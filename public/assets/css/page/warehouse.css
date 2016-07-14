@@ -1,0 +1,42 @@
+.warehouse-container {
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    width: 670px;
+}
+
+.warehouse-container .detail-content {
+    margin-top: 20px;
+}
+
+.warehouse-container .ix-material-info {
+    margin-top: 20px;
+}
+
+.warehouse-container .sl-size {
+    width: 100%;
+}
+
+.warehouse-container .detail-input-title {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.warehouse-container .weight-detail-inner {
+    padding-top: 50px;
+}
+
+.warehouse-container .btn-kc {
+    margin-top: 50px;
+    margin-left: -75px;
+}
+
+.warehouse-container .kc {
+    margin-left: 45%;
+    padding-top: 30px;
+}

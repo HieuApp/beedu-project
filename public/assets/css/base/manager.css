@@ -1,0 +1,195 @@
+/*
+    Created on : Oct 02, 2015, 4:18:27 AM
+    Author     : phamtrong204
+*/
+
+.table_header {
+    background-color: #EFF3F8;
+    padding-top: 7px;
+}
+
+.select2-container .select2-selection {
+    border-radius: 0px;
+}
+
+.select2-search:after {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    left: auto;
+    width: 16px;
+    text-align: center;
+}
+
+.select2-selection.select2-selection--multiple .select2-search:after {
+    top: 3px;
+    right: 7px;
+}
+
+.select2-container.select2-container--focus .select2-selection {
+    border: 1px solid #f59942;
+    outline: 0;
+}
+
+.select2-container .select2-selection--multiple {
+    height: 28px;
+    min-height: 28px;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 3px;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__choice {
+    margin-top: 2px;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__choice {
+    background-image: none;
+    background-color: #91b8d0;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 3px;
+    line-height: 22px;
+    padding: 0px 8px 0px 0px;
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease 0s;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+    font-size: 17px;
+    line-height: 17px;
+    vertical-align: -1px;
+    margin: 1px;
+    padding: 1px 2px 2px 2px;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__choice__remove:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/*.dataTables_wrapper label {*/
+/*margin-bottom: 0px;*/
+/*}*/
+
+/*.dataTables_wrapper.form-inline .form-control {*/
+/*display: inline-block;*/
+/*width: auto;*/
+/*vertical-align: middle;*/
+/*}*/
+
+/*.dataTables_wrapper .dataTables_info {*/
+/*padding-top: 6px;*/
+/*}*/
+
+/*.dataTables_wrapper .row.widget-header {*/
+/*min-height: 0;*/
+/*border: none;*/
+/*padding-left: 0px;*/
+/*border: 1px solid #ccc;*/
+/*border-bottom: none;*/
+/*}*/
+
+/*.dataTables_wrapper .row.widget-header:after {*/
+/*clear: both;*/
+/*}*/
+
+/*.dataTables_wrapper .row:first-child {*/
+/*padding-top: 6px;*/
+/*padding-bottom: 5px;*/
+
+/*}*/
+
+/*.dataTables_wrapper .row:last-child {*/
+/*padding-top: 7px;*/
+/*padding-bottom: 4px;*/
+/*}*/
+
+/*.dataTables_wrapper .tableTools-container {*/
+/*margin-bottom: 0px;*/
+/*padding-left: 7px;*/
+/*}*/
+
+/*.dataTables_paginate .pagination {*/
+/*margin: 0px;*/
+/*}*/
+
+/*.dataTables_wrapper table th.minimum-width,*/
+/*.dataTables_wrapper table td.minimum-width {*/
+/*width: 1px;*/
+/*}*/
+
+/*.dataTables_wrapper .table-bordered > thead > tr > td,*/
+/*.dataTables_wrapper .table-bordered > thead > tr > th {*/
+/*border-bottom-width: 1px;*/
+/*}*/
+
+/*.dataTables_wrapper .widget-toolbar {*/
+/*line-height: 1;*/
+/*}*/
+
+/*.manager-page .widget-box {*/
+/*!*margin: 0;*!*/
+/*}*/
+
+/*.jGrowl-notification .jGrowl-close {*/
+/*position: absolute;*/
+/*right: 11px;*/
+/*top: 11px;*/
+/*}*/
+
+/*.jGrowl-notification {*/
+/*opacity: 1;*/
+/*box-shadow: 0px 0px 10px 1px #ccc;*/
+/*}*/
+
+textarea {
+    max-width: 100%;
+    resize: none;
+}
+
+.box-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layout-row, .layout-column {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.layout-row, .row-space-between-start {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.align-space-between-start {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    /*===================================*/
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.full-width {
+    width: 100%;
+}

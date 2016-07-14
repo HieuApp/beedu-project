@@ -1,0 +1,135 @@
+.page-nav-pills {
+    margin-left: 0;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 0.3em;
+}
+
+.btn-after-form-control, .order-detail .order-detail-top .order-detail-top-side .mns-btn {
+    padding: 7px 12px;
+    margin-left: 0.4rem;
+}
+
+/************Order Detail************/
+
+/*Adding colors and MCEs*/
+.order-detail .order-detail-top .order-detail-top-side > .order-detail-top-side-inner .tags > span.tag {
+    width: 100%;
+    text-align: center;
+}
+
+/*MCEs' quantity detail*/
+.order-detail .mns-table .mns-table-row {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+input.input-as-label[readonly] {
+    border: none;
+    text-align: center;
+    padding: 0;
+    background: transparent !important;
+}
+
+.mns-table-head, .mce-quantity-real .mce_container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.mce-quantity-real .mce_container:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.mns-table-head, .mce-quantity-real .mce_container:nth-child(even) {
+    background-color: #eee;
+}
+
+.mns-table .mns-table-row label {
+    line-height: 34px;
+}
+
+.mns-table-row.mns-table-row-head label {
+    font-weight: 600;
+}
+
+.padding-18 {
+    padding: 18px
+}
+
+/************End of Order Detail************/
+
+/************Material************/
+.material-table-placeholder table tr.material-normal-tr, table.table-group-by tr.material-normal-tr {
+    background-color: #fafafa;
+}
+
+.material-table-placeholder table tr.material-sub-tr, table.table-group-by tr.material-sub-tr {
+    background-color: #eee;
+}
+
+.edit-order-container .modal-dialog {
+    width: 850px;
+    margin: 30px auto;
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+.margin-bottom-12, .m-b-12 {
+    margin-bottom: 12px;
+}
+
+/************End of Material************/
+
+/************Production Process************/
+
+#producing_steps .row {
+    margin-left: 0;
+}
+
+#producing_steps p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.processing-stages th {
+    text-align: center;
+}
+
+/* stages */
+.stages {
+    width: 100%;
+    height: 200px;
+}
+
+/* detail and detail stages */
+.detail-and-details-stages {
+    width: 100%;
+    height: 350px;
+}
+
+.detail {
+    border: solid #dbdbdb 1px;
+    height: 100%;
+}
+
+.details-stages {
+    border: solid #dbdbdb 1px;
+    height: 100%;
+}
+
+.details-stages p {
+    margin-top: 2rem;
+}
+
+.details-stages .form-group {
+    height: 4.7rem;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+/************End of Production Process************/
