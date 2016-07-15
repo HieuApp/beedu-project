@@ -10,7 +10,7 @@ class User extends Manager_base {
 
     function __construct() {
         parent::__construct();
-        $this->is_in_group(['admin', 'corporation'], TRUE);
+        $this->is_in_group(['admin'], TRUE);
     }
 
     /**

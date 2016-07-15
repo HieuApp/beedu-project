@@ -23,7 +23,7 @@
         <a href="#" class="navbar-brand">
             <small>
                 <i class="fa fa-tachometer" aria-hidden="true"></i>
-                May Nam Sơn
+                Beedu
             </small>
         </a>
 
