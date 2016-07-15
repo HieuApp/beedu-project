@@ -747,7 +747,7 @@ abstract class Manager_base extends Admin_layout {
     protected function add_action_button($origin_column_value, $column_name, &$record, $column_data, $caller) {
         $primary_key = $this->model->get_primary_key();
         $custom_action = "<div class='action-buttons'>";
-        $custom_action .= "<a class='e_ajax_link blue' href='" . site_url($this->url["view"] . $record->$primary_key) . "'><i class='ace-icon fa fa-search-plus bigger-130'></i></a>";
+//        $custom_action .= "<a class='e_ajax_link blue' href='" . site_url($this->url["view"] . $record->$primary_key) . "'><i class='ace-icon fa fa-search-plus bigger-130'></i></a>";
         if ((!isset($record->disable_edit) || !$record->disable_edit)) {
             $custom_action .= "<a class='e_ajax_link green' href='" . site_url($this->url["edit"] . $record->$primary_key) . "'><i class='ace-icon fa fa-pencil bigger-130'></i></a>";
             $custom_action .= "<a class='e_ajax_link e_ajax_confirm red' href='" . site_url($this->url["delete"] . $record->$primary_key) . "'><i class='ace-icon fa fa-trash-o  bigger-130'></i></a>";

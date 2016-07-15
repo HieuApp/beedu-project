@@ -6,8 +6,8 @@
                     <div class="center">
                         <h1>
                             <i class="ace-icon fa fa-dashboard green"></i>
-                            <span class="red">OWS</span>
-                            <span class="white" id="id-text2">Manager System</span>
+<!--                            <span class="red">Miunh</span>-->
+                            <span class="white" id="id-text2">Beedu Manager</span>
                         </h1>
                         <!--<h4 class="blue" id="id-company-text">&copy; 3TBK JSC</h4>-->
                     </div>
@@ -63,44 +63,44 @@
                                             <div class="space-4"></div>
                                         </fieldset>
                                     </form>
-                                    <div class="s">
-                                        <div class="social-or-login center">
-                                            <span class="bigger-110">Or Login Using</span>
-                                        </div>
-
-                                        <div class="space-6"></div>
-
-                                        <div class="social-login center">
-                                            <a class="btn btn-primary">
-                                                <i class="ace-icon fa fa-facebook"></i>
-                                            </a>
-
-                                            <a class="btn btn-info">
-                                                <i class="ace-icon fa fa-twitter"></i>
-                                            </a>
-
-                                            <a class="btn btn-danger">
-                                                <i class="ace-icon fa fa-google-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+<!--                                    <div class="s">-->
+<!--                                        <div class="social-or-login center">-->
+<!--                                            <span class="bigger-110">Or Login Using</span>-->
+<!--                                        </div>-->
+<!---->
+<!--                                        <div class="space-6"></div>-->
+<!---->
+<!--                                        <div class="social-login center">-->
+<!--                                            <a class="btn btn-primary">-->
+<!--                                                <i class="ace-icon fa fa-facebook"></i>-->
+<!--                                            </a>-->
+<!---->
+<!--                                            <a class="btn btn-info">-->
+<!--                                                <i class="ace-icon fa fa-twitter"></i>-->
+<!--                                            </a>-->
+<!---->
+<!--                                            <a class="btn btn-danger">-->
+<!--                                                <i class="ace-icon fa fa-google-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
                                 </div><!-- /.widget-main -->
 
-                                <div class="toolbar clearfix ">
-                                    <div>
-                                        <a href="#" data-target="#forgot-box" class="forgot-password-link">
-                                            <i class="ace-icon fa fa-arrow-left"></i>
-                                            I forgot my password
-                                        </a>
-                                    </div>
-
-                                    <div>
-                                        <a href="#" data-target="#signup-box" class="user-signup-link">
-                                            I want to register
-                                            <i class="ace-icon fa fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
+<!--                                <div class="toolbar clearfix ">-->
+<!--                                    <div>-->
+<!--                                        <a href="#" data-target="#forgot-box" class="forgot-password-link">-->
+<!--                                            <i class="ace-icon fa fa-arrow-left"></i>-->
+<!--                                            I forgot my password-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!---->
+<!--                                    <div>-->
+<!--                                        <a href="#" data-target="#signup-box" class="user-signup-link">-->
+<!--                                            I want to register-->
+<!--                                            <i class="ace-icon fa fa-arrow-right"></i>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
                             </div><!-- /.widget-body -->
                         </div><!-- /.login-box -->
 
