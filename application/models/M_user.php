@@ -130,15 +130,15 @@ class M_user extends Crud_manager {
         $this->db->select($this->_table_alias . ".*, g.name as role, g.description as role_name, g.id as role_id");
         $this->db->join("ion_users_groups as ug", $this->_table_alias . ".id=ug.user_id");
         $this->db->join("ion_groups as g", "ug.group_id=g.id");
-        if ($this->is_in_group("admin")) {
-            $this->db->where("g.name", 'corporation');
-        }
-        if ($this->is_in_group("corporation")) {
-            $this->db->where_in("g.name", [
-                'warehouse_manager', 'ppc', 'producer', 'quality_manager',
-            ]);
-            $this->db->where('m.parent_id', $this->session->userdata("user_id"));
-        }
+//        if ($this->is_in_group("admin")) {
+//            $this->db->where("g.name", 'corporation');
+//        }
+//        if ($this->is_in_group("corporation")) {
+//            $this->db->where_in("g.name", [
+//                'warehouse_manager', 'ppc', 'producer', 'quality_manager',
+//            ]);
+//            $this->db->where('m.parent_id', $this->session->userdata("user_id"));
+//        }
     }
 
     public function get_status() {

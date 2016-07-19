@@ -48,6 +48,57 @@ abstract class Admin_layout extends Base_layout {
             ),
         );
         $menu[] = Array(
+            "text"  => "Quản lý chuyên mục",
+            "icon"  => "fa-th-list",
+            "url"   => site_url('categories'),
+            "child" => Array(
+                '0' => Array(
+                    "text" => "Thêm",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('categories/add'),
+                ),
+                '1' => Array(
+                    "text" => "Quản lý chuyên mục",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('categories'),
+                ),
+            ),
+        );
+        $menu[] = Array(
+            "text"  => "Quản lý tài liệu",
+            "icon"  => "fa-file-text-o",
+            "url"   => site_url('documents'),
+            "child" => Array(
+                '0' => Array(
+                    "text" => "Thêm",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('documents/add'),
+                ),
+                '1' => Array(
+                    "text" => "Quản lý tài liệu",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('documents'),
+                ),
+            ),
+        );
+        $menu[] = Array(
+            "text"  => "Quản lý hỏi đáp",
+            "icon"  => "fa-question-circle-o",
+            "url"   => site_url('questions'),
+            "child" => Array(
+                '0' => Array(
+                    "text" => "Thêm",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('questions/add'),
+                ),
+                '1' => Array(
+                    "text" => "Quản lý hỏi đáp",
+                    "icon" => "fa-caret-right",
+                    "url"  => site_url('questions'),
+                ),
+            ),
+        );
+        $menu[] = Array(
             "text" => "System config",
             "icon" => "fa-cogs",
             "url"  => site_url('system_config'),
