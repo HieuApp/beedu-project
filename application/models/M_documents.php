@@ -59,12 +59,12 @@ class M_documents extends Crud_manager {
                 'class'                    => 'ace_file_input',//Use ACE theme for file input
 //                'attr'         => 'data-disable_client_validate=1',//Disable validate in client
                 'upload'                   => [//As config of File Upload Class in codeingiter
-                    'upload_path'      => 'upload/demo/avatars',
+                    'upload_path'      => 'upload/file',
                     'allowed_types'    => 'pdf|txt|doc|docx',
                     'max_size'         => '20480',
 //                    'min_size'         => '100',
-                    'min_width'        => 300,
-                    'min_height'       => 400,
+//                    'min_width'        => 300,
+//                    'min_height'       => 400,
 //                    'max_width'        => 1200,
 //                    'max_height'       => 1600,
                     'encrypt_name'     => TRUE,
@@ -86,6 +86,7 @@ class M_documents extends Crud_manager {
                     'wm_padding'       => '20',
                 ],
             ],
+            'table'    => TRUE,
         ],
         'author'        => [
             'field'    => 'author',
@@ -131,5 +132,11 @@ class M_documents extends Crud_manager {
 
     public function __construct() {
         parent::__construct();
+        $this->before_get[] = "join_categories_table";
+    }
+
+    public function join_categories_table() {
+        $this->db->select($this->_table_alias . ".*, ct.name as category_name, ct.id as category_id");
+        $this->db->join("categories as ct", $this->_table_alias . ".category_id=ct.id");
     }
 }
