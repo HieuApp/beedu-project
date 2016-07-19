@@ -61,6 +61,10 @@ class Migration_Add_some_table extends CI_Migration {
                 'type'       => 'INT',
                 'constraint' => 11,
             ),
+            'file'        => array(
+                'type'       => 'VARCHAR',
+                'constraint' => 255,
+            ),
             'author'      => array(
                 'type'       => 'VARCHAR',
                 'constraint' => 255,
