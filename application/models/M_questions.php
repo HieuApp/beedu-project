@@ -15,17 +15,18 @@ class M_questions extends Crud_manager {
     protected $soft_delete = FALSE;
     public $schema = [
         'question'   => [
-            'field'  => 'question',
-            'label'  => 'Nội dung câu hỏi',
-            'rules'  => '',
-            'form'   => [
+            'field'    => 'question',
+            'db_field' => 'question',
+            'label'    => 'Nội dung câu hỏi',
+            'rules'    => '',
+            'form'     => [
                 'type' => 'text',
                 'attr' => 'data-test="question"',
             ],
-            'table'  => [
+            'table'    => [
                 'label' => 'Nội dung câu hỏi',
             ],
-            'filter' => [
+            'filter'   => [
                 'search_type' => 'like',
                 'type'        => 'text',
             ],
