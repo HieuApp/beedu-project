@@ -14,46 +14,46 @@ if (!defined('BASEPATH'))
  *
  * Import CI param for suggest code in IDE
  * @property CI_DB_query_builder $db
- * @property CI_DB_forge $dbforge
- * @property CI_Benchmark $benchmark
- * @property CI_Calendar $calendar
- * @property CI_Cart $cart
- * @property CI_Config $config
- * @property CI_Controller $controller
- * @property CI_Email $email
- * @property CI_Encrypt $encrypt
- * @property CI_Exceptions $exceptions
- * @property CI_Ftp $ftp
- * @property CI_Hooks $hooks
- * @property CI_Image_lib $image_lib
- * @property CI_Input $input
- * @property CI_Language $language
- * @property CI_Log $log
- * @property CI_Output $output
- * @property CI_Pagination $pagination
- * @property CI_Parser $parser
- * @property CI_Profiler $profiler
- * @property CI_Session $session
- * @property CI_Sha1 $sha1
- * @property CI_Table $table
- * @property CI_Trackback $trackback
- * @property CI_Typography $typography
- * @property CI_Unit_test $unit_test
- * @property CI_Upload $upload
- * @property CI_URI $uri
- * @property CI_User_agent $user_agent
- * @property CI_Validation $validation
- * @property CI_Xmlrpc $xmlrpc
- * @property CI_Xmlrpcs $xmlrpcs
- * @property CI_Zip $zip
- * @property CI_Loader $load
- * @property CI_Router $router
- * @property Ion_auth_model $ion_auth
- * @property MY_Form_validation $form_validation
- * @property Crud_manager $model
+ * @property CI_DB_forge         $dbforge
+ * @property CI_Benchmark        $benchmark
+ * @property CI_Calendar         $calendar
+ * @property CI_Cart             $cart
+ * @property CI_Config           $config
+ * @property CI_Controller       $controller
+ * @property CI_Email            $email
+ * @property CI_Encrypt          $encrypt
+ * @property CI_Exceptions       $exceptions
+ * @property CI_Ftp              $ftp
+ * @property CI_Hooks            $hooks
+ * @property CI_Image_lib        $image_lib
+ * @property CI_Input            $input
+ * @property CI_Language         $language
+ * @property CI_Log              $log
+ * @property CI_Output           $output
+ * @property CI_Pagination       $pagination
+ * @property CI_Parser           $parser
+ * @property CI_Profiler         $profiler
+ * @property CI_Session          $session
+ * @property CI_Sha1             $sha1
+ * @property CI_Table            $table
+ * @property CI_Trackback        $trackback
+ * @property CI_Typography       $typography
+ * @property CI_Unit_test        $unit_test
+ * @property CI_Upload           $upload
+ * @property CI_URI              $uri
+ * @property CI_User_agent       $user_agent
+ * @property CI_Validation       $validation
+ * @property CI_Xmlrpc           $xmlrpc
+ * @property CI_Xmlrpcs          $xmlrpcs
+ * @property CI_Zip              $zip
+ * @property CI_Loader           $load
+ * @property CI_Router           $router
+ * @property Ion_auth_model      $ion_auth
+ * @property MY_Form_validation  $form_validation
+ * @property Crud_manager        $model
  *
  */
-abstract class Base_layout extends CI_Controller {
+abstract class Base_guest_layout extends CI_Controller {
 
     protected $json_barrier = ";mtb;";
     protected $html = Array();
@@ -159,10 +159,10 @@ abstract class Base_layout extends CI_Controller {
     /**
      * Set data or html of one part in master page
      * @see Master_layout::$parts
-     * @param String $part Part want to set
-     * @param Array $data data want to set
+     * @param String  $part          Part want to set
+     * @param Array   $data          data want to set
      *                               pass $data['view_file'] in want to change view
-     * @param boolean $merge True if want to merge(overrider) with old data, FALSE if want to remove old data and replace
+     * @param boolean $merge         True if want to merge(overrider) with old data, FALSE if want to remove old data and replace
      */
     final protected function set_data_part($part, $data, $merge = TRUE) {
         $this->_validate_part($part);
@@ -214,8 +214,8 @@ abstract class Base_layout extends CI_Controller {
     /**
      * Get data of one part in master page
      * @see Master_layout::$parts for parts name
-     * @param NULL|String|Array $parts String or Array of part want to get
-     * @param boolean $include_prepend_append TRUE if want to include html prepend and html append, FALSE to get data only
+     * @param NULL|String|Array $parts                  String or Array of part want to get
+     * @param boolean           $include_prepend_append TRUE if want to include html prepend and html append, FALSE to get data only
      * @return String|Array Data or Html of parts input
      * @throws Exception Invalid param, first param must be 'string' or 'array'!
      */
@@ -273,11 +273,11 @@ abstract class Base_layout extends CI_Controller {
     private function set_default_canonical($canonical = NULL) {
         return NULL;
     }
-    
+
     /**
      * Load more css
      * @param String $file_path File want to load
-     * @param bool $at_footer True if want to load at footer assets, false if want to load ad header asset
+     * @param bool   $at_footer True if want to load at footer assets, false if want to load ad header asset
      */
     protected function load_more_css($file_path, $at_footer = FALSE) {
         $html = '<link rel="stylesheet" href="' . base_url($file_path) . '"/>';
@@ -292,7 +292,7 @@ abstract class Base_layout extends CI_Controller {
     /**
      * Load more js
      * @param String $file_path File want to load
-     * @param bool $at_footer True if want to load at footer assets, false if want to load ad header asset
+     * @param bool   $at_footer True if want to load at footer assets, false if want to load ad header asset
      */
     protected function load_more_js($file_path, $at_footer = FALSE) {
         $html = '<script src="' . base_url($file_path) . '"></script>';
