@@ -352,4 +352,9 @@ abstract class Base_guest_layout extends CI_Controller {
         return base_url("/images/favicon.png");
     }
 
+    private function set_default_top_bar() {
+        $data = Array();
+        $data["view_file"] = "guest/base_layout/top_bar";
+        return $data;
+    }
 }

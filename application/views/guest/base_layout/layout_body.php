@@ -11,11 +11,6 @@
         } catch (e) {
         }
     </script>
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar responsive">
-        <?php echo $side_bar_left; ?>
-    </div>
-    <!-- /sidebar -->
     <!-- Page content -->
     <div class="main-content  full-remain">
         <div class="main-content-inner full-remain">
@@ -28,9 +23,6 @@
         </div>
     </div>
     <!-- /page content -->
-    <!-- Sidebar - right -->
-    <?php echo $side_bar_right; ?>
-    <!-- /sidebar - right -->
     <!-- absolutebar -->
     <div class="side-bar-absolute ace-settings-container">
         <?php echo $side_bar_absolute; ?>

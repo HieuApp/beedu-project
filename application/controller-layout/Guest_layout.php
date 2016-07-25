@@ -12,7 +12,7 @@ if (!defined('BASEPATH'))
 /**
  * Class Admin_layout
  */
-abstract class Guest_layout extends Base_layout {
+abstract class Guest_layout extends Base_guest_layout {
 
     protected $role_allow = 'guest';
 
