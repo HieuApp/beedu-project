@@ -116,3 +116,28 @@ nav.material-icons {
 footer.page-footer {
   margin: 0;
 }
+
+/*Hieu custom css*/
+div, h2.menu-title{
+  text-align: center;
+}
+
+.row .col.m7 {
+    width: 25%;
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+.container {
+    width: 90%;
+}
+
+.card-content{
+  height: 150px;
+}
+
+.card-img-content{
+  height: 250px
+}
