@@ -88,7 +88,6 @@
 <script src="<?php echo base_url("assets/plugins-bower/moment/min/moment-with-locales.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/moment-timezone/moment-timezone.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/jquery.hotkeys/jquery.hotkeys.js"); ?>"></script>
-<script src="<?php echo base_url("assets/plugins-bower/bernii/gauge.js/dist/gauge.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/bootbox.js/bootbox.js"); ?>"></script>
 <script
     src="<?php echo base_url("assets/plugins-bower/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"); ?>"></script>
@@ -119,7 +118,6 @@
 <script
     src="<?php echo base_url("assets/plugins-bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/jquery.nicescroll/dist/jquery.nicescroll.min.js"); ?>"></script>
-<script src="<?php echo base_url("assets/plugins-bower/jquery.sparkline/dist/jquery.sparkline.min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/jquery-colorbox/jquery.colorbox-min.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/jquery-inputlimiter/jquery.inputlimiter.js"); ?>"></script>
 <script src="<?php echo base_url("assets/plugins-bower/jquery-knob/dist/jquery.knob.min.js"); ?>"></script>
@@ -149,6 +147,7 @@
 <title>Parallax Template - Materialize</title>
 
 <!-- CSS  -->
+<!--phần này hiếu khai báo-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="<?php echo base_url("assets/materialize/dist/css/materialize.css"); ?>" type="text/css" rel="stylesheet"
       media="screen,projection"/>
