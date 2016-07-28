@@ -1,60 +1,55 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
-  color: white;
-  left: 56px;
+    color: white;
+    left: 56px;
 }
 
 nav ul {
-  position: absolute;
-  right: 24px;
+    position: absolute;
+    right: 24px;
 }
 
 nav .material-icons {
-  color: black;
+    color: black;
     position: relative;
     float: right;
     margin-top: -14px;
 
 }
 
-nav.material-icons:hover{
-  cursor:pointer;
+nav.material-icons:hover {
+    cursor: pointer;
+    background-color: red;
 }
 
-nav .search{
-  position: absolute;
-  left: 230px;
-  width: 300px;
-  height: 35px;
-  top: 10%;
+nav .search {
+    position: absolute;
+    left: 230px;
+    width: 300px;
+    height: 35px;
+    top: 10%;
 }
 
 nav li:hover {
-  background-color: #BDBDBD;
+    background-color: #BDBDBD;
 }
 
 nav .container {
-  width: 100%;
+    width: 100%;
 }
 
-nav .container-1 , .container-1 input#search:focus, .container-1 {
-    outline:none;
+nav .container-1, .container-1 input#search:focus, .container-1 {
+    outline: none;
     background: #ffffff;
-  }
-nav.label-search{
+}
+
+nav.label-search {
     position: absolute;
     right: 0;
 }
+
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 nav.input-field, nav#search {
@@ -68,50 +63,78 @@ nav.input-field, nav#search {
 }
 
 .material-icons:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 nav.material-icons {
-  color: black;
+    color: black;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
+}
+
+/*Hieu custom css*/
+div, h2.menu-title {
+    text-align: center;
+}
+
+.row .col.m7 {
+    width: 25%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+}
+
+.card-content {
+    height: 150px;
+}
+
+.card-img-content {
+    height: 250px
 }
