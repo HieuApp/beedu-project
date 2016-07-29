@@ -30,11 +30,10 @@
                     <div class="card-image">
                         <img class="card-img-content"
                              src="<?php echo base_url("assets/images/learn-by-my-self.jpg") ?>">
-                        <span class="card-title">Thói quen tự học</span>
+                        <span class="card-title"><?php echo $learning_method_1; ?></span>
                     </div>
                     <div class="card-content white-text">
-                        <p>Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh tự tìm tòi cách
-                            giải cho các bài tập đó</p>
+                        <p><?php echo $learning_method_content_1; ?></p>
                     </div>
                     <div class="card-action">
                         <a href="#">Xem thêm</a>
@@ -46,11 +45,10 @@
                 <div class="card blue-grey darken-1">
                     <div class="card-image">
                         <img class="card-img-content" src="<?php echo base_url("assets/images/side-by-side.jpg") ?>">
-                        <span class="card-title">Giáo dục từng cá nhân</span>
+                        <span class="card-title"><?php echo $learning_method_2; ?></span>
                     </div>
                     <div class="card-content white-text">
-                        <p>Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù
-                            hợp nhất với khả năng của từng em.</p>
+                        <p><?php echo $learning_method_content_2; ?></p>
                     </div>
                     <div class="card-action">
                         <a href="#">Xem thêm</a>
@@ -62,10 +60,10 @@
                 <div class="card blue-grey darken-1">
                     <div class="card-image">
                         <img class="card-img-content" src="<?php echo base_url("assets/images/book-for-kid.jpg") ?>">
-                        <span class="card-title">Giáo trình phù hợp</span>
+                        <span class="card-title"><?php echo $learning_method_3; ?></span>
                     </div>
                     <div class="card-content white-text">
-                        <p>Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.</p>
+                        <p><?php echo $learning_method_content_3; ?></p>
                     </div>
                     <div class="card-action">
                         <a href="#">Xem thêm</a>
@@ -78,10 +76,10 @@
                     <div class="card-image">
                         <img class="card-img-content"
                              src="<?php echo base_url("assets/images/teacher-take-care.jpg") ?>">
-                        <span class="card-title">Giáo viên nhiệt huyết</span>
+                        <span class="card-title"><?php echo $learning_method_4; ?></span>
                     </div>
                     <div class="card-content white-text">
-                        <p>Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.</p>
+                        <p><?php echo $learning_method_content_4; ?></p>
                     </div>
                     <div class="card-action">
                         <a href="#">Xem thêm</a>

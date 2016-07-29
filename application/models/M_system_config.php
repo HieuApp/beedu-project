@@ -1,16 +1,16 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: CaoLong
  * Date: 7/5/2016
  * Time: 10:48 AM
  */
-
 class M_system_config extends Crud_manager {
     protected $_table = 'system_configs';
     protected $soft_delete = FALSE;
     public $schema = [
-        'name'        => [
+        'name'       => [
             'field'    => 'name',
             'db_field' => 'name',
             'label'    => 'Tên thông số',
@@ -27,7 +27,7 @@ class M_system_config extends Crud_manager {
                 'label' => 'Tên thông số',
             ],
         ],
-        'value' => [
+        'value'      => [
             'field'    => 'value',
             'db_field' => 'value',
             'label'    => 'Giá trị',
@@ -44,7 +44,7 @@ class M_system_config extends Crud_manager {
                 'type'        => 'text',
             ],
         ],
-        'created_on'  => [
+        'created_on' => [
             'field' => 'created_on',
             'label' => 'Ngày tạo',
             'rules' => '',
