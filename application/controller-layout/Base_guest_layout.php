@@ -137,7 +137,6 @@ abstract class Base_guest_layout extends CI_Controller {
         $data["top_bar"] = $this->html["top_bar"];
         $data["breadcrumb"] = $this->html["breadcrumb"];
         $data["content"] = $content;
-        $data["side_bar_absolute"] = $this->html["side_bar_absolute"];
         $data["footer"] = $this->html["footer"];
         $new_content = $this->load->view($this->layout_body, $data, TRUE);
         $this->show_page_blank($new_content);
