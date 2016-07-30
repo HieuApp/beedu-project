@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2016 at 06:40 PM
+-- Generation Time: Jul 30, 2016 at 08:34 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -171,7 +171,15 @@ CREATE TABLE IF NOT EXISTS `questions` (
   `question` varchar(255) NOT NULL,
   `answer` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `questions`
+--
+
+INSERT INTO `questions` (`id`, `question`, `answer`, `created_on`) VALUES
+(1, 'đây là cái gì', 'qưer', '2016-07-29 14:04:22'),
+(2, 'minh hỏi đểu', 'thế thì kệ mịa mày', '2016-07-29 14:06:01');
 
 -- --------------------------------------------------------
 
@@ -184,7 +192,28 @@ CREATE TABLE IF NOT EXISTS `system_configs` (
   `name` varchar(255) NOT NULL,
   `value` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `system_configs`
+--
+
+INSERT INTO `system_configs` (`id`, `name`, `value`, `created_on`) VALUES
+(1, 'Màu nền', 'red', '2016-07-29 14:07:00'),
+(2, 'Menu 1', 'Phương pháp học Beedu', '2016-07-29 14:10:01'),
+(3, 'Menu 2', 'Chương trình học', '2016-07-29 14:10:29'),
+(4, 'Menu 3', 'Thư viện', '2016-07-29 14:10:42'),
+(5, 'Menu 4', 'Hỏi đáp', '2016-07-29 14:10:51'),
+(6, 'Menu 5', 'Giới thiệu', '2016-07-29 14:11:07'),
+(7, 'Câu giới thiệu', 'Đây là trang web của Đại ka Miunh', '2016-07-29 14:11:57'),
+(8, 'Phương pháp học 1', 'Thói quen tự học', '2016-07-29 14:15:11'),
+(9, 'Phương pháp học 2', 'Giáo dục từng cá nhân', '2016-07-29 14:17:27'),
+(10, 'Phương pháp học 3', 'Giáo trình phù hợp', '2016-07-29 14:17:44'),
+(11, 'Phương pháp học 4', 'Giáo viên nhiệt huyết', '2016-07-29 14:17:59'),
+(12, 'Nội dung phương pháp học 1', 'Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh tự tìm tòi cách giải cho các bài tập đó', '2016-07-29 14:19:01'),
+(13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', '2016-07-29 14:19:15'),
+(14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', '2016-07-29 14:19:27'),
+(15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41');
 
 -- --------------------------------------------------------
 
@@ -215,7 +244,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1469459735, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1469901533, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -318,12 +347,12 @@ ALTER TABLE `notifications`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `system_configs`
 --
 ALTER TABLE `system_configs`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `users`
 --
