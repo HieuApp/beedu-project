@@ -1,8 +1,5 @@
-<!-- ace scripts -->
-<script src='<?php echo base_url("assets/js/base/ace-elements.js"); ?>'></script>
-<script src='<?php echo base_url("assets/js/base/ace.js"); ?>'></script>
-<!-- page scripts -->
-<script src="<?php echo base_url("assets/js/base/function.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/base/form.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/base/all_theme.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/base/page.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url("assets/js/material_js/jquery-2.1.1.min.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/material_js/materialize.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/material_js/init.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/jquery-3.1.0.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/index.js"); ?>"></script>
