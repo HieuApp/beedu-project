@@ -11,7 +11,7 @@
     <link type="image/x-icon" href="<?php echo $favicon; ?>" rel="shortcut icon"/>
     <?php echo $assets_header; ?>
 </head>
-<body class="no-skin ace-custom" data-barrier="<?php echo $json_barrier; ?>">
+<body>
 <?php echo $content; ?>
 <?php echo $assets_footer; ?>
 </body>

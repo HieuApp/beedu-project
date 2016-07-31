@@ -11,6 +11,7 @@ if (!defined('BASEPATH'))
 
 /**
  * Class Admin_layout
+ * @property M_system_config m_system_config
  */
 abstract class Guest_layout extends Base_guest_layout {
 
@@ -18,6 +19,7 @@ abstract class Guest_layout extends Base_guest_layout {
 
     function __construct() {
         parent::__construct();
+        $this->load->model('M_system_config', 'm_system_config');
         $this->_set_top_bar();
     }
 
@@ -25,6 +27,12 @@ abstract class Guest_layout extends Base_guest_layout {
         $data = Array(
             'view_file' => "guest/base_layout/top_bar",
         );
+        $result = $this->m_system_config->get_all();
+        $data["menu_1"] = $result[1]->value;
+        $data["menu_2"] = $result[2]->value;
+        $data["menu_3"] = $result[3]->value;
+        $data["menu_4"] = $result[4]->value;
+        $data["menu_5"] = $result[5]->value;
         $this->set_data_part('top_bar', $data, TRUE);
     }
 }

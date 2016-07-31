@@ -506,12 +506,6 @@ function change_view_form() {
         var self = $(this);
         self.val(self.attr("js_default_value"));
     });
-    $('.date-picker').datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).next().on(ace.click_event, function () {
-        $(this).prev().focus();
-    });
     $('#input-upload-file').ace_file_input({
         style: 'well',
         btn_choose: 'Drop files here or click to choose',
@@ -544,7 +538,7 @@ function change_view_form() {
         //console.log($(this).data('ace_input_files'));
         //console.log($(this).data('ace_input_method'));
     });
-    
+
 
     //dynamically change allowed formats by changing allowExt && allowMime function
     $('#id-file-format').removeAttr('checked').on('change', function () {

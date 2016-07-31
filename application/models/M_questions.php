@@ -18,7 +18,7 @@ class M_questions extends Crud_manager {
             'field'    => 'question',
             'db_field' => 'question',
             'label'    => 'Nội dung câu hỏi',
-            'rules'    => '',
+            'rules'    => 'required',
             'form'     => [
                 'type' => 'text',
                 'attr' => 'data-test="question"',
@@ -35,7 +35,7 @@ class M_questions extends Crud_manager {
             'field'    => 'answer',
             'db_field' => 'answer',
             'label'    => 'Câu trả lời',
-            'rules'    => '',
+            'rules'    => 'required',
             'form'     => [
                 'type' => 'text',
             ],
@@ -44,7 +44,7 @@ class M_questions extends Crud_manager {
                 'type'        => 'text',
             ],
             'table'    => [
-                'callback_render_data' => "get_status_text",
+//                'callback_render_data' => "get_status_text",
                 'class'                => "hidden-480",
             ],
         ],

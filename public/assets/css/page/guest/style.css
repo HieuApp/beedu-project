@@ -1,0 +1,140 @@
+nav ul a,
+nav .brand-logo {
+    color: white;
+    left: 56px;
+}
+
+nav ul {
+    position: absolute;
+    right: 24px;
+}
+
+nav .material-icons {
+    color: black;
+    position: relative;
+    float: right;
+    margin-top: -14px;
+
+}
+
+nav.material-icons:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+nav .search {
+    position: absolute;
+    left: 230px;
+    width: 300px;
+    height: 35px;
+    top: 10%;
+}
+
+nav li:hover {
+    background-color: #BDBDBD;
+}
+
+nav .container {
+    width: 100%;
+}
+
+nav .container-1, .container-1 input#search:focus, .container-1 {
+    outline: none;
+    background: #ffffff;
+}
+
+nav.label-search {
+    position: absolute;
+    right: 0;
+}
+
+p {
+    line-height: 2rem;
+}
+
+nav.input-field, nav#search {
+    position: absolute;
+    height: 35px;
+    background: white;
+    left: 220px;
+    margin-top: 15px;
+    width: 300px;
+    color: black;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+nav.material-icons {
+    color: black;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+/*Hieu custom css*/
+div, h2.menu-title {
+    text-align: center;
+}
+
+.row .col.m7 {
+    width: 25%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+}
+
+.card-content {
+    height: 150px;
+}
+
+.card-img-content {
+    height: 250px
+}
