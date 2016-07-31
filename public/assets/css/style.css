@@ -1,0 +1,391 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+  left: 56px;
+}
+
+nav ul {
+  position: absolute;
+  right: 24px;
+}
+
+nav .material-icons {
+  color: black;
+    position: relative;
+    float: right;
+    margin-top: -14px;
+
+}
+
+nav.material-icons:hover{
+  cursor:pointer
+  background-color: ;
+}
+
+nav .search{
+  position: absolute;
+  left: 230px;
+  width: 300px;
+  height: 35px;
+  top: 10%;
+}
+
+nav li:hover {
+  background-color: #BDBDBD;
+}
+
+nav .container {
+  width: 100%;
+}
+
+nav .container-1 , .container-1 input#search:focus, .container-1 {
+    outline:none;
+    background: #ffffff;
+  }
+nav.label-search{
+    position: absolute;
+    right: 0;
+}
+p {
+  line-height: 2rem;
+}
+
+nav.input-field, nav#search {
+    position: absolute;
+    height: 35px;
+    background: white;
+    left: 220px;
+    margin-top: 15px;
+    width: 300px;
+    color: black;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+nav.material-icons {
+  color: black;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*Hieu custom css*/
+div, h2.menu-title{
+  text-align: center;
+  font-family: Roboto;
+}
+
+.row .col.m7 {
+    width: 25%;
+}
+
+.card-title{
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  text-align: left;
+}
+
+.transfer-box{
+  background-color: black;
+  opacity: 0.6;
+}
+
+.container {
+    width: 90%;
+}
+
+.card-content{
+  height: auto;
+}
+
+.card-img-content{
+  height: 230px
+}
+
+.contact {
+  font-weight: bold;
+}
+
+h5.contact{
+  text-align: left;
+  font-weight: normal;
+}
+
+.row .col.l3{
+  margin-left: 72px;
+  width: 40%;
+}
+
+.youtube-background { 
+   width: 40px;
+   height: 40px;
+   background: #9E9E9E; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+div.youtube-background:hover { 
+   width: 40px;
+   height: 40px;
+   background: #F44336; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+.facebook-background { 
+   width: 40px;
+   height: 40px;
+   background: #9E9E9E; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+   margin-left: 16px;
+}
+
+div.facebook-background:hover { 
+   width: 40px;
+   height: 40px;
+   background: #3F51B5; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+.googleplus-background { 
+   width: 40px;
+   height: 40px;
+   background: #9E9E9E; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+div.googleplus-background:hover { 
+   width: 40px;
+   height: 40px;
+   background: #F44336; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+table td.contact-detail{
+  width: 100px;
+}
+
+.light-text{
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.logo-social{
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.group-social{
+  display: inline-flex;
+}
+.logo-margin{
+  margin-left: 16px;
+}
+
+.step-icon{
+  background-size: 160px 160px;
+  width: 30%;
+  height: 200px;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.icon-first{
+  background-color: #fbaea8;
+  background-image: url("res/standar-class.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-second{
+  background-color: #c1e0f5;
+  background-image: url("res/class-second-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-left: 59%;
+  margin-top: 40px;
+}
+
+.icon-third{
+  background-color: #b8f5d2;
+  background-image: url("res/material.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-left: 15%;
+}
+
+.icon-end{
+  background-color: #c1e0f5;
+  background-image: url("res/class-second-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-left: 59%;
+  margin-top: -50px;
+}
+
+.step-content{
+  width: 40%;
+  display: inline-block;
+  padding: 0 0 0 50px;
+  vertical-align: middle;
+}
+
+.second-content{
+  padding-top: 24px;
+  padding-left: 0px;
+  margin-left: 59%;
+  display: inline-block;
+}
+
+.third-content{
+  padding-top: 24px;
+  padding-left: 0px;
+  margin-left: -40%;
+  display: inline-block;
+  width: 30%;
+}
+
+.class-title{
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Roboto;
+  color: #212121;
+}
+
+.class-content{
+  text-align: left;
+  font-family: Roboto;
+  color: #757575;
+  font-size: 16px;
+}
+
+img.pink-link{
+  width: 340px;
+  height: 110px;
+  position: relative;
+  top: 210px;
+  left: 160px;
+}
+
+img.green-link{
+  width: 260px;
+  height: 190px;
+  border: 0;
+  position: relative;
+  top: 163px;
+  left: -320px;
+}
+
+img.link-end{
+  width: 340px;
+  height: 110px;
+  position: relative;
+  top: 150px;
+  left: 350px;;
+}
+
+.valign-wrapper{
+  background: rgba(0,0,0,0.3);
+}
+
+.label-form{
+  text-align: left;
+}
+
+.row .col.s6{
+  width: 100%;
+}
+
+.form-questrion{
+  width: 40%
+}
