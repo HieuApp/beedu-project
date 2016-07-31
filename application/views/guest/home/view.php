@@ -192,35 +192,50 @@
                 <ul class="collection library">
                     <li class="collection-item avatar">
                         <i class="material-icons circle green">book</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
+                        <span class="title document-title"><a href="">Đề thi đại học(20)</a></span>
+                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
+                            hình dung được phần nào nội dung của nó
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <div class="download-count">
+                            <i class="material-icons grey-text">file_download</i>
+                            <span class="grey-text"> 1,234</span>
+                        </div>
+                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle">folder</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <span class="title document-title"><a href="">Đề thi học sinh giỏi(32)</a></span>
+                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
+                            hình dung được phần nào nội dung của nó.  </p>
+                        <div class="download-count">
+                            <i class="material-icons grey-text">file_download</i>
+                            <span class="grey-text"> 1,234</span>
+                        </div>
+                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle green">insert_chart</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
+                        <span class="title document-title"><a href="">Đề thi học cuối kỳ(60)</a> </span>
+                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
+                            hình dung được phần nào nội dung của nó
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <div class="download-count">
+                            <i class="material-icons grey-text">file_download</i>
+                            <span class="grey-text"> 1,234</span>
+                        </div>
+                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle red">play_arrow</i>
-                        <span class="title">Title</span>
-                        <p>First Line <br>
-                            Second Line
+                        <span class="title document-title"><a href="">Đề cương ôn tập(127)</a> </span>
+                        <p class="description">Một mô tả ngắn về nhóm tài liệu này để người dùng
+                            hình dung được phần nào nội dung của nó
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        <div class="download-count">
+                            <i class="material-icons grey-text">file_download</i>
+                            <span class="grey-text"> 1,234</span>
+                        </div>
+                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
                     </li>
                 </ul>
             </div>

@@ -433,3 +433,29 @@ div.answer{
     margin-left: auto;
     margin-right: auto;
 }
+
+.description{
+    color: rgba(0,0,0,0.5);
+    font-family: Roboto;
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+.document-title{
+    color: black;
+    font-family: Roboto;
+    font-size: 20px !important;
+    margin-left: 0px;
+}
+
+li.collection-item{
+    text-align: left;
+}
+
+.download-count{
+    display: inline-flex;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    margin-top: 10px;
+}
