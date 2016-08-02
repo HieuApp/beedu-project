@@ -4,7 +4,8 @@
         <div class="input-field" style="position: absolute; height: 35px; background: white;
             left: 220px; margin-top: 15px; width: 300px;">
 
-            <input id="search" type="search" style = "color: black;" placeholder="search for document..." />
+            <input id="search" type="search" style = "color: black;"
+                   placeholder="Tìm kiếm đề thi, tài liệu..." />
             <i class="material-icons" style="color: black; right: 0;">search</i>
         </div>
         <ul class="right hide-on-med-and-down">
