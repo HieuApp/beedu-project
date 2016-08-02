@@ -60,14 +60,13 @@ p {
     line-height: 2rem;
 }
 
-nav.input-field, nav#search {
+nav.input-field {
     position: absolute;
     height: 35px;
     background: white;
     left: 220px;
     margin-top: 15px;
     width: 300px;
-    color: black;
 }
 
 .material-icons:hover {
@@ -163,12 +162,11 @@ div, h2.menu-title{
 }
 
 h5.contact{
-    text-align: left;
+    text-align: center;
     font-weight: normal;
 }
 
 .row .col.l3{
-    margin-left: 72px;
     width: 40%;
 }
 
@@ -458,4 +456,21 @@ li.collection-item{
     right: 20px;
     bottom: 5px;
     margin-top: 10px;
+}
+
+.letter-text{
+    text-align: left;
+}
+
+.letter{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.author-sign{
+    text-align: right;
+    font-weight: bold;
 }

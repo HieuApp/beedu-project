@@ -30,7 +30,7 @@ class Home extends Guest_layout {
         $data["learning_method_content_2"] = $result[12]->value;
         $data["learning_method_content_3"] = $result[13]->value;
         $data["learning_method_content_4"] = $result[14]->value;
-        $content = $this->load->view("guest/home/view", $data, TRUE);
+        $content = $this->load->view("guest/home/view", null, TRUE);
         $this->show_page($content);
     }
 }

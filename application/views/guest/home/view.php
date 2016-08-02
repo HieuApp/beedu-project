@@ -7,22 +7,22 @@
                 <h5 class="header col s12 light">Thay đổi tư duy giáo dục của người Việt</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
+                <a href="<?php echo base_url("guest/beedu_detail");?>" id="download-button"
+                   class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
             </div>
             <br><br>
 
         </div>
     </div>
 
-    <div class="parallax"><img src="<?php echo base_url("assets/images/background-intro.jpg");?>" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="<?php echo base_url("assets/images/background-intro.jpg");?>"
+                               alt="Unsplashed background img 1"></div>
 
 </div>
 
 
 <div class="container">
     <div class="section section-method">
-
-
         <!--   Icon Section   -->
         <div class="row">
             <h4 class="menu-title header col s12 light">Phương pháp học Beedu</h4>
@@ -35,7 +35,7 @@
                         <div class="step-content">
                             <h2 class="class-title">Thói quen tự học</h2>
                             <p class="class-content">
-                                Leeedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh
+                                Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh
                                 tự tìm tòi cách giải cho các bài tập đó.
                             </p>
                         </div>
@@ -48,7 +48,7 @@
                         <div class="step-content second-content">
                             <h2 class="class-title">Giáo dục từng cá nhân</h2>
                             <p class="class-content">
-                                hương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một
+                                Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một
                                 trình độ phù hợp nhất với khả năng của từng em.
                             </p>
                         </div>
@@ -78,7 +78,7 @@
                     </li>
 
                     <li>
-                        <a href="http://materializecss.com/getting-started.html" id="download-button"
+                        <a href="<?php echo base_url("guest/register_trial");?>" id="download-button"
                            class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
                     </li>
                 </ul>
@@ -126,7 +126,7 @@
                             <p>10-15 học sinh/lớp <br> 100.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             <p>6 học sinh/lớp <br> 150.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                             <p>3 học sinh/lớp <br> 250.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                             <p>1 giáo viên kèm 1 học sinh <br> 500.00đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
