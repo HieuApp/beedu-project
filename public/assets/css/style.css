@@ -289,7 +289,7 @@ table td.contact-detail{
 
 .icon-second{
     background-color: #c1e0f5;
-    background-image: url("res/class-second-icon.png");
+    background-image: url("res/student.png");
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -299,7 +299,7 @@ table td.contact-detail{
 
 .icon-third{
     background-color: #b8f5d2;
-    background-image: url("res/material.png");
+    background-image: url("res/notebook.png");
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -308,7 +308,7 @@ table td.contact-detail{
 
 .icon-end{
     background-color: #c1e0f5;
-    background-image: url("res/class-second-icon.png");
+    background-image: url("res/teacher.png");
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -427,7 +427,7 @@ div.answer{
 }
 
 .library{
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -435,7 +435,7 @@ div.answer{
 .description{
     color: rgba(0,0,0,0.5);
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 0px;
 }
 
@@ -473,4 +473,47 @@ li.collection-item{
 .author-sign{
     text-align: right;
     font-weight: bold;
+}
+
+.document-title{
+    font-size: 20px;
+}
+
+.document-name{
+    font-size: 18px;
+}
+
+.full-width{
+    width: 100% !important;
+}
+
+.download-footer{
+    display: inline-flex;
+    width: 100%;
+}
+
+.btn-download{
+    height: 20px;
+    line-height: 0px;
+    float: right;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.document-item{
+    display: inline-flex;
+}
+
+li.document-item{
+    padding-left: 16px;
+}
+
+.icon-file{
+    width: 200px;
+    height: 100px;
+}
+
+div.document-info{
+    text-align: left;
+    margin-left: 16px;
 }

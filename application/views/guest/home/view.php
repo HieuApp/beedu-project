@@ -192,7 +192,8 @@
                 <ul class="collection library">
                     <li class="collection-item avatar">
                         <i class="material-icons circle green">book</i>
-                        <span class="title document-title"><a href="">Đề thi đại học(20)</a></span>
+                        <span class="title document-name">
+                            <a href="<?php echo base_url("guest/document");?>">Đề thi đại học(20)</a></span>
                         <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
                             hình dung được phần nào nội dung của nó
                         </p>
@@ -204,7 +205,7 @@
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle">folder</i>
-                        <span class="title document-title"><a href="">Đề thi học sinh giỏi(32)</a></span>
+                        <span class="title document-name"><a href="">Đề thi học sinh giỏi(32)</a></span>
                         <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
                             hình dung được phần nào nội dung của nó.  </p>
                         <div class="download-count">
@@ -215,7 +216,7 @@
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle green">insert_chart</i>
-                        <span class="title document-title"><a href="">Đề thi học cuối kỳ(60)</a> </span>
+                        <span class="title document-name"><a href="">Đề thi học cuối kỳ(60)</a> </span>
                         <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
                             hình dung được phần nào nội dung của nó
                         </p>
@@ -226,8 +227,8 @@
                         <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
                     </li>
                     <li class="collection-item avatar">
-                        <i class="material-icons circle red">play_arrow</i>
-                        <span class="title document-title"><a href="">Đề cương ôn tập(127)</a> </span>
+                        <i class="material-icons circle red">folder_special</i>
+                        <span class="title document-name"><a href="">Đề cương ôn tập(127)</a> </span>
                         <p class="description">Một mô tả ngắn về nhóm tài liệu này để người dùng
                             hình dung được phần nào nội dung của nó
                         </p>
