@@ -20,7 +20,7 @@
 
 
 <div class="container">
-    <div class="section">
+    <div class="section section-method">
 
 
         <!--   Icon Section   -->
@@ -107,7 +107,7 @@
 </div>
 
 <div class="container">
-    <div class="section">
+    <div class="section section-program">
 
         <div class="row">
             <div class="col s12 center">
@@ -184,7 +184,7 @@
 
 
 <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot section-library">
         <div class="container">
             <div class="row center">
 
@@ -244,7 +244,7 @@
     <div class="parallax"><img src="<?php echo base_url("assets/images/library3.jpg");?>" alt="Unsplashed background img 3"></div>
 </div>
 
-<div class="row">
+<div class="row section-question">
     <div class="col s12 center">
         <h4 class="header col s12 light">Hỏi đáp</h4>
         <ul class="collection with-header question-support">
