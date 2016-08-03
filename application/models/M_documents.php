@@ -10,7 +10,7 @@ class M_documents extends Crud_manager {
     protected $_table = 'documents';
     protected $soft_delete = FALSE;
     public $schema = [
-        'name'          => [
+        'name'             => [
             'field'    => 'name',
             'db_field' => 'name',
             'label'    => 'Tên tài liệu',
@@ -27,7 +27,7 @@ class M_documents extends Crud_manager {
                 'label' => 'Tên tài liệu',
             ],
         ],
-        'category_id'   => [
+        'category_id'      => [
             'field'    => 'category_id',
             'db_field' => 'ct.id',
             'label'    => 'Thư mục',
@@ -42,14 +42,31 @@ class M_documents extends Crud_manager {
                 'type' => 'multiple_select',
             ],
         ],
-        'category_name' => [
+        'category_name'    => [
             'field'    => 'category_name',
             'db_field' => 'ct.name',
             'label'    => 'Thư mục',
             'rules'    => 'required',
             'table'    => TRUE,
         ],
-        'file'          => [
+        'description'      => [
+            'field'    => 'description',
+            'db_field' => 'description',
+            'label'    => 'Mô tả',
+            'rules'    => '',
+            'table'    => [
+                'label' => 'Mô tả',
+            ],
+            'form'     => [
+                'type' => 'text',
+                'attr' => 'data-test="description"',
+            ],
+            'filter'   => [
+                'search_type' => 'like',
+                'type'        => 'text',
+            ],
+        ],
+        'file'             => [
             'field'    => 'file',
             'db_field' => 'file',
             'label'    => 'File',
@@ -88,7 +105,7 @@ class M_documents extends Crud_manager {
             ],
             'table'    => TRUE,
         ],
-        'author'        => [
+        'author'           => [
             'field'    => 'author',
             'db_field' => 'author',
             'label'    => 'Tác giả',
@@ -105,7 +122,17 @@ class M_documents extends Crud_manager {
                 'type'        => 'text',
             ],
         ],
-        'note'          => [
+        'count_downloaded' => [
+            'field'    => 'count_downloaded',
+            'db_field' => 'count_downloaded',
+            'label'    => 'Số lượt tải',
+            'rules'    => '',
+            'form'     => [
+                'type' => 'text',
+                'attr' => 'data-test="description"',
+            ],
+        ],
+        'note'             => [
             'field'    => 'note',
             'db_field' => 'note',
             'label'    => 'Ghi chú',
@@ -119,7 +146,7 @@ class M_documents extends Crud_manager {
             ],
             'table'    => TRUE,
         ],
-        'created_on'    => [
+        'created_on'       => [
             'field' => 'created_on',
             'label' => 'Ngày tạo',
             'rules' => '',
