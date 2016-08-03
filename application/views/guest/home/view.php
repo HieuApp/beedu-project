@@ -4,7 +4,7 @@
             <br><br>
             <h1 class="header center teal-text text-lighten-2">Beedu.vn</h1>
             <div class="row center">
-                <h5 class="header col s12 light">Thay đổi tư duy giáo dục của người Việt</h5>
+                <h5 class="header col s12 light"><?php echo $introduce_title; ?></h5>
             </div>
             <div class="row center">
                 <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
@@ -250,54 +250,21 @@
         <h4 class="header col s12 light">Hỏi đáp</h4>
         <ul class="collection with-header question-support">
             <li class="collection-header teal"><h4 class="question-title white-text">Câu hỏi thường gặp</h4></li>
-            <li class="collection-item">
-                <div class="question">Beedu dạy học sinh học như thế nào?
-                    <a class="secondary-content">
-                        <i class="material-icons expand-more">expand_more</i>
-                    </a>
-                </div>
-                <div class="answer">
-                    <p>Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều
-                        Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em
-                        thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.</p>
-                </div>
-            </li>
-            <li class="collection-item">
-                <div class="question">Beedu cần thiết và dành cho những ai?
-                    <a class="secondary-content">
-                        <i class="material-icons expand-more">expand_more</i>
-                    </a>
-                </div>
-                <div class="answer">
-                    <p>Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều
-                        Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em
-                        thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.</p>
-                </div>
-            </li>
-            <li class="collection-item">
-                <div class="question">Beedu cần thiết và dành cho những ai?
-                    <a class="secondary-content">
-                        <i class="material-icons expand-more">expand_more</i>
-                    </a>
-                </div>
-                <div class="answer">
-                    <p>Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều
-                        Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em
-                        thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.</p>
-                </div>
-            </li>
-            <li class="collection-item">
-                <div class="question">Beedu cần thiết và dành cho những ai?
-                    <a class="secondary-content">
-                        <i class="material-icons expand-more">expand_more</i>
-                    </a>
-                </div>
-                <div class="answer">
-                    <p>Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều
-                        Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em
-                        thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.</p>
-                </div>
-            </li>
+            <?php foreach ($questions as $question) {
+                ?>
+                <li class="collection-item">
+                    <div class="question"><?php echo $question->question; ?>
+                        <a class="secondary-content">
+                            <i class="material-icons expand-more">expand_more</i>
+                        </a>
+                    </div>
+                    <div class="answer">
+                        <p><?php echo $question->answer; ?></p>
+                    </div>
+                </li>
+                <?php
+            }
+            ?>
             <li class="collection-header teal"><h4 class="question-title white-text">Gửi câu hỏi</h4></li>
             <li class="collection-item">
                 <div class="row form-questrion">

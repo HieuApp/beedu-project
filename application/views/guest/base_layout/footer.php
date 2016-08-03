@@ -2,19 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-
                 <h5 class="white-text">Beedu.vn</h5>
-                <p class="light-text">Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo
-                    sẽ giúp các bạn phát triển và trau dồi kiến thức.
-
-                    Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy
-                    tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước
-                    nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối.
-
-                    Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không
-                    theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.</p>
-
-
+                <p class="light-text"><?php echo $beedu_info; ?></p>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text contact">Liên hệ</h5>
@@ -58,7 +47,6 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-
             Copyright <a class="brown-text text-lighten-3" href="#">Beedu.vn</a>
         </div>
     </div>

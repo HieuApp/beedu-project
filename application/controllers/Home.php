@@ -6,12 +6,14 @@
  * Date: 25-Jul-16
  * Time: 10:27 PM
  * @property M_system_config m_system_config
+ * @property M_questions     m_questions
  */
 class Home extends Guest_layout {
 
     function __construct() {
         parent::__construct();
         $this->load->model('M_system_config', 'm_system_config');
+        $this->load->model('M_questions', 'm_questions');
     }
 
     public function index() {
@@ -30,6 +32,9 @@ class Home extends Guest_layout {
         $data["learning_method_content_2"] = $result[12]->value;
         $data["learning_method_content_3"] = $result[13]->value;
         $data["learning_method_content_4"] = $result[14]->value;
+        $question = $this->m_questions->get_list_filter([], [], [], 5);
+        $data["questions"] = $question;
+//        var_dump($question);
         $content = $this->load->view("guest/home/view", $data, TRUE);
         $this->show_page($content);
     }

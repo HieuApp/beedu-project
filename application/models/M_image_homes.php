@@ -51,14 +51,14 @@ class M_image_homes extends Crud_manager {
                 'class'                    => 'ace_file_input',//Use ACE theme for file input
 //                'attr'         => 'data-disable_client_validate=1',//Disable validate in client
                 'upload'                   => [//As config of File Upload Class in codeingiter
-                    'upload_path'      => 'upload/file',
-                    'allowed_types'    => 'pdf|txt|doc|docx',
+                    'upload_path'      => 'upload/image',
+                    'allowed_types'    => 'jpg|jpeg|png',
                     'max_size'         => '20480',
-//                    'min_size'         => '100',
-//                    'min_width'        => 300,
-//                    'min_height'       => 400,
-//                    'max_width'        => 1200,
-//                    'max_height'       => 1600,
+                    'min_size'         => '10',
+                    'min_width'        => 30,
+                    'min_height'       => 40,
+                    'max_width'        => 12000,
+                    'max_height'       => 16000,
                     'encrypt_name'     => TRUE,
                     'file_ext_tolower' => TRUE,
                 ],

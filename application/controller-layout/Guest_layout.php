@@ -33,6 +33,7 @@ abstract class Guest_layout extends Base_guest_layout {
         $data["menu_3"] = $result[3]->value;
         $data["menu_4"] = $result[4]->value;
         $data["menu_5"] = $result[5]->value;
+        $data["beedu_info"] = $result[15]->value;
         $this->set_data_part('top_bar', $data, TRUE);
     }
 }
