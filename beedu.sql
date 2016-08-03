@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2016 at 08:34 PM
+-- Generation Time: Aug 01, 2016 at 06:24 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -73,14 +73,14 @@ CREATE TABLE IF NOT EXISTS `documents` (
   `author` varchar(255) NOT NULL,
   `note` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `documents`
 --
 
 INSERT INTO `documents` (`id`, `name`, `category_id`, `file`, `author`, `note`, `created_on`) VALUES
-(1, 'test', 1, 'upload/demo/avatars/b4e5b813a2ce48abc95e05520293c489.pdf', 'miunh', 'test ', '2016-07-19 16:44:29');
+(2, 'đề thi tốt nghiệp 2014', 1, 'upload/file/ac88e0e4c5181702c22a8ad4a6890625.doc', 'miunh', '', '2016-08-01 14:43:02');
 
 -- --------------------------------------------------------
 
@@ -178,8 +178,8 @@ CREATE TABLE IF NOT EXISTS `questions` (
 --
 
 INSERT INTO `questions` (`id`, `question`, `answer`, `created_on`) VALUES
-(1, 'đây là cái gì', 'qưer', '2016-07-29 14:04:22'),
-(2, 'minh hỏi đểu', 'thế thì kệ mịa mày', '2016-07-29 14:06:01');
+(1, 'Beedu cần thiết và dành cho những ai?', 'Beedu cần thiết và dành cho những ai?', '2016-07-29 14:04:22'),
+(2, 'Beedu dạy học sinh học như thế nào?', 'Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước v', '2016-07-29 14:06:01');
 
 -- --------------------------------------------------------
 
@@ -192,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `system_configs` (
   `name` varchar(255) NOT NULL,
   `value` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `system_configs`
@@ -213,7 +213,8 @@ INSERT INTO `system_configs` (`id`, `name`, `value`, `created_on`) VALUES
 (12, 'Nội dung phương pháp học 1', 'Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh tự tìm tòi cách giải cho các bài tập đó', '2016-07-29 14:19:01'),
 (13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', '2016-07-29 14:19:15'),
 (14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', '2016-07-29 14:19:27'),
-(15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41');
+(15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41'),
+(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hư', '2016-08-01 14:46:28');
 
 -- --------------------------------------------------------
 
@@ -244,7 +245,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1469901533, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470067025, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -322,7 +323,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `ion_groups`
 --
@@ -352,7 +353,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `system_configs`
 --
 ALTER TABLE `system_configs`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `users`
 --
