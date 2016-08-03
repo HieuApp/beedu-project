@@ -493,7 +493,7 @@ li.collection-item{
 }
 
 .btn-download{
-    height: 20px;
+    height: 25px;
     line-height: 0px;
     float: right;
     padding: 10px;
@@ -517,3 +517,8 @@ div.document-info{
     text-align: left;
     margin-left: 16px;
 }
+
+.left{
+    text-align: left;
+}
+
