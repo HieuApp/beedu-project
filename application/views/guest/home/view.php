@@ -33,10 +33,9 @@
                             <img class="pink-link" src="<?php echo base_url("assets/images/pink-link.png"); ?>">
                         </div>
                         <div class="step-content">
-                            <h2 class="class-title">Thói quen tự học</h2>
+                            <h2 class="class-title"><?php echo $learning_method_1; ?></h2>
                             <p class="class-content">
-                                Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh
-                                tự tìm tòi cách giải cho các bài tập đó.
+                                <?php echo $learning_method_content_1; ?>
                             </p>
                         </div>
                     </li>
@@ -46,10 +45,9 @@
                             <img class="green-link" src="<?php echo base_url("assets/images/green-link.png"); ?>">
                         </div>
                         <div class="step-content second-content">
-                            <h2 class="class-title">Giáo dục từng cá nhân</h2>
+                            <h2 class="class-title"><?php echo $learning_method_2; ?></h2>
                             <p class="class-content">
-                                Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một
-                                trình độ phù hợp nhất với khả năng của từng em.
+                                <?php echo $learning_method_content_2; ?>
                             </p>
                         </div>
                     </li>
@@ -59,9 +57,9 @@
                             <img class="link-end" src="<?php echo base_url("assets/images/link-end.png"); ?>">
                         </div>
                         <div class="third-content">
-                            <h2 class="class-title">Giáo trình phù hợp</h2>
+                            <h2 class="class-title"><?php echo $learning_method_3; ?></h2>
                             <p class="class-content">
-                                Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.
+                                <?php echo $learning_method_content_3; ?>
                             </p>
                         </div>
                     </li>
@@ -70,9 +68,9 @@
                         <div class="step-icon icon-end">
                         </div>
                         <div class="step-content second-content">
-                            <h2 class="class-title">Giáo viên nhiệt huyết</h2>
+                            <h2 class="class-title"><?php echo $learning_method_4; ?></h2>
                             <p class="class-content">
-                                Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.
+                                <?php echo $learning_method_content_4; ?>
                             </p>
                         </div>
                     </li>
