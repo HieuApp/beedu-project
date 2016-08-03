@@ -14,7 +14,7 @@ class Documents extends Manager_base {
     public function setting_class() {
         // TODO: Implement setting_class() method.
         $this->name = Array(
-            "class"  => "documents",
+            "class"  => "admin/documents",
             "view"   => "documents",
             "model"  => "m_documents",
             "object" => "tài liệu",

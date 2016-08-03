@@ -20,7 +20,7 @@ class System_config extends Manager_base {
     public function setting_class() {
         // TODO: Implement setting_class() method.
         $this->name = Array(
-            "class"  => "system_config",
+            "class"  => "admin/system_config",
             "view"   => "system_config",
             "model"  => "m_system_config",
             "object" => "bảng system_config",

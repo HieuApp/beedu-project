@@ -20,7 +20,7 @@ class Categories extends Manager_base {
     public function setting_class() {
         // TODO: Implement setting_class() method.
         $this->name = Array(
-            "class"  => "categories",
+            "class"  => "admin/categories",
             "view"   => "categories",
             "model"  => "m_categories",
             "object" => "chuyên mục",

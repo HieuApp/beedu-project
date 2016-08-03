@@ -21,7 +21,7 @@
 </div>
 
 
-<div class="container">
+<div class="container" id="edu_method">
     <div class="section section-method">
         <!--   Icon Section   -->
         <div class="row">
@@ -107,9 +107,8 @@
 
 </div>
 
-<div class="container">
+<div class="container" id="edu_program">
     <div class="section section-program">
-
         <div class="row">
             <div class="col s12 center">
                 <h4 class="header col s12 light">Chương trình học</h4>
@@ -186,13 +185,10 @@
 
 </div>
 </div>
-
-
-<div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper" id="edu_library">
     <div class="section no-pad-bot section-library">
         <div class="container">
             <div class="row center">
-
                 <h4 class="header col s12 light">Thư viện tài liệu</h4>
                 <ul class="collection library">
                     <li class="collection-item avatar">
@@ -251,7 +247,7 @@
                                alt="Unsplashed background img 3"></div>
 </div>
 
-<div class="row section-question">
+<div class="row section-question" id="answer_question">
     <div class="col s12 center">
         <h4 class="header col s12 light">Hỏi đáp</h4>
         <ul class="collection with-header question-support">

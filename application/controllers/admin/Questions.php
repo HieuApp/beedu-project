@@ -19,7 +19,7 @@ class Questions extends Manager_base {
     public function setting_class() {
         // TODO: Implement setting_class() method.
         $this->name = Array(
-            "class"  => "questions",
+            "class"  => "admin/questions",
             "view"   => "questions",
             "model"  => "m_questions",
             "object" => "hỏi đáp",
