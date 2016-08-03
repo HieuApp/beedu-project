@@ -7,7 +7,7 @@
                 <h5 class="header col s12 light">Thay đổi tư duy giáo dục của người Việt</h5>
             </div>
             <div class="row center">
-                <a href="<?php echo base_url("guest/beedu_detail");?>" id="download-button"
+                <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
                    class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
             </div>
             <br><br>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="parallax"><img src="<?php echo base_url("assets/images/background-intro.jpg");?>"
+    <div class="parallax"><img src="<?php echo base_url("assets/images/background-intro.jpg"); ?>"
                                alt="Unsplashed background img 1"></div>
 
 </div>
@@ -30,7 +30,7 @@
                 <ul>
                     <li>
                         <div class="step-icon icon-first">
-                            <img class="pink-link" src="<?php echo base_url("assets/images/pink-link.png");?>">
+                            <img class="pink-link" src="<?php echo base_url("assets/images/pink-link.png"); ?>">
                         </div>
                         <div class="step-content">
                             <h2 class="class-title">Thói quen tự học</h2>
@@ -43,7 +43,7 @@
 
                     <li>
                         <div class="step-icon icon-second">
-                            <img class="green-link" src="<?php echo base_url("assets/images/green-link.png");?>">
+                            <img class="green-link" src="<?php echo base_url("assets/images/green-link.png"); ?>">
                         </div>
                         <div class="step-content second-content">
                             <h2 class="class-title">Giáo dục từng cá nhân</h2>
@@ -56,7 +56,7 @@
 
                     <li>
                         <div class="step-icon icon-third">
-                            <img class="link-end" src="<?php echo base_url("assets/images/link-end.png");?>">
+                            <img class="link-end" src="<?php echo base_url("assets/images/link-end.png"); ?>">
                         </div>
                         <div class="third-content">
                             <h2 class="class-title">Giáo trình phù hợp</h2>
@@ -78,7 +78,7 @@
                     </li>
 
                     <li>
-                        <a href="<?php echo base_url("guest/register_trial");?>" id="download-button"
+                        <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
                            class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
                     </li>
                 </ul>
@@ -102,7 +102,8 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="<?php echo base_url("assets/images/student-class.jpg");?>" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="<?php echo base_url("assets/images/student-class.jpg"); ?>"
+                               alt="Unsplashed background img 2"></div>
 
 </div>
 
@@ -116,7 +117,8 @@
                 <div class="col s12 m7">
                     <div class="card blue-grey darken-1">
                         <div class="card-image">
-                            <img class="card-img-content" src="<?php echo base_url("assets/images/learn-by-my-self.jpg");?>">
+                            <img class="card-img-content"
+                                 src="<?php echo base_url("assets/images/learn-by-my-self.jpg"); ?>">
                             <div class="transfer-box">
 
                             </div>
@@ -126,7 +128,7 @@
                             <p>10-15 học sinh/lớp <br> 100.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -134,14 +136,15 @@
                 <div class="col s12 m7">
                     <div class="card blue-grey darken-1">
                         <div class="card-image">
-                            <img class="card-img-content" src="<?php echo base_url("assets/images/side-by-side.jpg");?>">
+                            <img class="card-img-content"
+                                 src="<?php echo base_url("assets/images/side-by-side.jpg"); ?>">
                             <span class="card-title">Lớp đảm bảo</span>
                         </div>
                         <div class="card-content white-text">
                             <p>6 học sinh/lớp <br> 150.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -149,14 +152,15 @@
                 <div class="col s12 m7">
                     <div class="card blue-grey darken-1">
                         <div class="card-image">
-                            <img class="card-img-content" src="<?php echo base_url("assets/images/book-for-kid.jpg");?>">
+                            <img class="card-img-content"
+                                 src="<?php echo base_url("assets/images/book-for-kid.jpg"); ?>">
                             <span class="card-title">Lớp chuyên sâu</span>
                         </div>
                         <div class="card-content white-text">
                             <p>3 học sinh/lớp <br> 250.000đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -164,14 +168,15 @@
                 <div class="col s12 m7">
                     <div class="card blue-grey darken-1">
                         <div class="card-image">
-                            <img class="card-img-content" src="<?php echo base_url("assets/images/teacher-take-care.jpg");?>">
+                            <img class="card-img-content"
+                                 src="<?php echo base_url("assets/images/teacher-take-care.jpg"); ?>">
                             <span class="card-title">Lớp 1-1</span>
                         </div>
                         <div class="card-content white-text">
                             <p>1 giáo viên kèm 1 học sinh <br> 500.00đ/buổi</p>
                         </div>
                         <div class="card-action">
-                            <a href="<?php echo base_url("guest/register_trial");?>">Học thử miễn phí</a>
+                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +198,7 @@
                     <li class="collection-item avatar">
                         <i class="material-icons circle green">book</i>
                         <span class="title document-name">
-                            <a href="<?php echo base_url("guest/document");?>">Đề thi đại học(20)</a></span>
+                            <a href="<?php echo base_url("document"); ?>">Đề thi đại học(20)</a></span>
                         <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
                             hình dung được phần nào nội dung của nó
                         </p>
@@ -207,7 +212,7 @@
                         <i class="material-icons circle">folder</i>
                         <span class="title document-name"><a href="">Đề thi học sinh giỏi(32)</a></span>
                         <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
-                            hình dung được phần nào nội dung của nó.  </p>
+                            hình dung được phần nào nội dung của nó. </p>
                         <div class="download-count">
                             <i class="material-icons grey-text">file_download</i>
                             <span class="grey-text"> 1,234</span>
@@ -242,7 +247,8 @@
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="<?php echo base_url("assets/images/library3.jpg");?>" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="<?php echo base_url("assets/images/library3.jpg"); ?>"
+                               alt="Unsplashed background img 3"></div>
 </div>
 
 <div class="row section-question">

@@ -1,6 +1,6 @@
 <nav class="black" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="<?php echo base_url("guest/home");?>" class="brand-logo">BEEDU.VN</a>
+        <a id="logo-container" href="<?php echo base_url("home");?>" class="brand-logo">BEEDU.VN</a>
         <div class="input-field" style="position: absolute; height: 35px; background: white;
             left: 220px; margin-top: 15px; width: 300px;">
 
