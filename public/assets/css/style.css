@@ -127,10 +127,6 @@ div, h2.menu-title{
     font-family: Roboto;
 }
 
-.row .col.m7 {
-    width: 25%;
-}
-
 .card-title{
     padding-top: 8px !important;
     padding-bottom: 8px !important;
@@ -164,10 +160,6 @@ div, h2.menu-title{
 h5.contact{
     text-align: center;
     font-weight: normal;
-}
-
-.row .col.l3{
-    width: 40%;
 }
 
 .youtube-background {
@@ -270,59 +262,6 @@ table td.contact-detail{
     margin-left: 16px;
 }
 
-.step-icon{
-    background-size: 160px 160px;
-    width: 30%;
-    height: 200px;
-    border-radius: 4px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-}
-
-.icon-first{
-    background-color: #fbaea8;
-    background-image: url("res/standar-class.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-second{
-    background-color: #c1e0f5;
-    background-image: url("res/student.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    margin-left: 59%;
-    margin-top: 40px;
-}
-
-.icon-third{
-    background-color: #b8f5d2;
-    background-image: url("res/notebook.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    margin-left: 15%;
-}
-
-.icon-end{
-    background-color: #c1e0f5;
-    background-image: url("res/teacher.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    margin-left: 59%;
-    margin-top: -50px;
-}
-
-.step-content{
-    width: 40%;
-    display: inline-block;
-    padding: 0 0 0 50px;
-    vertical-align: middle;
-}
-
 .second-content{
     padding-top: 24px;
     padding-left: 0px;
@@ -384,10 +323,6 @@ img.link-end{
 
 .label-form{
     text-align: left;
-}
-
-.row .col.s6{
-    width: 100%;
 }
 
 .form-questrion{
@@ -520,5 +455,38 @@ div.document-info{
 
 .left{
     text-align: left;
+}
+
+.step{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 5px;
+    margin-left: -15px;
+    margin-top: -12px;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+    color: white;
+}
+
+.step-content{
+
+}
+
+.cd-container{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding: 15px !important;
+}
+
+.step-title{
+    margin: 0px;
+    font-size: 20px !important;
+}
+
+.cd-timeline-block{
+    margin: 20px !important;
 }
 

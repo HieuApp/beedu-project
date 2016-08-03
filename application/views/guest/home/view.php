@@ -26,66 +26,54 @@
         <!--   Icon Section   -->
         <div class="row">
             <h4 class="menu-title header col s12 light">Phương pháp học Beedu</h4>
-            <div class="main-step">
-                <ul>
-                    <li>
-                        <div class="step-icon icon-first">
-                            <img class="pink-link" src="<?php echo base_url("assets/images/pink-link.png"); ?>">
+            <div class="col s6 m6 l12">
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <span class="step">1</span>
                         </div>
-                        <div class="step-content">
-                            <h2 class="class-title">Thói quen tự học</h2>
-                            <p class="class-content">
-                                Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh
-                                tự tìm tòi cách giải cho các bài tập đó.
-                            </p>
-                        </div>
-                    </li>
 
-                    <li>
-                        <div class="step-icon icon-second">
-                            <img class="green-link" src="<?php echo base_url("assets/images/green-link.png"); ?>">
+                        <div class="cd-timeline-content">
+                            <h2 class="step-title">Title of section 1</h2>
+                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
                         </div>
-                        <div class="step-content second-content">
-                            <h2 class="class-title">Giáo dục từng cá nhân</h2>
-                            <p class="class-content">
-                                Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một
-                                trình độ phù hợp nhất với khả năng của từng em.
-                            </p>
-                        </div>
-                    </li>
+                    </div>
 
-                    <li>
-                        <div class="step-icon icon-third">
-                            <img class="link-end" src="<?php echo base_url("assets/images/link-end.png"); ?>">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <span class="step">2</span>
                         </div>
-                        <div class="third-content">
-                            <h2 class="class-title">Giáo trình phù hợp</h2>
-                            <p class="class-content">
-                                Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.
-                            </p>
+
+                        <div class="cd-timeline-content">
+                            <h2 class="step-title">Title of section 2</h2>
+                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
-                        <div class="step-icon icon-end">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <span class="step">3</span>
                         </div>
-                        <div class="step-content second-content">
-                            <h2 class="class-title">Giáo viên nhiệt huyết</h2>
-                            <p class="class-content">
-                                Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.
-                            </p>
+                        <div class="cd-timeline-content">
+                            <h2 class="step-title">Title of section 3</h2>
+                            <p>Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis.</p>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
-                        <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
-                           class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
-                    </li>
-                </ul>
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                            <span class="step">4</span>
+                        </div>
 
-
+                        <div class="cd-timeline-content">
+                            <h2 class="step-title">Title of section 4</h2>
+                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        </div>
+                    </div>
+                    <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
+                       class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
+                </section>
             </div>
-
         </div>
 
     </div>
@@ -109,76 +97,79 @@
 
 <div class="container" id="edu_program">
     <div class="section section-program">
-        <div class="row">
-            <div class="col s12 center">
+        <div>
+            <div class="col s12 m12 l12 center">
                 <h4 class="header col s12 light">Chương trình học</h4>
 
-                <div class="col s12 m7">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-image">
-                            <img class="card-img-content"
-                                 src="<?php echo base_url("assets/images/learn-by-my-self.jpg"); ?>">
-                            <div class="transfer-box">
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-image">
+                                <img class="card-img-content"
+                                     src="<?php echo base_url("assets/images/learn-by-my-self.jpg"); ?>">
+                                <div class="transfer-box">
 
+                                </div>
+                                <span class="card-title">Lớp chuẩn</span>
                             </div>
-                            <span class="card-title">Lớp chuẩn</span>
+                            <div class="card-content white-text">
+                                <p>10-15 học sinh/lớp <br> 100.000đ/buổi</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                            </div>
                         </div>
-                        <div class="card-content white-text">
-                            <p>10-15 học sinh/lớp <br> 100.000đ/buổi</p>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-image">
+                                <img class="card-img-content"
+                                     src="<?php echo base_url("assets/images/side-by-side.jpg"); ?>">
+                                <span class="card-title">Lớp đảm bảo</span>
+                            </div>
+                            <div class="card-content white-text">
+                                <p>6 học sinh/lớp <br> 150.000đ/buổi</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-image">
+                                <img class="card-img-content"
+                                     src="<?php echo base_url("assets/images/book-for-kid.jpg"); ?>">
+                                <span class="card-title">Lớp chuyên sâu</span>
+                            </div>
+                            <div class="card-content white-text">
+                                <p>3 học sinh/lớp <br> 250.000đ/buổi</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-image">
+                                <img class="card-img-content"
+                                     src="<?php echo base_url("assets/images/teacher-take-care.jpg"); ?>">
+                                <span class="card-title">Lớp 1-1</span>
+                            </div>
+                            <div class="card-content white-text">
+                                <p>1 giáo viên kèm 1 học sinh <br> 500.00đ/buổi</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col s12 m7">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-image">
-                            <img class="card-img-content"
-                                 src="<?php echo base_url("assets/images/side-by-side.jpg"); ?>">
-                            <span class="card-title">Lớp đảm bảo</span>
-                        </div>
-                        <div class="card-content white-text">
-                            <p>6 học sinh/lớp <br> 150.000đ/buổi</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m7">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-image">
-                            <img class="card-img-content"
-                                 src="<?php echo base_url("assets/images/book-for-kid.jpg"); ?>">
-                            <span class="card-title">Lớp chuyên sâu</span>
-                        </div>
-                        <div class="card-content white-text">
-                            <p>3 học sinh/lớp <br> 250.000đ/buổi</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m7">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-image">
-                            <img class="card-img-content"
-                                 src="<?php echo base_url("assets/images/teacher-take-care.jpg"); ?>">
-                            <span class="card-title">Lớp 1-1</span>
-                        </div>
-                        <div class="card-content white-text">
-                            <p>1 giáo viên kèm 1 học sinh <br> 500.00đ/buổi</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
