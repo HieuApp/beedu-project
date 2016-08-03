@@ -10,7 +10,7 @@ class M_feedback_manage extends Crud_manager {
     protected $_table = 'feedback_manages';
     protected $soft_delete = FALSE;
     public $schema = [
-        'email_reader' => [
+        'email_reader'     => [
             'field'    => 'email_reader',
             'db_field' => 'email_reader',
             'label'    => 'Email độc giả',
@@ -27,24 +27,24 @@ class M_feedback_manage extends Crud_manager {
                 'type'        => 'text',
             ],
         ],
-        'question'     => [
-            'field'    => 'question',
-            'db_field' => 'question',
-            'label'    => 'Nội dung câu hỏi',
+        'feedback_content' => [
+            'field'    => 'feedback_content',
+            'db_field' => 'feedback_content',
+            'label'    => 'Nội dung phản hồi',
             'rules'    => 'required',
             'form'     => [
                 'type' => 'text',
                 'attr' => 'data-test="question"',
             ],
             'table'    => [
-                'label' => 'Nội dung câu hỏi',
+                'label' => 'Nội dung phản hồi',
             ],
             'filter'   => [
                 'search_type' => 'like',
                 'type'        => 'text',
             ],
         ],
-        'created_on'   => [
+        'created_on'       => [
             'field' => 'created_on',
             'label' => 'Ngày tạo',
             'rules' => '',

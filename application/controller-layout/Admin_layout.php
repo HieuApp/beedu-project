@@ -113,35 +113,6 @@ abstract class Admin_layout extends Base_layout {
             "icon" => "fa-cogs",
             "url"  => site_url('admin/system_config'),
         );
-        $group = $this->session->userdata("user_groups");
-        $is_admin = isset($group['admin']);
-        $is_corporation = isset($group['corporation']);
-        $is_ppc = isset($group['ppc']);
-        $is_warehouse_manager = isset($group['warehouse_manager']);
-        $is_quality = isset($group['quality_manager']);
-        $is_producer = isset($group['producer']);
-        /**
-         * TODO: the code bellow to check piority of user
-         */
-//        if ($is_admin) {
-//        } else {
-//            unset($menu["7"]);
-//            if ($is_corporation) {
-//            } else {
-//                unset($menu["1"]);
-//                if ($is_ppc) {
-//                } else {
-//                    unset($menu["4"]);
-//                    unset($menu["2"]);
-//                    if ($is_warehouse_manager) {
-//
-//                    } else {
-//                        unset($menu["3"]);
-//                        unset($menu["5"]);
-//                    }
-//                }
-//            }
-//        }
         $data = Array(
             'view_file' => "admin/base_layout/side_bar_left",
             'menu_data' => $menu,

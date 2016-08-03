@@ -268,21 +268,25 @@
             <li class="collection-header teal"><h4 class="question-title white-text">Gửi câu hỏi</h4></li>
             <li class="collection-item">
                 <div class="row form-questrion">
-                    <form class="col s12">
+                    <form class="col s12" action="<?php echo $save_link; ?>" method="POST"
+                          enctype="multipart/form-data" role="form">
                         <div class="row">
                             <div class="input-field col s12 s6">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea"
+                                          name="feedback_content"></textarea>
                                 <label for="textarea1">Câu hỏi của bạn</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 s6">
-                                <input id="email" type="email" class="validate">
+                                <input id="email" type="email" class="validate" name="email_reader">
                                 <label class="label-form" for="email">Email</label>
                             </div>
                         </div>
+                        <button type="submit"
+                                class="btn-large waves-effect waves-light teal lighten-1">Gửi
+                        </button>
                     </form>
-                    <a href="#" class="btn-large waves-effect waves-light teal lighten-1">Gửi</a>
                 </div>
 
             </li>

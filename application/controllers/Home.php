@@ -5,8 +5,9 @@
  * User: miunh
  * Date: 25-Jul-16
  * Time: 10:27 PM
- * @property M_system_config m_system_config
- * @property M_questions     m_questions
+ * @property M_system_config   m_system_config
+ * @property M_questions       m_questions
+ * @property M_feedback_manage m_feedback_manage
  */
 class Home extends Guest_layout {
 
@@ -14,6 +15,8 @@ class Home extends Guest_layout {
         parent::__construct();
         $this->load->model('M_system_config', 'm_system_config');
         $this->load->model('M_questions', 'm_questions');
+        $this->load->model('M_feedback_manage', 'm_feedback_manage');
+
     }
 
     public function index() {
@@ -32,10 +35,21 @@ class Home extends Guest_layout {
         $data["learning_method_content_2"] = $result[12]->value;
         $data["learning_method_content_3"] = $result[13]->value;
         $data["learning_method_content_4"] = $result[14]->value;
+        $data["save_link"] = base_url("home/send_feedback");
         $question = $this->m_questions->get_list_filter([], [], [], 5);
         $data["questions"] = $question;
-//        var_dump($question);
         $content = $this->load->view("guest/home/view", $data, TRUE);
         $this->show_page($content);
+    }
+
+    public function send_feedback() {
+        $data = $this->input->post();
+        $insert_id = $this->m_feedback_manage->insert($data, TRUE);
+        if (!$insert_id == FALSE) {
+            echo '<script type="text/javascript">alert("DONE!!");</script>';
+        } else {
+            echo '<script type="text/javascript">alert("NOT DONE!!");</script>';
+        }
+        redirect(base_url());
     }
 }
