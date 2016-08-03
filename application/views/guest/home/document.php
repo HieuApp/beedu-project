@@ -8,7 +8,7 @@
                         <img class="icon-file" src="<?php echo base_url("assets/images/file.png");?>"/>
                         <div class="document-info">
                             <span class="title document-name">
-                                <a href="">Đề thi Đại học khối A môn Toán 2013</a>
+                                <a href="<?php echo base_url("guest/document_preview");?>">Đề thi Đại học khối A môn Toán 2013</a>
                             </span>
                             <p class="description">Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay.
                                 Hãy thử sức mình bằng cách bắt tay làm thử
