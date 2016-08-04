@@ -5,7 +5,7 @@
                 <h5 class="white-text">Beedu.vn</h5>
                 <p class="light-text"><?php echo $beedu_info; ?></p>
             </div>
-            <div class="col l3 s12">
+            <div class="col l6 s12">
                 <h5 class="white-text contact">Liên hệ</h5>
                 <table>
                     <tr>
