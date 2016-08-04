@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2016 at 06:24 PM
+-- Generation Time: Aug 03, 2016 at 06:44 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -32,15 +32,18 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `description` varchar(255) NOT NULL,
   `note` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `description`, `note`, `created_on`) VALUES
-(1, 'toán 12', 'aaaa', 'test', '2016-07-19 16:39:02'),
-(2, 'Tiếng anh', 'tiếng anh 12', 'test ', '2016-07-19 16:39:22');
+(1, 'Toán 12', 'Nơi đây quy tụ tất cả tài liệu đỉnh cao của môn Toán 12', 'test', '2016-07-19 16:39:02'),
+(2, 'Đề thi đại học', 'Chỗ này tuyển tập các đề thi đại học qua các năm', 'test ', '2016-07-19 16:39:22'),
+(3, 'Đề thi học sinh giỏi', 'Chứa đựng tất cả các đề thi học sinh giỏi của các tỉnh thành trong cả nước', '', '2016-08-03 15:07:23'),
+(4, 'Đề cương ôn tập', 'Tổng hợp đề cương ôn thi tốt nghiệp tất cả các môn qua tất cả các năm.', '', '2016-08-03 15:07:51'),
+(5, 'Đề thi Toeic', 'Chỗ này dành cho thánh nào muốn lên trình tiếng anh quốc tế nhanh nhất', '', '2016-08-03 15:08:24');
 
 -- --------------------------------------------------------
 
@@ -57,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `ci_migrations` (
 --
 
 INSERT INTO `ci_migrations` (`version`) VALUES
-(20160719234900);
+(20160803220900);
 
 -- --------------------------------------------------------
 
@@ -69,18 +72,78 @@ CREATE TABLE IF NOT EXISTS `documents` (
   `id` int(9) NOT NULL,
   `name` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL,
+  `description` varchar(2550) DEFAULT NULL,
   `file` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
+  `count_downloaded` int(11) DEFAULT NULL,
   `note` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `documents`
 --
 
-INSERT INTO `documents` (`id`, `name`, `category_id`, `file`, `author`, `note`, `created_on`) VALUES
-(2, 'đề thi tốt nghiệp 2014', 1, 'upload/file/ac88e0e4c5181702c22a8ad4a6890625.doc', 'miunh', '', '2016-08-01 14:43:02');
+INSERT INTO `documents` (`id`, `name`, `category_id`, `description`, `file`, `author`, `count_downloaded`, `note`, `created_on`) VALUES
+(2, 'đề thi tốt nghiệp 2014', 2, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/ee599b6982271599301c51ec4c057552.docx', 'miunh', 222, '', '2016-08-01 14:43:02'),
+(3, 'Tuyển tập đại số', 1, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/6d0eca2508b73c3e05dee5adf1030be5.txt', 'HieuTT', 1234, '', '2016-08-03 15:05:41'),
+(4, 'Tuyển tập đề thi Toán khối B', 2, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/5f5e3f1c54f31c09d548971fe3acf69a.pdf', 'miunh', 123, '', '2016-08-03 15:06:11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback_manages`
+--
+
+CREATE TABLE IF NOT EXISTS `feedback_manages` (
+  `id` int(9) NOT NULL,
+  `email_reader` varchar(255) NOT NULL,
+  `feedback_content` varchar(255) NOT NULL,
+  `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `feedback_manages`
+--
+
+INSERT INTO `feedback_manages` (`id`, `email_reader`, `feedback_content`, `created_on`) VALUES
+(1, 'minh@hieu', 'đây là câu hỏi đầu tiên cảu em', '2016-08-03 16:01:19'),
+(2, 'minh@hieu', 'đây là câu hỏi thứ 2 xem sao?', '2016-08-03 16:01:45'),
+(3, 'mni@naa', 'test show alert', '2016-08-03 16:06:44'),
+(4, 'q@q', 'thông báo 1 cái nào', '2016-08-03 16:07:26'),
+(5, 'v@a', 'a', '2016-08-03 16:08:25'),
+(6, 'q@q', 'lên thông báo đi mà', '2016-08-03 16:09:54'),
+(7, 'q@q', 'lên thông báo đi mà', '2016-08-03 16:11:46'),
+(8, 'm@n', 'cái dcm chứ', '2016-08-03 16:13:29'),
+(9, 'm@n', 'cái dcm chứ', '2016-08-03 16:13:56'),
+(10, 'm@n', 'cái dcm chứ', '2016-08-03 16:13:59'),
+(11, 'm@n', 'cái dcm chứ aaaaaaaaaaaa', '2016-08-03 16:15:03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `image_homes`
+--
+
+CREATE TABLE IF NOT EXISTS `image_homes` (
+  `id` int(9) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `note` varchar(255) NOT NULL,
+  `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `image_homes`
+--
+
+INSERT INTO `image_homes` (`id`, `title`, `description`, `file`, `note`, `created_on`) VALUES
+(1, 'Ảnh bìa giới thiệu đầu tiên', 'Đây là cái ảnh đầu tiên trên cùng của trang', 'upload/image/5dfd39988e18ab48e165e7d2bbdc2739.jpg', 'test phát 1', '2016-08-03 14:53:07'),
+(2, 'Ảnh đại diện phương pháp học 1', 'Đây là cái ảnh đại diện cho phương pháp học đầu tiên.', 'upload/image/41d3678f475963532f31b54908701b7c.jpg', 'đến chịu', '2016-08-03 14:56:19'),
+(3, 'Ảnh đại diện phương pháp học 2', 'Đây là cái ảnh đại diện cho phương pháp học thứ 2.', 'upload/image/05549a47375a7438e7d9eec85e751320.jpg', 'test tiếp', '2016-08-03 14:58:04'),
+(4, 'Ảnh đại diện phương pháp học 3', 'Đây là cái ảnh đại diện cho phương pháp học thứ 3.', 'upload/image/fddd4bfe77063a2637b1ac12b27f684a.jpg', '', '2016-08-03 14:58:42'),
+(5, 'Ảnh đại diện phương pháp học 4', 'Đây là cái ảnh đại diện cho phương pháp học thứ 4.', 'upload/image/70f7d62ac9373f9c66715313912903bb.jpg', '', '2016-08-03 14:59:04');
 
 -- --------------------------------------------------------
 
@@ -169,9 +232,9 @@ CREATE TABLE IF NOT EXISTS `notifications` (
 CREATE TABLE IF NOT EXISTS `questions` (
   `id` int(9) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `answer` varchar(255) NOT NULL,
+  `answer` mediumtext NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `questions`
@@ -179,7 +242,9 @@ CREATE TABLE IF NOT EXISTS `questions` (
 
 INSERT INTO `questions` (`id`, `question`, `answer`, `created_on`) VALUES
 (1, 'Beedu cần thiết và dành cho những ai?', 'Beedu cần thiết và dành cho những ai?', '2016-07-29 14:04:22'),
-(2, 'Beedu dạy học sinh học như thế nào?', 'Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước v', '2016-07-29 14:06:01');
+(2, 'Beedu dạy học sinh học như thế nào?', 'Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.', '2016-07-29 14:06:01'),
+(3, 'Beedu dạy ở đâu?', 'Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.', '2016-08-03 14:42:54'),
+(4, 'Beedu có từ bao giờ?', 'Beedu là chương trình học dành cho học sinh ở mọi độ tuổi, mọi trình độ. Ngày càng có nhiều Phụ huynh cho trẻ theo học Beedu ngay từ lứa tuổi mầm non, với hy vọng xây dựng cho các em thói quen học tập hữu ích qua từng ngày học và giúp các em tự tin bước vào Lớp 1.', '2016-08-03 14:43:12');
 
 -- --------------------------------------------------------
 
@@ -190,7 +255,7 @@ INSERT INTO `questions` (`id`, `question`, `answer`, `created_on`) VALUES
 CREATE TABLE IF NOT EXISTS `system_configs` (
   `id` int(9) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `value` varchar(255) NOT NULL,
+  `value` mediumtext NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
@@ -214,7 +279,7 @@ INSERT INTO `system_configs` (`id`, `name`, `value`, `created_on`) VALUES
 (13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', '2016-07-29 14:19:15'),
 (14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', '2016-07-29 14:19:27'),
 (15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41'),
-(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hư', '2016-08-01 14:46:28');
+(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối. Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.', '2016-08-01 14:46:28');
 
 -- --------------------------------------------------------
 
@@ -245,7 +310,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470067025, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470232656, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -263,6 +328,18 @@ ALTER TABLE `categories`
 -- Indexes for table `documents`
 --
 ALTER TABLE `documents`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `feedback_manages`
+--
+ALTER TABLE `feedback_manages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `image_homes`
+--
+ALTER TABLE `image_homes`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -318,12 +395,22 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `feedback_manages`
+--
+ALTER TABLE `feedback_manages`
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `image_homes`
+--
+ALTER TABLE `image_homes`
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `ion_groups`
 --
@@ -348,7 +435,7 @@ ALTER TABLE `notifications`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `system_configs`
 --
