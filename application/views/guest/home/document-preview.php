@@ -7,7 +7,7 @@
                 những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.
             </p>
             <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true"
-                    style="width:595px; height:842px;" frameborder="0"></iframe>
+                    style="width:595px; height:600px;" frameborder="0"></iframe>
 
             <div class="download-footer">
                 <i class="material-icons grey-text">file_download</i>

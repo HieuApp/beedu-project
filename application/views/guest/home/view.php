@@ -26,7 +26,7 @@
         <!--   Icon Section   -->
         <div class="row">
             <h4 class="menu-title header col s12 light">Phương pháp học Beedu</h4>
-            <div class="col s6 m6 l12">
+            <div class="col s12 m12 l12">
                 <section id="cd-timeline" class="cd-container">
                     <div class="cd-timeline-block">
                         <div class="cd-timeline-img cd-picture">
@@ -123,7 +123,8 @@
                                 <span class="card-title">Lớp chuẩn</span>
                             </div>
                             <div class="card-content white-text">
-                                <p>10-15 học sinh/lớp <br> 100.000đ/buổi</p>
+                                <p>10-15 học sinh/lớp</p>
+                                <p>100.000đ/buổi</p>
                             </div>
                             <div class="card-action">
                                 <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
@@ -139,7 +140,8 @@
                                 <span class="card-title">Lớp đảm bảo</span>
                             </div>
                             <div class="card-content white-text">
-                                <p>6 học sinh/lớp <br> 150.000đ/buổi</p>
+                                <p>6 học sinh/lớp </p>
+                                <p> 150.000đ/buổi</p>
                             </div>
                             <div class="card-action">
                                 <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
@@ -155,7 +157,8 @@
                                 <span class="card-title">Lớp chuyên sâu</span>
                             </div>
                             <div class="card-content white-text">
-                                <p>3 học sinh/lớp <br> 250.000đ/buổi</p>
+                                <p>3 học sinh/lớp </p>
+                                <p>250.000đ/buổi</p>
                             </div>
                             <div class="card-action">
                                 <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
@@ -171,7 +174,8 @@
                                 <span class="card-title">Lớp 1-1</span>
                             </div>
                             <div class="card-content white-text">
-                                <p>1 giáo viên kèm 1 học sinh <br> 500.00đ/buổi</p>
+                                <p>1 giáo viên kèm 1 học sinh</p>
+                                <p> 500.00đ/buổi</p>
                             </div>
                             <div class="card-action">
                                 <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
@@ -186,61 +190,142 @@
 
 </div>
 </div>
-<div class="parallax-container valign-wrapper" id="edu_library">
-    <div class="section no-pad-bot section-library">
-        <div class="container">
-            <div class="row center">
-                <h4 class="header col s12 light">Thư viện tài liệu</h4>
-                <ul class="collection library">
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle green">book</i>
-                        <span class="title document-name">
-                            <a href="<?php echo base_url("document"); ?>">Đề thi đại học(20)</a></span>
-                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
-                            hình dung được phần nào nội dung của nó
-                        </p>
-                        <div class="download-count">
-                            <i class="material-icons grey-text">file_download</i>
-                            <span class="grey-text"> 1,234</span>
+<div class="parallax-container valign-wrapper">
+    <div class="container section-library" id="edu_library">
+        <div class="secsion">
+            <div class="row">
+                <h4 class="header col s12 light">Thư viện</h4>
+
+                <div class="row">
+                    <div class="col s12 m6 l4 medium-4 columns">
+                        <h4 class="group-title">Mới nhất</h4>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
                         </div>
-                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle">folder</i>
-                        <span class="title document-name"><a href="">Đề thi học sinh giỏi(32)</a></span>
-                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
-                            hình dung được phần nào nội dung của nó. </p>
-                        <div class="download-count">
-                            <i class="material-icons grey-text">file_download</i>
-                            <span class="grey-text"> 1,234</span>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
                         </div>
-                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle green">insert_chart</i>
-                        <span class="title document-name"><a href="">Đề thi học cuối kỳ(60)</a> </span>
-                        <p class="description ">Một mô tả ngắn về nhóm tài liệu này để người dùng
-                            hình dung được phần nào nội dung của nó
-                        </p>
-                        <div class="download-count">
-                            <i class="material-icons grey-text">file_download</i>
-                            <span class="grey-text"> 1,234</span>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
                         </div>
-                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons circle red">folder_special</i>
-                        <span class="title document-name"><a href="">Đề cương ôn tập(127)</a> </span>
-                        <p class="description">Một mô tả ngắn về nhóm tài liệu này để người dùng
-                            hình dung được phần nào nội dung của nó
-                        </p>
-                        <div class="download-count">
-                            <i class="material-icons grey-text">file_download</i>
-                            <span class="grey-text"> 1,234</span>
+                    </div>
+                    <div class=" col s12 m6 l4 medium-4 columns">
+                        <h4 class="group-title">Tải nhiều nhất</h4>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
                         </div>
-                        <i class="secondary-content material-icons materialize-red-text">fiber_new</i>
-                    </li>
-                </ul>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
+                        </div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col s12 m6 l4 medium-4 columns">
+                        <h4 class="group-title">Chọn lọc</h4>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
+                        </div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
+                        </div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <a href="<?php echo base_url("document_preview");?>">
+                                    <img class="thumbnail"
+                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                </a>
+                            </div>
+                            <div class="media-object-section">
+                                <h5 class="document-title black-text left-align">
+                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="<?php echo base_url("docs_collection"); ?>" id="download-button"
+                   class="btn-large waves-effect waves-light teal lighten-1">Xem tài liệu khác</a>
             </div>
         </div>
     </div>
@@ -248,51 +333,53 @@
                                alt="Unsplashed background img 3"></div>
 </div>
 
-<div class="row section-question" id="answer_question">
-    <div class="col s12 center">
-        <h4 class="header col s12 light">Hỏi đáp</h4>
-        <ul class="collection with-header question-support">
-            <li class="collection-header teal"><h4 class="question-title white-text">Câu hỏi thường gặp</h4></li>
-            <?php foreach ($questions as $question) {
+<div class="secsion section-question" id="answer_question">
+    <div class="row ">
+        <div class="col s12 center">
+            <h4 class="header col s12 light">Hỏi đáp</h4>
+            <ul class="col s12 m4 l6 offset-l3 collection with-header question-support">
+                <li class="collection-header teal"><h4 class="question-title white-text">Câu hỏi thường gặp</h4></li>
+                <?php foreach ($questions as $question) {
+                    ?>
+                    <li class="collection-item">
+                        <div class="question"><?php echo $question->question; ?>
+                            <a class="secondary-content">
+                                <i class="material-icons expand-more">expand_more</i>
+                            </a>
+                        </div>
+                        <div class="answer">
+                            <p><?php echo $question->answer; ?></p>
+                        </div>
+                    </li>
+                    <?php
+                }
                 ?>
+                <li class="collection-header teal"><h4 class="question-title white-text">Gửi câu hỏi</h4></li>
                 <li class="collection-item">
-                    <div class="question"><?php echo $question->question; ?>
-                        <a class="secondary-content">
-                            <i class="material-icons expand-more">expand_more</i>
-                        </a>
-                    </div>
-                    <div class="answer">
-                        <p><?php echo $question->answer; ?></p>
-                    </div>
-                </li>
-                <?php
-            }
-            ?>
-            <li class="collection-header teal"><h4 class="question-title white-text">Gửi câu hỏi</h4></li>
-            <li class="collection-item">
-                <div class="row form-questrion">
-                    <form class="col s12" action="<?php echo $save_link; ?>" method="POST"
-                          enctype="multipart/form-data" role="form">
-                        <div class="row">
-                            <div class="input-field col s12 s6">
+                    <div class="row form-questrion">
+                        <form class="col s12" action="<?php echo $save_link; ?>" method="POST"
+                              enctype="multipart/form-data" role="form">
+                            <div class="row">
+                                <div class="input-field col s12 s6">
                                 <textarea id="textarea1" class="materialize-textarea"
                                           name="feedback_content"></textarea>
-                                <label for="textarea1">Câu hỏi của bạn</label>
+                                    <label for="textarea1">Câu hỏi của bạn</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12 s6">
-                                <input id="email" type="email" class="validate" name="email_reader">
-                                <label class="label-form" for="email">Email</label>
+                            <div class="row">
+                                <div class="input-field col s12 s6">
+                                    <input id="email" type="email" class="validate" name="email_reader">
+                                    <label class="label-form" for="email">Email</label>
+                                </div>
                             </div>
-                        </div>
-                        <button type="submit"
-                                class="btn-large waves-effect waves-light teal lighten-1">Gửi
-                        </button>
-                    </form>
-                </div>
+                            <button type="submit"
+                                    class="btn-large waves-effect waves-light teal lighten-1">Gửi
+                            </button>
+                        </form>
+                    </div>
 
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
