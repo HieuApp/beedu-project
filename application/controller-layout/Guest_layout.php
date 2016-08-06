@@ -34,6 +34,9 @@ abstract class Guest_layout extends Base_guest_layout {
         $data["menu_4"] = $result[4]->value;
         $data["menu_5"] = $result[5]->value;
         $data["beedu_info"] = $result[15]->value;
+        $data["address_contact"] = $result[16]->value;
+        $data["phone_contact"] = $result[17]->value;
+        $data["email_contact"] = $result[18]->value;
         $this->set_data_part('top_bar', $data, TRUE);
     }
 }

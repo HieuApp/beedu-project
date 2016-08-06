@@ -10,16 +10,16 @@
                 <table>
                     <tr>
                         <td class="white-text contact">Địa chỉ</td>
-                        <td class="white-text light-text">Tầng 8, Tòa nhà Sông Hồng Land, 165 Thái Hà, Đống Đa, Hà Nội
+                        <td class="white-text light-text"><?php echo $address_contact; ?>
                         </td>
                     </tr>
                     <tr>
                         <td class="white-text contact">Tel</td>
-                        <td class="white-text light-text">01674 077049</td>
+                        <td class="white-text light-text"><?php echo $phone_contact; ?></td>
                     </tr>
                     <tr>
                         <td class="white-text contact">Mail</td>
-                        <td class="white-text light-text">support@beedu.vn</td>
+                        <td class="white-text light-text"><?php echo $email_contact; ?></td>
                     </tr>
                     <tr>
                         <td class="white-text contact contact-detail">Cộng đồng</td>
