@@ -24,7 +24,7 @@ class Docs_collection extends Guest_layout {
             ];
             $list_document_in_category = $this->m_documents->get_list_filter($where, [], []);
             array_push($document_by_category, [
-                'category_name'             => $category->name,
+                'category'                  => $category,
                 'list_document_in_category' => $list_document_in_category,
             ]);
         }

@@ -2,8 +2,9 @@
     ?>
     <div class="container">
         <div class="row column text-center">
-            <a class="group-title left" href="<?php echo base_url("document"); ?>">
-                <i class="material-icons vertical-sub">storage</i><?php echo $document_category_item['category_name']; ?>
+            <a class="group-title left"
+               href="<?php echo base_url("document/view_category") . "/" . $document_category_item['category']->id; ?>">
+                <i class="material-icons vertical-sub">storage</i><?php echo $document_category_item['category']->name; ?>
             </a>
         </div>
         <hr>
@@ -17,7 +18,7 @@
                             <img class="thumbnail" src="<?php echo base_url("assets/images/300x400.png"); ?>">
                         </a>
                         <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a></h5>
-                        <br><span>400 downloads</span>
+                        <br><span><?php echo $document->count_downloaded; ?> downloads</span>
                         <button class="waves-effect waves-light btn">Download</button>
                     </div>
 
