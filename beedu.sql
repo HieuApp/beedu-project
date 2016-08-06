@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2016 at 06:44 PM
+-- Generation Time: Aug 06, 2016 at 12:40 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `documents` (
   `count_downloaded` int(11) DEFAULT NULL,
   `note` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `documents`
@@ -87,7 +87,9 @@ CREATE TABLE IF NOT EXISTS `documents` (
 INSERT INTO `documents` (`id`, `name`, `category_id`, `description`, `file`, `author`, `count_downloaded`, `note`, `created_on`) VALUES
 (2, 'đề thi tốt nghiệp 2014', 2, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/ee599b6982271599301c51ec4c057552.docx', 'miunh', 222, '', '2016-08-01 14:43:02'),
 (3, 'Tuyển tập đại số', 1, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/6d0eca2508b73c3e05dee5adf1030be5.txt', 'HieuTT', 1234, '', '2016-08-03 15:05:41'),
-(4, 'Tuyển tập đề thi Toán khối B', 2, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/5f5e3f1c54f31c09d548971fe3acf69a.pdf', 'miunh', 123, '', '2016-08-03 15:06:11');
+(4, 'Tuyển tập đề thi Toán khối B', 2, 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/5f5e3f1c54f31c09d548971fe3acf69a.pdf', 'miunh', 123, '', '2016-08-03 15:06:11'),
+(5, 'Đề thi học sinh giỏi lớp 9 THPT chuyên HN', 3, 'Tuyển tập các đề thi chọn đội tuyển của trường chuyên Hà Nam', 'upload/file/b575b87995fdaa56c0073ca1502f96da.pdf', 'Mun', 134, '', '2016-08-06 09:25:50'),
+(6, 'Đề thi giữa kì đại số', 1, 'Đây là tài liệu thứ 2 của phần đề thi toán 12 môn đại số', 'upload/file/77d3ac2ed1c61e7454366ebb70f9ffdc.pdf', 'HieuTT', 111, '', '2016-08-06 09:59:07');
 
 -- --------------------------------------------------------
 
@@ -257,7 +259,7 @@ CREATE TABLE IF NOT EXISTS `system_configs` (
   `name` varchar(255) NOT NULL,
   `value` mediumtext NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `system_configs`
@@ -279,7 +281,10 @@ INSERT INTO `system_configs` (`id`, `name`, `value`, `created_on`) VALUES
 (13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', '2016-07-29 14:19:15'),
 (14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', '2016-07-29 14:19:27'),
 (15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41'),
-(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối. Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.', '2016-08-01 14:46:28');
+(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối. Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.', '2016-08-01 14:46:28'),
+(17, 'Địa chỉ liên hệ', 'Tầng 8, Tòa nhà Sông Hồng Land, 165 Thái Hà, Đống Đa, Hà Nội', '2016-08-06 09:34:55'),
+(18, 'Số điện thoại liên hệ', '01674 077049', '2016-08-06 09:35:27'),
+(19, 'Email liên hệ', 'support_miu@beedu.vn', '2016-08-06 09:35:45');
 
 -- --------------------------------------------------------
 
@@ -310,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470232656, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470474738, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -400,7 +405,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `feedback_manages`
 --
@@ -440,7 +445,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `system_configs`
 --
 ALTER TABLE `system_configs`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `users`
 --
