@@ -35,9 +35,8 @@
 
 
                         <div class="cd-timeline-content">
-                            <h2 class="step-title">Title of section 1</h2>
-                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa
-                                ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                            <h2 class="step-title"><?php echo $learning_method_1; ?></h2>
+                            <p><?php echo $learning_method_content_1; ?></p>
 
                         </div>
                     </div>
@@ -48,9 +47,8 @@
                         </div>
 
                         <div class="cd-timeline-content">
-                            <h2 class="step-title">Title of section 2</h2>
-                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa
-                                ad debitis unde?</p>
+                            <h2 class="step-title"><?php echo $learning_method_2; ?></h2>
+                            <p><?php echo $learning_method_content_2; ?></p>
 
                         </div>
                     </div>
@@ -61,10 +59,8 @@
                         </div>
 
                         <div class="cd-timeline-content">
-                            <h2 class="step-title">Title of section 3</h2>
-                            <p>Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate
-                                error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae
-                                rerum quis.</p>
+                            <h2 class="step-title"><?php echo $learning_method_3; ?></h2>
+                            <p><?php echo $learning_method_content_3; ?></p>
 
                         </div>
                     </div>
@@ -75,9 +71,8 @@
                         </div>
 
                         <div class="cd-timeline-content">
-                            <h2 class="step-title">Title of section 4</h2>
-                            <p>Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa
-                                ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                            <h2 class="step-title"><?php echo $learning_method_4; ?></h2>
+                            <p><?php echo $learning_method_content_4; ?></p>
                         </div>
                     </div>
                     <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
@@ -201,41 +196,47 @@
                         <h4 class="group-title">Mới nhất</h4>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                     </div>
@@ -243,41 +244,47 @@
                         <h4 class="group-title">Tải nhiều nhất</h4>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                     </div>
@@ -285,41 +292,47 @@
                         <h4 class="group-title">Chọn lọc</h4>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                         <div class="media-object">
                             <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview");?>">
+                                <a href="<?php echo base_url("document_preview"); ?>">
                                     <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png");?>">
+                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
                                 </a>
                             </div>
                             <div class="media-object-section">
                                 <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview");?>">Đề thi đại học môn Toán khối A 2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
+                                        2016</a></h5>
+                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
+                                    faucibus eget in metus. In pellentesque.</p>
                             </div>
                         </div>
                     </div>
