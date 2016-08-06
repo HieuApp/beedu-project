@@ -8,6 +8,8 @@
  * @property M_system_config   m_system_config
  * @property M_questions       m_questions
  * @property M_feedback_manage m_feedback_manage
+ * @property M_image_homes     m_image_homes
+ * @property M_documents       m_documents
  */
 class Home extends Guest_layout {
 
@@ -16,6 +18,8 @@ class Home extends Guest_layout {
         $this->load->model('M_system_config', 'm_system_config');
         $this->load->model('M_questions', 'm_questions');
         $this->load->model('M_feedback_manage', 'm_feedback_manage');
+        $this->load->model('M_image_homes', 'm_image_homes');
+        $this->load->model('M_documents', 'm_documents');
 
     }
 
@@ -35,9 +39,18 @@ class Home extends Guest_layout {
         $data["learning_method_content_2"] = $result[12]->value;
         $data["learning_method_content_3"] = $result[13]->value;
         $data["learning_method_content_4"] = $result[14]->value;
+
         $data["save_link"] = base_url("home/send_feedback");
+
         $question = $this->m_questions->get_list_filter([], [], [], 5);
         $data["questions"] = $question;
+
+        $list_image = $this->m_image_homes->get_all();
+        $data["img_bg_intro"] = $list_image[0]->file;
+
+        $list_document_newest = $this->m_documents->get_list_filter([], [], [], 3);
+        $data["documents"] = $list_document_newest;
+
         $content = $this->load->view("guest/home/view", $data, TRUE);
         $this->show_page($content);
     }

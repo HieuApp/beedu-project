@@ -78,7 +78,7 @@ class M_documents extends Crud_manager {
                 'upload'                   => [//As config of File Upload Class in codeingiter
                     'upload_path'      => 'upload/file',
                     'allowed_types'    => 'pdf|txt|doc|docx',
-                    'max_size'         => '20480',
+                    'max_size'         => '204800',
 //                    'min_size'         => '100',
 //                    'min_width'        => 300,
 //                    'min_height'       => 400,

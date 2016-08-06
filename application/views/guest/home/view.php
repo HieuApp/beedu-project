@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="parallax"><img src="<?php echo base_url("assets/images/background-intro.jpg"); ?>"
+    <div class="parallax"><img src="<?php echo base_url($img_bg_intro); ?>"
                                alt="Unsplashed background img 1"></div>
 
 </div>
@@ -194,147 +194,63 @@
                 <div class="row">
                     <div class="col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Mới nhất</h4>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
+                        <?php foreach ($documents as $document) { ?>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                        <img class="thumbnail"
+                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                    </a>
+                                </div>
+                                <div class="media-object-section">
+                                    <h5 class="document-title black-text left-align">
+                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                    </h5>
+                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                </div>
                             </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
+                            <?php
+                        } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Tải nhiều nhất</h4>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
+                        <?php foreach ($documents as $document) { ?>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                        <img class="thumbnail"
+                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                    </a>
+                                </div>
+                                <div class="media-object-section">
+                                    <h5 class="document-title black-text left-align">
+                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                    </h5>
+                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                </div>
                             </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
+                            <?php
+                        } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Chọn lọc</h4>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
+                        <?php foreach ($documents as $document) { ?>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                        <img class="thumbnail"
+                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                    </a>
+                                </div>
+                                <div class="media-object-section">
+                                    <h5 class="document-title black-text left-align">
+                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                    </h5>
+                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                </div>
                             </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
-                        <div class="media-object">
-                            <div class="media-object-section">
-                                <a href="<?php echo base_url("document_preview"); ?>">
-                                    <img class="thumbnail"
-                                         src="<?php echo base_url("assets/images/100x100.png"); ?>">
-                                </a>
-                            </div>
-                            <div class="media-object-section">
-                                <h5 class="document-title black-text left-align">
-                                    <a href="<?php echo base_url("document_preview"); ?>">Đề thi đại học môn Toán khối A
-                                        2016</a></h5>
-                                <p class="description black-text left-align">Quisque eget odio ac lectus vestibulum
-                                    faucibus eget in metus. In pellentesque.</p>
-                            </div>
-                        </div>
+                            <?php
+                        } ?>
                     </div>
                 </div>
                 <a href="<?php echo base_url("docs_collection"); ?>" id="download-button"
