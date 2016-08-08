@@ -288,25 +288,24 @@
     <div class="row ">
         <div class="col s12 center">
             <h4 class="header col s12 light">Hỏi đáp</h4>
-            <ul class="col s12 m4 l6 offset-l3 collection with-header question-support">
-                <li class="collection-header teal"><h4 class="question-title white-text">Câu hỏi thường gặp</h4></li>
+            <ul class="col s12 m4 l6 offset-l3 collapsible with-header question-support"
+                data-collapsible="accordion">
                 <?php foreach ($questions as $question) {
                     ?>
                     <li class="collection-item">
-                        <div class="question"><?php echo $question->question; ?>
+                        <div class="question collapsible-header"><?php echo $question->question; ?>
                             <a class="secondary-content">
                                 <i class="material-icons expand-more">expand_more</i>
                             </a>
                         </div>
-                        <div class="answer">
+                        <div class="answer collapsible-body">
                             <p><?php echo $question->answer; ?></p>
                         </div>
                     </li>
                     <?php
                 }
                 ?>
-                <li class="collection-header teal"><h4 class="question-title white-text">Gửi câu hỏi</h4></li>
-                <li class="collection-item">
+                <li class="collection-item question-form">
                     <div class="row form-questrion">
                         <form class="col s12" action="<?php echo $save_link; ?>" method="POST"
                               enctype="multipart/form-data" role="form">
@@ -330,6 +329,7 @@
                     </div>
 
                 </li>
+
             </ul>
         </div>
     </div>

@@ -58,11 +58,12 @@ class Home extends Guest_layout {
     public function send_feedback() {
         $data = $this->input->post();
         $insert_id = $this->m_feedback_manage->insert($data, TRUE);
+        redirect(base_url("home#answer_question"));
         if (!$insert_id == FALSE) {
-            echo '<script type="text/javascript">alert("DONE!!");</script>';
+
         } else {
-            echo '<script type="text/javascript">alert("NOT DONE!!");</script>';
+            
         }
-        redirect(base_url());
+
     }
 }
