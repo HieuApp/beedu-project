@@ -909,3 +909,18 @@ div.document-info{
 .vertical-sub{
     vertical-align: sub;
 }
+
+.no-magin{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.content-padding{
+    padding: 40px !important;
+}
+
+.link-docs{
+    width: 100%;
+}
+
+

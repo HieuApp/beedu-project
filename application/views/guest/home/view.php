@@ -10,8 +10,6 @@
                 <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
                    class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
             </div>
-            <br><br>
-
         </div>
     </div>
 
@@ -36,7 +34,7 @@
 
                         <div class="cd-timeline-content">
                             <h2 class="step-title"><?php echo $learning_method_1; ?></h2>
-                            <p><?php echo $learning_method_content_1; ?></p>
+                            <p class="no-magin"><?php echo $learning_method_content_1; ?></p>
 
                         </div>
                     </div>
@@ -48,7 +46,7 @@
 
                         <div class="cd-timeline-content">
                             <h2 class="step-title"><?php echo $learning_method_2; ?></h2>
-                            <p><?php echo $learning_method_content_2; ?></p>
+                            <p class="no-magin"><?php echo $learning_method_content_2; ?></p>
 
                         </div>
                     </div>
@@ -60,7 +58,7 @@
 
                         <div class="cd-timeline-content">
                             <h2 class="step-title"><?php echo $learning_method_3; ?></h2>
-                            <p><?php echo $learning_method_content_3; ?></p>
+                            <p class="no-magin"><?php echo $learning_method_content_3; ?></p>
 
                         </div>
                     </div>
@@ -72,7 +70,7 @@
 
                         <div class="cd-timeline-content">
                             <h2 class="step-title"><?php echo $learning_method_4; ?></h2>
-                            <p><?php echo $learning_method_content_4; ?></p>
+                            <p class="no-magin"><?php echo $learning_method_content_4; ?></p>
                         </div>
                     </div>
                     <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
@@ -206,7 +204,15 @@
                                     <h5 class="document-title black-text left-align">
                                         <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
                                     </h5>
-                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                    <p class="description black-text left-align">
+                                        <?php
+                                            $max_length = 105;
+                                            $text = $document->description;
+                                            if(strlen($document->description) > $max_length){
+                                                $text = substr($document->description, 0, $max_length)."...";
+                                            }
+                                        echo $text; ?>
+                                    </p>
                                 </div>
                             </div>
                             <?php
@@ -226,7 +232,15 @@
                                     <h5 class="document-title black-text left-align">
                                         <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
                                     </h5>
-                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                    <p class="description black-text left-align">
+                                        <?php
+                                        $max_length = 105;
+                                        $text = $document->description;
+                                        if(strlen($document->description) > $max_length){
+                                            $text = substr($document->description, 0, $max_length)."...";
+                                        }
+                                        echo $text; ?>
+                                    </p>
                                 </div>
                             </div>
                             <?php
@@ -246,7 +260,15 @@
                                     <h5 class="document-title black-text left-align">
                                         <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
                                     </h5>
-                                    <p class="description black-text left-align"><?php echo $document->description; ?></p>
+                                    <p class="description black-text left-align">
+                                        <?php
+                                        $max_length = 105;
+                                        $text = $document->description;
+                                        if(strlen($document->description) > $max_length){
+                                            $text = substr($document->description, 0, $max_length)."...";
+                                        }
+                                        echo $text; ?>
+                                    </p>
                                 </div>
                             </div>
                             <?php
