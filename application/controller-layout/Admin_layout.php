@@ -87,6 +87,11 @@ abstract class Admin_layout extends Base_layout {
             "url"  => site_url('admin/image_home'),
         );
         $menu[] = Array(
+            "text" => "Quản lý lớp học",
+            "icon" => "fa-university",
+            "url"  => site_url('admin/classes'),
+        );
+        $menu[] = Array(
             "text" => "Quản lý phản hồi",
             "icon" => "fa-inbox",
             "url"  => site_url('admin/feedback_manage'),
