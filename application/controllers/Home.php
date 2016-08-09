@@ -10,6 +10,7 @@
  * @property M_feedback_manage m_feedback_manage
  * @property M_image_homes     m_image_homes
  * @property M_documents       m_documents
+ * @property M_classes         m_classes
  */
 class Home extends Guest_layout {
 
@@ -20,7 +21,7 @@ class Home extends Guest_layout {
         $this->load->model('M_feedback_manage', 'm_feedback_manage');
         $this->load->model('M_image_homes', 'm_image_homes');
         $this->load->model('M_documents', 'm_documents');
-
+        $this->load->model('M_classes', 'm_classes');
     }
 
     public function index() {
@@ -47,9 +48,14 @@ class Home extends Guest_layout {
 
         $list_image = $this->m_image_homes->get_all();
         $data["img_bg_intro"] = $list_image[0]->file;
+        $data["student_class"] = $list_image[5]->file;
+        $data["library"] = $list_image[6]->file;
 
         $list_document_newest = $this->m_documents->get_list_filter([], [], [], 3);
         $data["documents"] = $list_document_newest;
+
+        $list_class = $this->m_classes->get_all();
+        $data["classes"] = $list_class;
 
         $content = $this->load->view("guest/home/view", $data, TRUE);
         $this->show_page($content);
@@ -60,10 +66,7 @@ class Home extends Guest_layout {
         $insert_id = $this->m_feedback_manage->insert($data, TRUE);
         redirect(base_url("home#answer_question"));
         if (!$insert_id == FALSE) {
-
         } else {
-
         }
-
     }
 }

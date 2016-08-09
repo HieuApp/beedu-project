@@ -43,6 +43,45 @@ class M_classes extends Crud_manager {
             ],
             'table'    => TRUE,
         ],
+        'avatar'      => [
+            'field'    => 'avatar',
+            'db_field' => 'avatar',
+            'label'    => 'Avatar',
+            'rules'    => 'required',
+            'form'     => [
+                'type'                     => 'file', //multiple_file
+                'class'                    => 'ace_file_input',//Use ACE theme for file input
+//                'attr'         => 'data-disable_client_validate=1',//Disable validate in client
+                'upload'                   => [//As config of File Upload Class in codeingiter
+                    'upload_path'      => 'upload/avatar',
+                    'allowed_types'    => 'jpg|jpeg|png',
+                    'max_size'         => '20480',
+                    'min_size'         => '10',
+                    'min_width'        => 30,
+                    'min_height'       => 40,
+                    'max_width'        => 12000,
+                    'max_height'       => 16000,
+                    'encrypt_name'     => TRUE,
+                    'file_ext_tolower' => TRUE,
+                ],
+                'callback_before_validate' => '',
+                'callback_after_validate'  => '',
+                'resize'                   => [ //As config of Image Manipulation Class(resize) in CodeIgniter (without source_image)
+                    'height' => 104,
+                    'width'  => 104,
+                ],
+                'watermarking'             => [ //As config of Image Manipulation Class(watermarking) in CodeIgniter (without source_image)
+                    'wm_text'          => 'Copyright 2016 - TrongPD',
+                    'wm_type'          => 'text',
+                    'wm_font_size'     => '16',
+                    'wm_font_color'    => 'ffffff',
+                    'wm_vrt_alignment' => 'bottom',
+                    'wm_hor_alignment' => 'right',
+                    'wm_padding'       => '20',
+                ],
+            ],
+            'table'    => TRUE,
+        ],
         'detail'      => [
             'field'    => 'detail',
             'db_field' => 'detail',
