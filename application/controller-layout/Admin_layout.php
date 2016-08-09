@@ -87,26 +87,19 @@ abstract class Admin_layout extends Base_layout {
             "url"  => site_url('admin/image_home'),
         );
         $menu[] = Array(
+            "text" => "Quản lý lớp học",
+            "icon" => "fa-university",
+            "url"  => site_url('admin/classes'),
+        );
+        $menu[] = Array(
             "text" => "Quản lý phản hồi",
             "icon" => "fa-inbox",
             "url"  => site_url('admin/feedback_manage'),
         );
         $menu[] = Array(
-            "text"  => "Quản lý hỏi đáp",
-            "icon"  => "fa-question-circle-o",
-            "url"   => site_url('admin/questions'),
-            "child" => Array(
-                '0' => Array(
-                    "text" => "Thêm",
-                    "icon" => "fa-caret-right",
-                    "url"  => site_url('admin/questions/add'),
-                ),
-                '1' => Array(
-                    "text" => "Quản lý hỏi đáp",
-                    "icon" => "fa-caret-right",
-                    "url"  => site_url('admin/questions'),
-                ),
-            ),
+            "text" => "Quản lý hỏi đáp",
+            "icon" => "fa-question-circle-o",
+            "url"  => site_url('admin/questions'),
         );
         $menu[] = Array(
             "text" => "System config",

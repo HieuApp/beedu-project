@@ -39,30 +39,6 @@ class M_notification extends Crud_manager {
                 'label' => 'Nội dung',
             ],
         ],
-        'user_receive_id' => [
-            'field'    => 'user_receive_id',
-            'db_field' => 'user_receive_id',
-            'label'    => 'ID người nhận',
-            'rules'    => '',
-            'form'     => [
-                'type'            => 'select',
-                'target_model'    => 'M_user',
-                'target_function' => 'dropdown',
-                'target_arg'      => ['id', 'name'],
-            ],
-            'filter'   => [
-                'type' => 'multiple_select',
-            ],
-        ],
-        'user_name'       => [
-            'field'    => 'user_name',
-            'db_field' => 'u.name',
-            'label'    => 'Tên người nhận',
-            'rules'    => '',
-            'table'    => [
-                'label' => 'Tên người nhận',
-            ],
-        ],
         'status'          => [
             'field'    => 'status',
             'db_field' => 'status',
@@ -95,14 +71,6 @@ class M_notification extends Crud_manager {
 
     public function __construct() {
         parent::__construct();
-        $this->before_get['join_all'] = "join_user_table";
-    }
-
-    public function join_user_table() {
-        $this->db->select($this->_table_alias . ".*, 
-        u.name as user_name, 
-        ");
-        $this->db->join("users as u", $this->_table_alias . ".user_receive_id=u.id");
     }
 
     public function get_status() {
