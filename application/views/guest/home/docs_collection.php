@@ -14,10 +14,11 @@
                 foreach ($document_category_item['list_document_in_category'] as $document) {
                     ?>
                     <div class="col s6 m6 l2">
-                        <a href="<?php echo base_url("document_preview"); ?>">
+                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                             <img class="thumbnail" src="<?php echo base_url($document->avatar); ?>">
                         </a>
-                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a></h5>
+                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
+                            <?php echo $document->name; ?></a></h5>
                         <br><span><?php echo $document->count_downloaded; ?> downloads</span>
                         <button class="waves-effect waves-light btn">Download</button>
                     </div>

@@ -15,7 +15,7 @@
                             <img class="icon-file" src="<?php echo base_url($document->avatar); ?>"/>
                             <div class="document-info">
                             <span class="title document-name">
-                                <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>"><?php echo $document->name; ?></a>
                             </span>
                                 <p class="description"><?php echo $document->description; ?>
                                 </p>
