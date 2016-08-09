@@ -62,7 +62,7 @@ class M_documents extends Crud_manager {
                     'upload_path'      => 'upload/avatar',
                     'allowed_types'    => 'jpg|jpeg|png',
                     'max_size'         => '20480',
-                    'min_size'         => '10',
+                    'min_size'         => '1',
                     'min_width'        => 30,
                     'min_height'       => 40,
                     'max_width'        => 12000,

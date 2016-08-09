@@ -48,6 +48,8 @@ class Home extends Guest_layout {
 
         $list_image = $this->m_image_homes->get_all();
         $data["img_bg_intro"] = $list_image[0]->file;
+        $data["student_class"] = $list_image[5]->file;
+        $data["library"] = $list_image[6]->file;
 
         $list_document_newest = $this->m_documents->get_list_filter([], [], [], 3);
         $data["documents"] = $list_document_newest;
