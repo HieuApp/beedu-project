@@ -103,76 +103,105 @@
                 <h4 class="header col s12 light">Chương trình học</h4>
 
                 <div class="row">
-                    <div class="col s12 m6 l3">
-                        <div class="card blue-grey darken-1">
-                            <div class="card-image">
-                                <img class="card-img-content"
-                                     src="<?php echo base_url("assets/images/learn-by-my-self.jpg"); ?>">
-                                <div class="transfer-box">
+                    <?php foreach ($classes as $class) { ?>
+                        <div class="col s12 m6 l3">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-image">
+                                    <img class="card-img-content"
+                                         src="<?php echo base_url($class->avatar); ?>">
+                                    <div class="transfer-box">
 
+                                    </div>
+                                    <span class="card-title"><?php echo $class->name; ?></span>
                                 </div>
-                                <span class="card-title">Lớp chuẩn</span>
-                            </div>
-                            <div class="card-content white-text">
-                                <p>10-15 học sinh/lớp</p>
-                                <p>100.000đ/buổi</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l3">
-                        <div class="card blue-grey darken-1">
-                            <div class="card-image">
-                                <img class="card-img-content"
-                                     src="<?php echo base_url("assets/images/side-by-side.jpg"); ?>">
-                                <span class="card-title">Lớp đảm bảo</span>
-                            </div>
-                            <div class="card-content white-text">
-                                <p>6 học sinh/lớp </p>
-                                <p> 150.000đ/buổi</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                                <div class="card-content white-text">
+                                    <p><?php echo $class->description; ?></p>
+                                    <p><?php echo $class->price; ?></p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col s12 m6 l3">
-                        <div class="card blue-grey darken-1">
-                            <div class="card-image">
-                                <img class="card-img-content"
-                                     src="<?php echo base_url("assets/images/book-for-kid.jpg"); ?>">
-                                <span class="card-title">Lớp chuyên sâu</span>
-                            </div>
-                            <div class="card-content white-text">
-                                <p>3 học sinh/lớp </p>
-                                <p>250.000đ/buổi</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 l3">
-                        <div class="card blue-grey darken-1">
-                            <div class="card-image">
-                                <img class="card-img-content"
-                                     src="<?php echo base_url("assets/images/teacher-take-care.jpg"); ?>">
-                                <span class="card-title">Lớp 1-1</span>
-                            </div>
-                            <div class="card-content white-text">
-                                <p>1 giáo viên kèm 1 học sinh</p>
-                                <p> 500.00đ/buổi</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
+                    <!--                    <div class="col s12 m6 l3">-->
+                    <!--                        <div class="card blue-grey darken-1">-->
+                    <!--                            <div class="card-image">-->
+                    <!--                                <img class="card-img-content"-->
+                    <!--                                     src="-->
+                    <?php //echo base_url("assets/images/learn-by-my-self.jpg"); ?><!--">-->
+                    <!--                                <div class="transfer-box">-->
+                    <!---->
+                    <!--                                </div>-->
+                    <!--                                <span class="card-title">Lớp chuẩn</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-content white-text">-->
+                    <!--                                <p>10-15 học sinh/lớp</p>-->
+                    <!--                                <p>100.000đ/buổi</p>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-action">-->
+                    <!--                                <a href="-->
+                    <?php //echo base_url("register_trial"); ?><!--">Học thử miễn phí</a>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!---->
+                    <!--                    <div class="col s12 m6 l3">-->
+                    <!--                        <div class="card blue-grey darken-1">-->
+                    <!--                            <div class="card-image">-->
+                    <!--                                <img class="card-img-content"-->
+                    <!--                                     src="-->
+                    <?php //echo base_url("assets/images/side-by-side.jpg"); ?><!--">-->
+                    <!--                                <span class="card-title">Lớp đảm bảo</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-content white-text">-->
+                    <!--                                <p>6 học sinh/lớp </p>-->
+                    <!--                                <p> 150.000đ/buổi</p>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-action">-->
+                    <!--                                <a href="-->
+                    <?php //echo base_url("register_trial"); ?><!--">Học thử miễn phí</a>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!---->
+                    <!--                    <div class="col s12 m6 l3">-->
+                    <!--                        <div class="card blue-grey darken-1">-->
+                    <!--                            <div class="card-image">-->
+                    <!--                                <img class="card-img-content"-->
+                    <!--                                     src="-->
+                    <?php //echo base_url("assets/images/book-for-kid.jpg"); ?><!--">-->
+                    <!--                                <span class="card-title">Lớp chuyên sâu</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-content white-text">-->
+                    <!--                                <p>3 học sinh/lớp </p>-->
+                    <!--                                <p>250.000đ/buổi</p>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-action">-->
+                    <!--                                <a href="-->
+                    <?php //echo base_url("register_trial"); ?><!--">Học thử miễn phí</a>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!---->
+                    <!--                    <div class="col s12 m6 l3">-->
+                    <!--                        <div class="card blue-grey darken-1">-->
+                    <!--                            <div class="card-image">-->
+                    <!--                                <img class="card-img-content"-->
+                    <!--                                     src="-->
+                    <?php //echo base_url("assets/images/teacher-take-care.jpg"); ?><!--">-->
+                    <!--                                <span class="card-title">Lớp 1-1</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-content white-text">-->
+                    <!--                                <p>1 giáo viên kèm 1 học sinh</p>-->
+                    <!--                                <p> 500.00đ/buổi</p>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="card-action">-->
+                    <!--                                <a href="-->
+                    <?php //echo base_url("register_trial"); ?><!--">Học thử miễn phí</a>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                 </div>
 
             </div>
@@ -204,11 +233,11 @@
                                     </h5>
                                     <p class="description black-text left-align">
                                         <?php
-                                            $max_length = 105;
-                                            $text = $document->description;
-                                            if(strlen($document->description) > $max_length){
-                                                $text = substr($document->description, 0, $max_length)."...";
-                                            }
+                                        $max_length = 105;
+                                        $text = $document->description;
+                                        if (strlen($document->description) > $max_length) {
+                                            $text = substr($document->description, 0, $max_length) . "...";
+                                        }
                                         echo $text; ?>
                                     </p>
                                 </div>
@@ -234,8 +263,8 @@
                                         <?php
                                         $max_length = 105;
                                         $text = $document->description;
-                                        if(strlen($document->description) > $max_length){
-                                            $text = substr($document->description, 0, $max_length)."...";
+                                        if (strlen($document->description) > $max_length) {
+                                            $text = substr($document->description, 0, $max_length) . "...";
                                         }
                                         echo $text; ?>
                                     </p>
@@ -262,8 +291,8 @@
                                         <?php
                                         $max_length = 105;
                                         $text = $document->description;
-                                        if(strlen($document->description) > $max_length){
-                                            $text = substr($document->description, 0, $max_length)."...";
+                                        if (strlen($document->description) > $max_length) {
+                                            $text = substr($document->description, 0, $max_length) . "...";
                                         }
                                         echo $text; ?>
                                     </p>
