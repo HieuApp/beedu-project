@@ -76,5 +76,6 @@ class Home extends Guest_layout {
             echo "success";
         } else {
             echo "error";
+        }
     }
 }

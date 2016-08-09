@@ -1,14 +1,13 @@
 <nav class="black" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="<?php echo base_url("home"); ?>" class="brand-logo">BEEDU.VN</a>
-        <form action="<?php echo base_url("document/search"); ?>" method="POST"
+        <form id="form-search" action="<?php echo base_url("document/search"); ?>" method="POST"
               enctype="multipart/form-data" role="form">
             <div class="input-field" style="position: absolute; height: 35px; background: white;
             left: 220px; margin-top: 15px; width: 300px;">
-                <input id="search" type="search" style="color: black;"
+                <input name="key" id="search" type="search" style="color: black;"
                        placeholder="Tìm kiếm đề thi, tài liệu..."/>
-                    <i class="material-icons" style="color: black; right: 0;"
-                       href="<?php echo base_url("document/search") ?>">search</i>
+                    <button class="material-icons btn" id="search-btn" style="color: black; right: 0;">search</button>
             </div>
         </form>
         <ul class="right hide-on-med-and-down">
