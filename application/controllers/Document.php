@@ -32,4 +32,34 @@ class Document extends Guest_layout {
         $content = $this->load->view("guest/home/document", $data, TRUE);
         $this->show_page($content);
     }
+
+    public function search(){
+        $key=$this->input->post("key");
+        if(!$key){
+           redirect(base_url());
+        }
+        $like_name_Condition=[
+            'm.name' => $key,
+        ];
+        $like_description_Condition=[
+            'm.description' => $key,
+        ];
+        $data=[];
+        $result_by_name=$this->m_documents->get_list_filter([], [], $like_name_Condition);
+        $result_by_description=$this->m_documents->get_list_filter([], [], $like_description_Condition);
+        if(count($result_by_name)){
+            foreach ($result_by_name as $item_name){
+                array_push($data,$item_name);
+            }
+
+        }
+        if(count($result_by_description)){
+            foreach ($result_by_description as $item_des){
+                array_push($data,$item_des);
+            }
+        }
+        $data_result["document_by_category"]=$data;
+        $content = $this->load->view("guest/home/search_result", $data_result, TRUE);
+        $this->show_page($content);
+    }
 }

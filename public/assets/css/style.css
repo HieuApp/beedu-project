@@ -973,4 +973,11 @@ div.document-info{
     to {bottom: 0; opacity: 0;}
 }
 
+#search-btn{
+    color: white !important;
+    right: -90px !important;
+    margin-top: -1px !important;
+    border-radius: 0px !important;
+}
+
 
