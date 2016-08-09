@@ -146,7 +146,7 @@
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview"); ?>">
                                         <img class="thumbnail"
-                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                             src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">
@@ -174,7 +174,7 @@
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview"); ?>">
                                         <img class="thumbnail"
-                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                             src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">
@@ -202,7 +202,7 @@
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview"); ?>">
                                         <img class="thumbnail"
-                                             src="<?php echo base_url("assets/images/100x100.png"); ?>">
+                                             src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">

@@ -15,7 +15,7 @@
                     ?>
                     <div class="col s6 m6 l2">
                         <a href="<?php echo base_url("document_preview"); ?>">
-                            <img class="thumbnail" src="<?php echo base_url("assets/images/300x400.png"); ?>">
+                            <img class="thumbnail" src="<?php echo base_url($document->avatar); ?>">
                         </a>
                         <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a></h5>
                         <br><span><?php echo $document->count_downloaded; ?> downloads</span>
