@@ -43,3 +43,29 @@ $(document).on("click", "#intro-beedu", function () {
         scrollTop: $(".page-footer").offset().top
     }, 700);
 });
+
+$("#feedback-form").submit(function (event) {
+    event.preventDefault();
+    var questionVal = $("#textarea1").val();
+    var emailVal = $("#email").val();
+    var url = $(this).attr("action");
+    console.log(url);
+    $.post( url, { question: questionVal, email: emailVal })
+        .done(function( data ) {
+            if(data == "error"){
+                $("div#snackbar").html("Có lỗi xảy ra, vui lòng thử lại");
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }else {
+                var x = document.getElementById("snackbar");
+                $("div#snackbar").html("Đã gửi câu hỏi của bạn");
+                x.className = "show";
+                setTimeout(function(){
+                    x.className = x.className.replace("show", ""); }, 3000);
+                $("#textarea1").val("");
+                $("#email").val("");
+            }
+        });
+
+});

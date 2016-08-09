@@ -256,7 +256,7 @@
                 ?>
                 <li class="collection-item question-form">
                     <div class="row form-questrion">
-                        <form class="col s12" action="<?php echo $save_link; ?>" method="POST"
+                        <form class="col s12" id="feedback-form" action="<?php echo $save_link; ?>" method="POST"
                               enctype="multipart/form-data" role="form">
                             <div class="row">
                                 <div class="input-field col s12 s6">
@@ -271,9 +271,10 @@
                                     <label class="label-form" for="email">Email</label>
                                 </div>
                             </div>
-                            <button type="submit"
+                            <button type="submit" id="send-feedback"
                                     class="btn-large waves-effect waves-light teal lighten-1">Gửi
                             </button>
+                            <div id="snackbar">Some text some message..</div>
                         </form>
                     </div>
 

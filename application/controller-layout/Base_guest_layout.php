@@ -258,11 +258,11 @@ abstract class Base_guest_layout extends CI_Controller {
 
 
     private function set_default_title($title = NULL) {
-        return $title ? $title : "Manager System";
+        return $title ? $title : "Beedu.vn";
     }
 
     private function set_default_description($description = NULL) {
-        return $description ? $description : "Manager System";
+        return $description ? $description : "Beedu.vn";
     }
 
     private function set_default_keywords($keywords = NULL) {
