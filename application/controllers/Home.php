@@ -56,13 +56,20 @@ class Home extends Guest_layout {
     }
 
     public function send_feedback() {
-        $data = $this->input->post();
+        if(!$_POST["email"]){
+            return;
+        }
+        $question = $_POST["question"];
+        $email = $_POST["email"];
+        $data=[
+          'feedback_content'=>$question,
+            'email_reader'=>$email,
+        ];
         $insert_id = $this->m_feedback_manage->insert($data, TRUE);
-        redirect(base_url("home#answer_question"));
         if (!$insert_id == FALSE) {
-
+            echo "success";
         } else {
-
+            echo "error";
         }
 
     }
