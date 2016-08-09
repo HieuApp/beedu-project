@@ -62,7 +62,7 @@ class Home extends Guest_layout {
         if (!$insert_id == FALSE) {
 
         } else {
-            
+
         }
 
     }

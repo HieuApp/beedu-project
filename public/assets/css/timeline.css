@@ -159,8 +159,8 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height: 56px;
         left: 50%;
         margin-left: -30px;
         /* Force Hardware Acceleration in WebKit */
@@ -304,7 +304,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
     .cd-timeline-content {
         margin-left: 0;
-        padding: 1.6em;
+        padding: 1em;
         width: 45%;
     }
     .cd-timeline-content::before {

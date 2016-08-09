@@ -30,8 +30,6 @@
                         <div class="cd-timeline-img cd-picture">
                             <span class="step">1</span>
                         </div>
-
-
                         <div class="cd-timeline-content">
                             <h2 class="step-title"><?php echo $learning_method_1; ?></h2>
                             <p class="no-magin"><?php echo $learning_method_content_1; ?></p>

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="letter">
+        <div class="col s12 m12 l8 offset-l2 card letter-padding">
             <h5 class="black-text">Thư ngỏ</h5>
             <p class="letter-text">
                 Chào em, anh là Đức Anh - CEO của Akira Group.
