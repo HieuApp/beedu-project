@@ -144,14 +144,14 @@
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object">
                                 <div class="media-object-section">
-                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                    <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">
                                     <h5 class="document-title black-text left-align">
-                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>"><?php echo $document->name; ?></a>
                                     </h5>
                                     <p class="description black-text left-align">
                                         <?php
@@ -172,14 +172,14 @@
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object">
                                 <div class="media-object-section">
-                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                    <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">
                                     <h5 class="document-title black-text left-align">
-                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>"><?php echo $document->name; ?></a>
                                     </h5>
                                     <p class="description black-text left-align">
                                         <?php
@@ -200,14 +200,14 @@
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object">
                                 <div class="media-object-section">
-                                    <a href="<?php echo base_url("document_preview"); ?>">
+                                    <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
                                 <div class="media-object-section">
                                     <h5 class="document-title black-text left-align">
-                                        <a href="<?php echo base_url("document_preview"); ?>"><?php echo $document->name; ?></a>
+                                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>"><?php echo $document->name; ?></a>
                                     </h5>
                                     <p class="description black-text left-align">
                                         <?php

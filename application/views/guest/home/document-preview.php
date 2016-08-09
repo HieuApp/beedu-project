@@ -2,10 +2,8 @@
     <div class="row">
         <div class="content-preview">
             <div class="col s12 m6 l8 content-padding">
-                <h4 class="light document-name left"><b>Đề thi đại học khối A môn Toán 2015</b></h4>
-                <p class="description left">Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay.
-                    Hãy thử sức mình bằng cách bắt tay làm thử
-                    những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.
+                <h4 class="light document-name left"><b><?php echo $document->name; ?></b></h4>
+                <p class="description left"><?php echo $document->description; ?>
                 </p>
             </div>
             <div class="col s12 m4 l8">
@@ -16,18 +14,17 @@
             <div class="col s12 m4 l4">
                 <div class="collection">
                     <h5 class="collection-item">Tài liệu liên quan</h5>
-                    <a href="#!" class="collection-item link-docs left">Đề thi thử THPT Quốc gia năm 2016 môn Toán</a>
-                    <a href="#!" class="collection-item link-docs left">Đề thi thử THPT Quốc gia năm 2016 môn Toán</a>
-                    <a href="#!" class="collection-item link-docs left">Đề thi thử THPT Quốc gia năm 2016 môn Toán</a>
-                    <a href="#!" class="collection-item link-docs left">Đề thi thử THPT Quốc gia năm 2016 môn Toán</a>
-                    <a href="#!" class="collection-item link-docs left">Đề thi thử THPT Quốc gia năm 2016 môn Toán</a>
+                    <?php foreach ($document_by_category as $document) { ?>
+                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>"
+                           class="collection-item link-docs left"><?php echo $document->name; ?></a>
+                    <?php } ?>
                 </div>
             </div>
         </div>
 
         <div class="download-footer content-padding">
             <i class="material-icons grey-text">file_download</i>
-            <span class="grey-text"> 1,234</span>
+            <span class="grey-text"><?php echo $document->count_downloaded; ?></span>
             <button class="waves-effect waves-light btn btn-download">Download</button>
         </div>
     </div>

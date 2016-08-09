@@ -13,10 +13,9 @@ class View_detail extends Base_guest_layout {
         $this->load->model('M_documents', 'm_documents');
     }
 
-    public function index() {
-        $data["documents"] = $this->m_documents->get_all();
-        var_dump($data);
-        $content = $this->load->view("guest/category/view_detail", $data, TRUE);
-        $this->show_page($content);
-    }
+//    public function index() {
+//        $data["documents"] = $this->m_documents->get_all();
+//        $content = $this->load->view("guest/category/view_detail", $data, TRUE);
+//        $this->show_page($content);
+//    }
 }
