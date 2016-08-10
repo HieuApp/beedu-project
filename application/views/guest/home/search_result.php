@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col s12 m4 l8 offset-l2">
+        <div class="col s12 m12 l8 offset-l2">
 
             <ul class="collection">
                 <?php
