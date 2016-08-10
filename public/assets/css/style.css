@@ -975,9 +975,9 @@ div.document-info{
 
 #search-btn{
     color: white !important;
-    right: -90px !important;
+    right: -85px !important;
     margin-top: -1px !important;
-    border-radius: 0px !important;
+    border-radius: 0 2px 2px 0!important;
 }
 
 
