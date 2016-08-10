@@ -65,8 +65,15 @@ class Document extends Guest_layout {
         $where = [
             'm.id' => $id,
         ];
-        $file = $this->m_documents->get_list_filter($where, [], [])[0]->file;
+        $document = $this->m_documents->get_list_filter($where, [], [])[0];
+        $file = $document->file;
+        $count_downloaded = $document->count_downloaded;
+        $count_downloaded += 1;
+        $data_update_count = [
+            'count_downloaded' => $count_downloaded,
+        ];
         if (file_exists($file)) {
+            $update_id = $this->m_documents->update($id, $data_update_count, TRUE);
             header('Content-Description: File Transger');
             header('Content-Type: application/octet-stream');
             header('Content-Disposition: attachment; filename="' . basename($file) . '"');
@@ -76,6 +83,5 @@ class Document extends Guest_layout {
             readfile($file);
             redirect(base_url());
         }
-
     }
 }
