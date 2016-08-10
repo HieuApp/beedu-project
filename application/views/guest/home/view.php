@@ -145,7 +145,7 @@
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
-                                        <img class="thumbnail"
+                                        <img class="thumbnail icon-file"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
@@ -173,7 +173,7 @@
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
-                                        <img class="thumbnail"
+                                        <img class="thumbnail icon-file"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
@@ -201,7 +201,7 @@
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
-                                        <img class="thumbnail"
+                                        <img class="thumbnail icon-file"
                                              src="<?php echo base_url($document->avatar); ?>">
                                     </a>
                                 </div>
