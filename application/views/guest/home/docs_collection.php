@@ -20,7 +20,9 @@
                         <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                             <?php echo $document->name; ?></a></h5>
                         <br><span><?php echo $document->count_downloaded; ?> downloads</span>
-                        <button class="waves-effect waves-light btn">Download</button>
+                        <a href="<?php echo base_url("document/download" . "/" . $document->id); ?>"
+                                class="waves-effect waves-light btn btn-download">Download
+                        </a>
                     </div>
 
                     <?php

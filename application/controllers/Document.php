@@ -15,9 +15,8 @@ class Document extends Guest_layout {
         $this->load->model('M_categories', 'm_categories');
     }
 
-
     public function index() {
-        $content = $this->load->view("guest/home/document", null, TRUE);
+        $content = $this->load->view("guest/home/document", NULL, TRUE);
         $this->show_page($content);
     }
 
@@ -33,33 +32,56 @@ class Document extends Guest_layout {
         $this->show_page($content);
     }
 
-    public function search(){
-        $key=$this->input->post("key");
-        if(!$key){
-           redirect(base_url());
+    public function search() {
+        $key = $this->input->post("key");
+        if (!$key) {
+            redirect(base_url());
         }
-        $like_name_Condition=[
+        $like_name_Condition = [
             'm.name' => $key,
         ];
-        $like_description_Condition=[
+        $like_description_Condition = [
             'm.description' => $key,
         ];
-        $data=[];
-        $result_by_name=$this->m_documents->get_list_filter([], [], $like_name_Condition);
-        $result_by_description=$this->m_documents->get_list_filter([], [], $like_description_Condition);
-        if(count($result_by_name)){
-            foreach ($result_by_name as $item_name){
-                array_push($data,$item_name);
-            }
-
-        }
-        if(count($result_by_description)){
-            foreach ($result_by_description as $item_des){
-                array_push($data,$item_des);
+        $data = [];
+        $result_by_name = $this->m_documents->get_list_filter([], [], $like_name_Condition);
+        $result_by_description = $this->m_documents->get_list_filter([], [], $like_description_Condition);
+        if (count($result_by_name)) {
+            foreach ($result_by_name as $item_name) {
+                array_push($data, $item_name);
             }
         }
-        $data_result["document_by_category"]=$data;
+        if (count($result_by_description)) {
+            foreach ($result_by_description as $item_des) {
+                array_push($data, $item_des);
+            }
+        }
+        $data_result["document_by_category"] = $data;
         $content = $this->load->view("guest/home/search_result", $data_result, TRUE);
         $this->show_page($content);
+    }
+
+    public function download($id) {
+        $where = [
+            'm.id' => $id,
+        ];
+        $document = $this->m_documents->get_list_filter($where, [], [])[0];
+        $file = $document->file;
+        $count_downloaded = $document->count_downloaded;
+        $count_downloaded += 1;
+        $data_update_count = [
+            'count_downloaded' => $count_downloaded,
+        ];
+        if (file_exists($file)) {
+            $update_id = $this->m_documents->update($id, $data_update_count, TRUE);
+            header('Content-Description: File Transger');
+            header('Content-Type: application/octet-stream');
+            header('Content-Disposition: attachment; filename="' . basename($file) . '"');
+            header('Expires:0');
+            header('Pragma: public');
+            header('Content-Length:' . filesize($file));
+            readfile($file);
+            redirect(base_url());
+        }
     }
 }
