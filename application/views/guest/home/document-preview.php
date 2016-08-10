@@ -9,7 +9,7 @@
             <div class="col s12 m4 l8">
                 <iframe
                     src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true"
-                    style="width:700px; height:500px;" frameborder="0"></iframe>
+                    style="width:100%; height:500px;" frameborder="0"></iframe>
             </div>
             <div class="col s12 m4 l4">
                 <div class="collection">
@@ -25,7 +25,9 @@
         <div class="download-footer content-padding">
             <i class="material-icons grey-text">file_download</i>
             <span class="grey-text"><?php echo $document->count_downloaded; ?></span>
-            <button class="waves-effect waves-light btn btn-download">Download</button>
+            <a href="<?php echo base_url("document/download" . "/" . $document->id); ?>"
+                    class="waves-effect waves-light btn btn-download">Download
+            </a>
         </div>
     </div>
 </div>

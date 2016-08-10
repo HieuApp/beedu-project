@@ -6,11 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-    color: white;
-    left: 56px;
-}
+/*nav ul a,*/
+/*nav .brand-logo {*/
+/*color: white;*/
+/*left: 56px;*/
+/*}*/
 
 nav ul {
     position: absolute;
@@ -22,7 +22,17 @@ nav .material-icons {
     position: relative;
     float: right;
     margin-top: -14px;
+}
 
+.override .material-icons {
+    color: inherit;
+    position: inherit;
+    float: inherit;
+    margin-top: inherit;
+}
+
+.override div {
+    text-align: inherit;
 }
 
 nav.material-icons:hover {
@@ -122,20 +132,20 @@ footer.page-footer {
 }
 
 /*Hieu custom css*/
-div, h2.menu-title{
+div, h2.menu-title {
     text-align: center;
     font-family: Roboto;
 }
 
-.card-title{
+.card-title {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: left;
 }
 
-.transfer-box{
+.transfer-box {
     background-color: black;
     opacity: 0.6;
 }
@@ -144,13 +154,12 @@ div, h2.menu-title{
     width: 90%;
 }
 
-
-.card-content{
+.card-content {
     height: auto;
     padding: 8px !important;
 }
 
-.card-img-content{
+.card-img-content {
     height: 230px
 }
 
@@ -158,7 +167,7 @@ div, h2.menu-title{
     font-weight: bold;
 }
 
-h5.contact{
+h5.contact {
     text-align: center;
     font-weight: normal;
 }
@@ -218,15 +227,15 @@ div.googleplus-background:hover {
     border-radius: 70px;
 }
 
-table td.contact-detail{
+table td.contact-detail {
     width: 100px;
 }
 
-.light-text{
+.light-text {
     color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.logo-social{
+.logo-social {
     width: 24px;
     height: 24px;
     margin-top: 8px;
@@ -256,21 +265,22 @@ table td.contact-detail{
     -webkit-font-smoothing: antialiased;
 }
 
-.group-social{
+.group-social {
     display: inline-flex;
 }
-.logo-margin{
+
+.logo-margin {
     margin-left: 16px;
 }
 
-.second-content{
+.second-content {
     padding-top: 24px;
     padding-left: 0px;
     margin-left: 59%;
     display: inline-block;
 }
 
-.third-content{
+.third-content {
     padding-top: 24px;
     padding-left: 0px;
     margin-left: -40%;
@@ -278,7 +288,7 @@ table td.contact-detail{
     width: 30%;
 }
 
-.class-title{
+.class-title {
     text-align: left;
     font-size: 15px;
     font-weight: bold;
@@ -286,14 +296,14 @@ table td.contact-detail{
     color: #212121;
 }
 
-.class-content{
+.class-content {
     text-align: left;
     font-family: Roboto;
     color: #757575;
     font-size: 16px;
 }
 
-img.pink-link{
+img.pink-link {
     width: 340px;
     height: 110px;
     position: relative;
@@ -301,7 +311,7 @@ img.pink-link{
     left: 160px;
 }
 
-img.green-link{
+img.green-link {
     width: 260px;
     height: 190px;
     border: 0;
@@ -310,7 +320,7 @@ img.green-link{
     left: -320px;
 }
 
-img.link-end{
+img.link-end {
     width: 340px;
     height: 110px;
     position: relative;
@@ -318,78 +328,78 @@ img.link-end{
     left: 350px;;
 }
 
-.valign-wrapper{
-    background: rgba(0,0,0,0.3);
+.valign-wrapper {
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.label-form{
+.label-form {
     text-align: left;
 }
 
-.form-questrion{
+.form-questrion {
     width: 100%;
     margin-top: 24px;
 }
 
-.question-support{
+.question-support {
     margin-right: auto;
     padding-top: 10px !important;
 }
 
-.question-title{
+.question-title {
     font-size: 20px;
     text-align: left;
     height: 10px;
     margin-top: auto;
 }
 
-.question-form{
+.question-form {
     background-color: white;
 }
 
-div.question{
+div.question {
     text-align: left;
 }
 
-div.answer{
+div.answer {
     text-align: left;
     background-color: #E0E0E0;
     display: none;
 }
 
-.expand-less{
+.expand-less {
     display: none;
 }
 
-.parallax-container{
-    background: rgba(0,0,0,0.3);
+.parallax-container {
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.library{
+.library {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.description{
-    color: rgba(0,0,0,0.5);
+.description {
+    color: rgba(0, 0, 0, 0.5);
     font-family: Roboto;
     font-size: 13px;
     margin-left: 0px;
 }
 
-.document-title{
+.document-title {
     color: black;
     font-family: Roboto;
     font-size: 15px !important;
     margin-left: 0px;
 }
 
-li.collection-item{
+li.collection-item {
     text-align: left;
 }
 
-.download-count{
+.download-count {
     display: inline-flex;
     position: absolute;
     right: 20px;
@@ -397,11 +407,11 @@ li.collection-item{
     margin-top: 10px;
 }
 
-.letter-text{
+.letter-text {
     text-align: left;
 }
 
-.letter{
+.letter {
     text-align: center;
     width: 50%;
     margin-left: auto;
@@ -409,25 +419,25 @@ li.collection-item{
     margin-top: 24px;
 }
 
-.author-sign{
+.author-sign {
     text-align: right;
     font-weight: bold;
 }
 
-.document-name{
+.document-name {
     font-size: 18px;
 }
 
-.full-width{
+.full-width {
     width: 100% !important;
 }
 
-.download-footer{
+.download-footer {
     display: inline-flex;
     width: 100%;
 }
 
-.btn-download{
+.btn-download {
     height: 25px;
     line-height: 0px;
     float: right;
@@ -435,30 +445,30 @@ li.collection-item{
     margin-left: 16px;
 }
 
-.document-item{
+.document-item {
     display: inline-flex;
 }
 
-li.document-item{
+li.document-item {
     padding-left: 16px;
     width: 100%;
 }
 
-.icon-file{
+.icon-file {
     width: 108px;
     height: 108px;
 }
 
-div.document-info{
+div.document-info {
     text-align: left;
     margin-left: 16px;
 }
 
-.left{
+.left {
     text-align: left;
 }
 
-.step{
+.step {
     display: block;
     width: 24px;
     height: 24px;
@@ -472,22 +482,22 @@ div.document-info{
     color: white;
 }
 
-.step-content{
+.step-content {
 
 }
 
-.cd-container{
+.cd-container {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     padding: 15px !important;
 }
 
-.step-title{
+.step-title {
     margin: 0 0 10px 0px !important;
     font-size: 20px !important;
 }
 
-.cd-timeline-block{
+.cd-timeline-block {
     margin: 20px !important;
 }
 
@@ -496,6 +506,7 @@ div.document-info{
     display: block;
     background-color: white;
 }
+
 .media-object img {
     max-width: none
 }
@@ -865,7 +876,7 @@ div.document-info{
     vertical-align: bottom
 }
 
-.group-title{
+.group-title {
     font-size: 22px;
     font-family: Roboto;
     margin-top: 16px;
@@ -910,24 +921,24 @@ div.document-info{
     clear: both
 }
 
-.vertical-sub{
+.vertical-sub {
     vertical-align: sub;
 }
 
-.no-magin{
+.no-magin {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
 
-.content-padding{
+.content-padding {
     padding: 20px 40px 40px 40px !important;
 }
 
-.link-docs{
+.link-docs {
     width: 100%;
 }
 
-.letter-padding{
+.letter-padding {
     padding: 30px !important;
 }
 
@@ -954,30 +965,69 @@ div.document-info{
 }
 
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
-#search-btn{
+#search-btn {
     color: white !important;
     right: -85px !important;
     margin-top: -1px !important;
     border-radius: 0 2px 2px 0!important;
 }
 
+nav .search-box {
+    /*width: 64px;*/
+}
 
+nav.black .input-field label.active i,
+nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
+    color: #212121;
+}
+
+nav .search-box .input-field input {
+    background-color: #fff;
+    height: 64px;
+    width: calc(100% - 8rem);
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
