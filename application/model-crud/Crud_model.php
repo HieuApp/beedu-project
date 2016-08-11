@@ -352,7 +352,6 @@ class Crud_model extends CI_Model {
 
         $this->_set_where($where);
 
-
         if ($this->soft_delete) {
             $result = $this->_database->update($this->_table . " AS " . $this->_table_alias,
                 array($this->_table_alias . "." . $this->soft_delete_key => TRUE));
@@ -384,7 +383,6 @@ class Crud_model extends CI_Model {
 
         return $result;
     }
-
 
     /**
      * Truncates the table
@@ -722,7 +720,6 @@ class Crud_model extends CI_Model {
         if ($this->skip_validation) {
             return $data;
         }
-
         if (!empty($validate)) {
             $this->load->library('form_validation');
             $this->form_validation->reset_validation();

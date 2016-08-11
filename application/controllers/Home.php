@@ -51,8 +51,14 @@ class Home extends Guest_layout {
         $data["student_class"] = $list_image[5]->file;
         $data["library"] = $list_image[6]->file;
 
-        $list_document_newest = $this->m_documents->get_list_filter([], [], [], 3);
-        $data["documents"] = $list_document_newest;
+        $list_document_newest = $this->m_documents->get_list_filter([], [], [], 3, '', 'created_on');// sap xep tu cu den moi
+        $data["documents_newest"] = $list_document_newest;
+
+        $list_document_downloaded = $this->m_documents->get_list_filter([], [], [], 3, '', 'count_downloaded');// sap xep tu cu den moi
+        $data["documents_hotest"] = $list_document_downloaded;
+
+        $list_document_special = $this->m_documents->get_list_filter([], [], [], 3, '', 'created_on');// sap xep tu cu den moi
+        $data["documents_special"] = $list_document_special;
 
         $list_class = $this->m_classes->get_all();
         $data["classes"] = $list_class;
