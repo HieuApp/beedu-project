@@ -142,7 +142,7 @@
                     <div class="col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Mới nhất</h4>
                         <?php foreach ($documents as $document) { ?>
-                            <div class="media-object">
+                            <div class="media-object card">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail icon-file"
@@ -170,7 +170,7 @@
                     <div class=" col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Tải nhiều nhất</h4>
                         <?php foreach ($documents as $document) { ?>
-                            <div class="media-object">
+                            <div class="media-object card">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail icon-file"
@@ -198,7 +198,7 @@
                     <div class=" col s12 m6 l4 medium-4 columns">
                         <h4 class="group-title">Chọn lọc</h4>
                         <?php foreach ($documents as $document) { ?>
-                            <div class="media-object">
+                            <div class="media-object card">
                                 <div class="media-object-section">
                                     <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                                         <img class="thumbnail icon-file"
