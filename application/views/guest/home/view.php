@@ -23,7 +23,7 @@
     <div class="section section-method">
         <!--   Icon Section   -->
         <div class="row">
-            <h4 class="menu-title header col s12 light">Phương pháp học Beedu</h4>
+            <h4 class="menu-title header col s12 light center">Phương pháp học Beedu</h4>
             <div class="col s12 m12 l12">
                 <section id="cd-timeline" class="cd-container">
                     <div class="cd-timeline-block">
@@ -71,8 +71,10 @@
                             <p class="no-magin"><?php echo $learning_method_content_4; ?></p>
                         </div>
                     </div>
-                    <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
-                       class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
+                    <div class="center">
+                        <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
+                           class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
+                    </div>
                 </section>
             </div>
         </div>
@@ -136,10 +138,10 @@
     <div class="container section-library" id="edu_library">
         <div class="secsion">
             <div class="row">
-                <h4 class="header col s12 light">Thư viện</h4>
+                <h4 class="header col s12 light center">Thư viện</h4>
 
                 <div class="row">
-                    <div class="col s12 m6 l4 medium-4 columns">
+                    <div class="col s12 m6 l4 medium-4 columns center">
                         <h4 class="group-title">Mới nhất</h4>
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object card">
@@ -167,7 +169,7 @@
                             <?php
                         } ?>
                     </div>
-                    <div class=" col s12 m6 l4 medium-4 columns">
+                    <div class=" col s12 m6 l4 medium-4 columns center">
                         <h4 class="group-title">Tải nhiều nhất</h4>
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object card">
@@ -195,7 +197,7 @@
                             <?php
                         } ?>
                     </div>
-                    <div class=" col s12 m6 l4 medium-4 columns">
+                    <div class=" col s12 m6 l4 medium-4 columns center">
                         <h4 class="group-title">Chọn lọc</h4>
                         <?php foreach ($documents as $document) { ?>
                             <div class="media-object card">
@@ -224,8 +226,11 @@
                         } ?>
                     </div>
                 </div>
-                <a href="<?php echo base_url("docs_collection"); ?>" id="download-button"
-                   class="btn-large waves-effect waves-light teal lighten-1">Xem tài liệu khác</a>
+                <div class="center">
+                    <a href="<?php echo base_url("docs_collection"); ?>" id="download-button"
+                       class="btn-large waves-effect waves-light teal lighten-1">Xem tài liệu khác</a>
+                </div>
+
             </div>
         </div>
     </div>
@@ -272,7 +277,7 @@
                                 </div>
                             </div>
                             <button type="submit" id="send-feedback"
-                                    class="btn-large waves-effect waves-light teal lighten-1">Gửi
+                                    class="btn waves-effect waves-light teal lighten-1">Gửi
                             </button>
                             <div id="snackbar">Some text some message..</div>
                         </form>

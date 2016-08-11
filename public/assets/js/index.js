@@ -16,25 +16,25 @@ $(".question").on( "click", ".expand-more", function() {
 
 $(document).on("click", "#edu-method", function () {
     $('html, body').animate({
-        scrollTop: $(".section-method").offset().top
+        scrollTop: $(".section-method").offset().top - $("nav").height()
     }, 700);
 });
 
 $(document).on("click", "#edu-program", function () {
     $('html, body').animate({
-        scrollTop: $(".section-program").offset().top
+        scrollTop: $(".section-program").offset().top - $("nav").height()
     }, 700);
 });
 
 $(document).on("click", "#edu-library", function () {
     $('html, body').animate({
-        scrollTop: $(".section-library").offset().top
+        scrollTop: $(".section-library").offset().top - $("nav").height()
     }, 700);
 });
 
 $(document).on("click", "#answer-question", function () {
     $('html, body').animate({
-        scrollTop: $(".section-question").offset().top
+        scrollTop: $(".section-question").offset().top - $("nav").height()
     }, 700);
 });
 
