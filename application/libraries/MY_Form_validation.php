@@ -92,7 +92,6 @@ class MY_Form_validation extends CI_Form_validation {
             //we are safe just run as is
             $result = parent::run($group);
         }
-
         return $result;
     }
 

@@ -117,7 +117,7 @@ class M_documents extends Crud_manager {
                 'upload'                   => [//As config of File Upload Class in codeingiter
                     'upload_path'      => 'upload/file',
                     'allowed_types'    => 'pdf|txt|doc|docx',
-                    'max_size'         => '204800',
+                    'max_size'         => '20480000',
 //                    'min_size'         => '100',
 //                    'min_width'        => 300,
 //                    'min_height'       => 400,
@@ -133,7 +133,7 @@ class M_documents extends Crud_manager {
                     'width'  => 104,
                 ],
                 'watermarking'             => [ //As config of Image Manipulation Class(watermarking) in CodeIgniter (without source_image)
-                    'wm_text'          => 'Copyright 2016 - TrongPD',
+                    'wm_text'          => 'Copyright 2016 - MinhNV',
                     'wm_type'          => 'text',
                     'wm_font_size'     => '16',
                     'wm_font_color'    => 'ffffff',
