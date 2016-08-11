@@ -7,10 +7,10 @@
  */
 
 /*nav ul a,*/
-/*nav .brand-logo {*/
-/*color: white;*/
-/*left: 56px;*/
-/*}*/
+.brand-logo {
+color: white;
+left: 56px;
+}
 
 nav ul {
     position: absolute;
@@ -48,7 +48,7 @@ nav .search {
     top: 10%;
 }
 
-nav li:hover {
+.menu:hover {
     background-color: #BDBDBD;
 }
 
@@ -132,8 +132,12 @@ footer.page-footer {
 }
 
 /*Hieu custom css*/
-div, h2.menu-title {
+h2.menu-title {
     text-align: center;
+    font-family: Roboto;
+}
+
+body{
     font-family: Roboto;
 }
 
@@ -439,10 +443,8 @@ li.collection-item {
 
 .btn-download {
     height: 25px;
-    line-height: 0px;
-    float: right;
+    line-height: 0.5;
     padding: 10px;
-    margin-left: 16px;
 }
 
 .document-item {
@@ -1015,19 +1017,37 @@ div.document-info {
     border-radius: 0 2px 2px 0!important;
 }
 
-nav .search-box {
-    /*width: 64px;*/
-}
-
 nav.black .input-field label.active i,
 nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
     color: #212121;
 }
 
-nav .search-box .input-field input {
+.search-box .input-field input {
     background-color: #fff;
-    height: 64px;
+    height: 40px;
     width: calc(100% - 8rem);
     padding-left: 4rem;
     padding-right: 4rem;
+}
+
+.input-field input[type=search] {
+    display: -webkit-inline-box;
+}
+
+.margin-right-16{
+    margin-right: 16px;
+}
+
+.no-margin-bottom{
+    margin-bottom: 0px !important;
+}
+
+.img-empty{
+    padding: 30px;
+    width: 250px;
+}
+
+.empty-search{
+    height: 500px;
+    margin-top: 120px;
 }

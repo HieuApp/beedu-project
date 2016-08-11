@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col s12 m12 l8 offset-l2 card letter-padding">
-            <h5 class="black-text">Thư ngỏ</h5>
+            <h5 class="black-text center">Thư ngỏ</h5>
             <p class="letter-text">
                 Chào em, anh là Đức Anh - CEO của Akira Group.
                 <br>
@@ -17,7 +17,7 @@
                 ...<br>
                 Đều là những người xuất sắc, nhưng trước đây các anh chị chưa từng nhận ra điều đó.<br>
             </p>
-            <div ><img src="<?php echo base_url("assets/images/image-letter.jpg");?>" alt="Unsplashed background img 3"></div>
+            <div class="center"><img src="<?php echo base_url("assets/images/image-letter.jpg");?>" alt="Unsplashed background img 3"></div>
             <p class="letter-text">
                 Có quá nhiều tài năng đang bị lãng phí ở khắp nơi, khi một người sinh ra để làm việc A nhưng lại cứ đâm đầu vào việc B. Tệ hơn là chính các bạn cũng không biết điều gì là tốt nhất với mình. Nhiều khi lờ mờ cảm nhận được nhưng cũng không biết liệu nếu mình thay đổi thì có thật sự tốt hơn ko, hay là sẽ lại rơi vào 1 cái C, D, E... còn tệ hơn cái B?
                 <br>
@@ -37,7 +37,9 @@
                 Và anh tin rằng em cũng có thể làm được điều như vậy!
             </p>
             <p class="author-sign">Đức Anh</p>
-            <a class="waves-effect waves-light btn" href="<?php echo base_url("home#edu_method"); ?>">Xem phương pháp học</a>
+            <div class="center">
+                <a class="waves-effect waves-light btn" href="<?php echo base_url("home#edu_method"); ?>">Xem phương pháp học</a>
+            </div>
         </div>
     </div>
 </div>

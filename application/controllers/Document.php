@@ -58,6 +58,9 @@ class Document extends Guest_layout {
         }
         $data_result["document_by_category"] = $data;
         $content = $this->load->view("guest/home/search_result", $data_result, TRUE);
+        if(sizeof($data) == 0){
+            $content = $this->load->view("guest/home/search_not_found", $data_result, TRUE);
+        }
         $this->show_page($content);
     }
 
