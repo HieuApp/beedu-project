@@ -1,4 +1,4 @@
-<footer class="page-footer teal" id="intro_beedu">
+<footer class="page-footer grey darken-3" id="intro_beedu">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
