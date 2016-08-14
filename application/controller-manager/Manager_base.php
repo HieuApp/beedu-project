@@ -337,7 +337,6 @@ abstract class Manager_base extends Admin_layout {
             return FALSE;
         }
 
-
         if (!isset($data["save_link"])) {
             $data["save_link"] = site_url($this->name["class"] . "/edit_save");
         }
@@ -371,7 +370,6 @@ abstract class Manager_base extends Admin_layout {
 
         $this->master_page($content, $head_page, $title);
     }
-
 
     /**
      * Hàm hiển thị bảng quản lý cơ sở dữ liệu

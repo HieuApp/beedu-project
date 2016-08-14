@@ -133,7 +133,7 @@ class M_documents extends Crud_manager {
                     'width'  => 104,
                 ],
                 'watermarking'             => [ //As config of Image Manipulation Class(watermarking) in CodeIgniter (without source_image)
-                    'wm_text'          => 'Copyright 2016 - TrongPD',
+                    'wm_text'          => 'Copyright 2016 - MinhNV',
                     'wm_type'          => 'text',
                     'wm_font_size'     => '16',
                     'wm_font_color'    => 'ffffff',

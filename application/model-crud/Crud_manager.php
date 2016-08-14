@@ -49,7 +49,6 @@ class Crud_manager extends Crud_model {
                     $this->form_validation->add_error($field, $error);
                     return FALSE;
                 }
-
             }
         }
         return $form_data;
