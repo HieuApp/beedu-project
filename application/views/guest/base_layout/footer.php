@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">Beedu.vn</h5>
+                <h5 class="white-text center">Beedu.vn</h5>
                 <p class="light-text"><?php echo $beedu_info; ?></p>
             </div>
             <div class="col l6 s12">

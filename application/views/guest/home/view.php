@@ -27,7 +27,7 @@
             <div class="col s12 m12 l12">
                 <section id="cd-timeline" class="cd-container">
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-picture">
+                        <div class="cd-timeline-img cd-picture center">
                             <span class="step">1</span>
                         </div>
                         <div class="cd-timeline-content">
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-movie">
+                        <div class="cd-timeline-img cd-movie center">
                             <span class="step">2</span>
                         </div>
 
@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-picture">
+                        <div class="cd-timeline-img cd-picture center">
                             <span class="step">3</span>
                         </div>
 
@@ -62,8 +62,8 @@
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-location">
-                            <span class="step">4</span>
+                        <div class="cd-timeline-img cd-location center">
+                            <span class=" step">4</span>
                         </div>
 
                         <div class="cd-timeline-content">

@@ -49,22 +49,23 @@ $("#feedback-form").submit(function (event) {
     var questionVal = $("#textarea1").val();
     var emailVal = $("#email").val();
     var url = $(this).attr("action");
-    $.post( url, { question: questionVal, email: emailVal })
-        .done(function( data ) {
-            if(data == "error"){
-                $("div#snackbar").html("Có lỗi xảy ra, vui lòng thử lại");
-                var x = document.getElementById("snackbar");
-                x.className = "show";
-                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }else {
-                var x = document.getElementById("snackbar");
-                $("div#snackbar").html("Câu hỏi đã được gửi đi");
-                x.className = "show";
-                setTimeout(function(){
-                    x.className = x.className.replace("show", ""); }, 3000);
-                $("#textarea1").val("");
-                $("#email").val("");
-            }
-        });
-
+    if(questionVal != "" && emailVal != ""){
+        $.post( url, { question: questionVal, email: emailVal })
+            .done(function( data ) {
+                if(data == "error"){
+                    $("div#snackbar").html("Có lỗi xảy ra, vui lòng thử lại");
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                }else {
+                    var x = document.getElementById("snackbar");
+                    $("div#snackbar").html("Câu hỏi đã được gửi đi");
+                    x.className = "show";
+                    setTimeout(function(){
+                        x.className = x.className.replace("show", ""); }, 3000);
+                    $("#textarea1").val("");
+                    $("#email").val("");
+                }
+            });
+    }
 });
