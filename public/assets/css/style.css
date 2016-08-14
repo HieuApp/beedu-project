@@ -336,10 +336,6 @@ img.link-end {
     left: 350px;;
 }
 
-.valign-wrapper {
-    background: rgba(0, 0, 0, 0.3);
-}
-
 .label-form {
     text-align: left;
 }
@@ -1060,4 +1056,32 @@ nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field 
 
 .input-field input{
     font-size: 1rem !important;
+}
+
+.margin-top-80{
+    margin-top: 80px;
+}
+
+body{
+    background-color: #E0E0E0;
+}
+
+#cd-timeline::before{
+    background: #757575;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.video-border{
+    border: 3px solid #ffffff;
+}
+
+.bottom-20{
+    margin-bottom: 20px;
+}
+
+.translateY-20{
+    transform: translateY(20%);
 }

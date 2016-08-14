@@ -1,15 +1,20 @@
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+<div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot ">
         <div class="container">
-            <br><br>
-            <h1 class="header center teal-text text-lighten-2">Beedu.vn</h1>
-            <div class="row center">
-                <h5 class="header col s12 light"><?php echo $introduce_title; ?></h5>
+            <div class="row ">
+                <div class="col s12 m4 l7 center bottom-20">
+                    <h5 class="header col s12 grey-text text-darken-3"><?php echo $introduce_title; ?></h5>
+                    <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
+                       class="btn-large waves-effect waves-light blue">Xem thêm</a>
+                </div>
+
+                <div class="col s12 m4 l5 center">
+                    <iframe width="420" height="240" class="video-border"
+                            src="https://www.youtube.com/embed/1mHjMNZZvFo?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+
             </div>
-            <div class="row center">
-                <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
-                   class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
-            </div>
+
         </div>
     </div>
 
@@ -30,7 +35,7 @@
                         <div class="cd-timeline-img cd-picture center">
                             <span class="step">1</span>
                         </div>
-                        <div class="cd-timeline-content">
+                        <div class="cd-timeline-content z-depth-1">
                             <h2 class="step-title"><?php echo $learning_method_1; ?></h2>
                             <p class="no-magin"><?php echo $learning_method_content_1; ?></p>
 
@@ -42,7 +47,7 @@
                             <span class="step">2</span>
                         </div>
 
-                        <div class="cd-timeline-content">
+                        <div class="cd-timeline-content z-depth-1">
                             <h2 class="step-title"><?php echo $learning_method_2; ?></h2>
                             <p class="no-magin"><?php echo $learning_method_content_2; ?></p>
 
@@ -54,7 +59,7 @@
                             <span class="step">3</span>
                         </div>
 
-                        <div class="cd-timeline-content">
+                        <div class="cd-timeline-content z-depth-1">
                             <h2 class="step-title"><?php echo $learning_method_3; ?></h2>
                             <p class="no-magin"><?php echo $learning_method_content_3; ?></p>
 
@@ -66,7 +71,7 @@
                             <span class=" step">4</span>
                         </div>
 
-                        <div class="cd-timeline-content">
+                        <div class="cd-timeline-content z-depth-1">
                             <h2 class="step-title"><?php echo $learning_method_4; ?></h2>
                             <p class="no-magin"><?php echo $learning_method_content_4; ?></p>
                         </div>
