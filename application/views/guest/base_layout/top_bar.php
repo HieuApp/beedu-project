@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-    <nav class="black override">
+    <nav class="grey darken-3 override">
         <div class="nav-wrapper">
             <a id="logo-container" href="<?php echo base_url("home"); ?>" class="brand-logo">BEEDU.VN</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse white-text"><i
@@ -11,8 +11,7 @@
                         <div class="input-field">
                             <input name="key" id="search" type="search" placeholder="Tìm kiếm đề thi, tài liệu..."
                                    required>
-                            <label for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
+                            <i class="material-icons ">search</i>
                         </div>
                     </form>
                 </li>

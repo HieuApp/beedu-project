@@ -31,7 +31,7 @@
             </p>
             <p class="author-sign">Đức Anh</p>
             <div class="center">
-                <a class="waves-effect waves-light btn" href="<?php echo base_url("home#edu_method"); ?>">Xem phương pháp học</a>
+                <a class="waves-effect waves-light btn blue" href="<?php echo base_url("home#edu_method"); ?>">Xem phương pháp học</a>
             </div>
 
         </div>

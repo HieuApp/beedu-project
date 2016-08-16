@@ -1,15 +1,20 @@
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+<div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot ">
         <div class="container">
-            <br><br>
-            <h1 class="header center teal-text text-lighten-2">Beedu.vn</h1>
-            <div class="row center">
-                <h5 class="header col s12 light"><?php echo $introduce_title; ?></h5>
+            <div class="row valign-wrapper">
+                <div class="col s12 m4 l7 center bottom-20">
+                    <h5 class="header col s12 grey-text text-darken-3"><?php echo $introduce_title; ?></h5>
+                    <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
+                       class="btn-large waves-effect waves-light blue">Xem thêm</a>
+                </div>
+
+                <div class="col s12 m4 l5 center">
+                    <iframe width="420" height="240" class="video-border"
+                            src="https://www.youtube.com/embed/1mHjMNZZvFo?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+
             </div>
-            <div class="row center">
-                <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
-                   class="btn-large waves-effect waves-light teal lighten-1">Xem thêm</a>
-            </div>
+
         </div>
     </div>
 
@@ -27,53 +32,65 @@
             <div class="col s12 m12 l12">
                 <section id="cd-timeline" class="cd-container">
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-picture center">
+                        <div class="cd-timeline-img cd-picture center" id="step-1">
                             <span class="step">1</span>
                         </div>
-                        <div class="cd-timeline-content">
-                            <h2 class="step-title"><?php echo $learning_method_1; ?></h2>
-                            <p class="no-magin"><?php echo $learning_method_content_1; ?></p>
+                        <div class="cd-timeline-content z-depth-1">
+                            <h2 id="method-1" class="step-title "><b><?php echo $learning_method_1; ?></b></h2>
+                            <p class="no-magin grey-text text-darken-3" >
+                                <?php echo $learning_method_content_1 . "..."; ?>
+                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                            </p>
 
                         </div>
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-movie center">
+                        <div class="cd-timeline-img cd-picture center" id="step-2">
                             <span class="step">2</span>
                         </div>
 
-                        <div class="cd-timeline-content">
-                            <h2 class="step-title"><?php echo $learning_method_2; ?></h2>
-                            <p class="no-magin"><?php echo $learning_method_content_2; ?></p>
+                        <div class="cd-timeline-content z-depth-1">
+                            <h2 id="method-2" class="step-title "><b><?php echo $learning_method_2; ?></b></h2>
+                            <p class="no-magin grey-text text-darken-3">
+                                <?php echo $learning_method_content_2 . "..."; ?>
+                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                            </p>
 
                         </div>
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-picture center">
+                        <div class="cd-timeline-img cd-picture center" id="step-3">
                             <span class="step">3</span>
                         </div>
 
-                        <div class="cd-timeline-content">
-                            <h2 class="step-title"><?php echo $learning_method_3; ?></h2>
-                            <p class="no-magin"><?php echo $learning_method_content_3; ?></p>
+                        <div class="cd-timeline-content z-depth-1 ">
+                            <h2 id="method-3" class="step-title "><b><?php echo $learning_method_3; ?></b></h2>
+                            <p class="no-magin grey-text text-darken-3">
+                                <?php echo $learning_method_content_3 . "..."; ?>
+                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                            </p>
 
                         </div>
                     </div>
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-location center">
+                        <div class="cd-timeline-img cd-picture center" id="step-4">
                             <span class=" step">4</span>
                         </div>
 
-                        <div class="cd-timeline-content">
-                            <h2 class="step-title"><?php echo $learning_method_4; ?></h2>
-                            <p class="no-magin"><?php echo $learning_method_content_4; ?></p>
+                        <div class="cd-timeline-content z-depth-1 ">
+                            <h2 id="method-4" class="step-title "><b><?php echo $learning_method_4; ?></b></h2>
+                            <p class="no-magin grey-text text-darken-3">
+                                <?php echo $learning_method_content_4 . "..."; ?>
+                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                            </p>
                         </div>
                     </div>
                     <div class="center">
                         <a href="<?php echo base_url("register_trial"); ?>" id="download-button"
-                           class="btn-large waves-effect waves-light teal lighten-1">Đăng ký học thử</a>
+                           class="btn-large waves-effect waves-light blue">Đăng ký học thử</a>
                     </div>
                 </section>
             </div>
@@ -88,7 +105,7 @@
         <div class="container">
             <div class="row center">
 
-                <h5 class="header col s12 light">Chương trình học được nghiên cứu và phát triển theo các
+                <h5 class="header col s12 grey-text text-darken-3">Chương trình học được nghiên cứu và phát triển theo các
                     nền giáo dục hàng đầu thế giới</h5>
             </div>
         </div>
@@ -138,11 +155,11 @@
     <div class="container section-library" id="edu_library">
         <div class="secsion">
             <div class="row">
-                <h4 class="header col s12 light center">Thư viện</h4>
+                <h4 class="header col s12 grey-text text-darken-3 center">Thư viện</h4>
 
                 <div class="row">
                     <div class="col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title">Mới nhất</h4>
+                        <h4 class="group-title grey-text text-darken-3">Mới nhất</h4>
                         <?php foreach ($documents_newest as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -170,7 +187,7 @@
                         } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title">Tải nhiều nhất</h4>
+                        <h4 class="group-title grey-text text-darken-3">Tải nhiều nhất</h4>
                         <?php foreach ($documents_hotest as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -198,7 +215,7 @@
                         } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title">Chọn lọc</h4>
+                        <h4 class="group-title grey-text text-darken-3">Chọn lọc</h4>
                         <?php foreach ($documents_special as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -228,7 +245,7 @@
                 </div>
                 <div class="center">
                     <a href="<?php echo base_url("docs_collection"); ?>" id="download-button"
-                       class="btn-large waves-effect waves-light teal lighten-1">Xem tài liệu khác</a>
+                       class="btn-large waves-effect waves-light blue">Xem tài liệu khác</a>
                 </div>
 
             </div>
@@ -277,7 +294,7 @@
                                 </div>
                             </div>
                             <button type="submit" id="send-feedback"
-                                    class="btn waves-effect waves-light teal lighten-1">Gửi
+                                    class="btn waves-effect waves-light blue">Gửi
                             </button>
                             <div id="snackbar">Some text some message..</div>
                         </form>

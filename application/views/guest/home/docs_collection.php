@@ -22,7 +22,7 @@
                         <br><span><?php echo $document->count_downloaded; ?> downloads</span>
 
                         <a href="<?php echo base_url("document/download" . "/" . $document->id); ?>"
-                                class="waves-effect waves-light btn btn-download">Download
+                                class="waves-effect waves-light btn btn-download blue">Download
                         </a>
                     </div>
 
