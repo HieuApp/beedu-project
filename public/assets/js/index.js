@@ -69,3 +69,48 @@ $("#feedback-form").submit(function (event) {
             });
     }
 });
+
+$(document).ready(function(){
+    var count = 5;
+    setInterval(function () {
+        var step = count % 4;
+        for(var i = 1; i <= 4; i++){
+            var e = document.getElementById("step-"+i);
+            e.classList.remove("step-active");
+            var childs = e.childNodes;
+            childs[1].classList.remove("white-text");
+            var title = document.getElementById("method-"+i);
+            title.classList.remove("blue-text");
+
+        }
+        switch (step){
+            case 1:
+                var element = document.getElementById("step-1");
+                element.className += " step-active";
+                var title = document.getElementById("method-1");
+                title.className += " blue-text";
+                break;
+            case 2:
+                var element = document.getElementById("step-2");
+                element.className += " step-active";
+                var title = document.getElementById("method-2");
+                title.className += " blue-text";
+                break;
+            case 3:
+                var element = document.getElementById("step-3");
+                element.className += " step-active";
+                var title = document.getElementById("method-3");
+                title.className += " blue-text";
+                break;
+            case 0:
+                var element = document.getElementById("step-4");
+                element.className += " step-active";
+                var title = document.getElementById("method-4");
+                title.className += " blue-text";
+                break;
+        }
+        var childs = element.childNodes;
+        childs[1].className += " white-text";
+        count++;
+    }, 2500);
+});

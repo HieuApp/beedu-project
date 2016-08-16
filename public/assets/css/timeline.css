@@ -136,7 +136,8 @@ header h1 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px #2196F3;
+    /*box-shadow: 0 0 0 4px #2196F3, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);*/
 }
 .cd-timeline-img img {
     display: block;
@@ -149,13 +150,7 @@ header h1 {
     margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-    background: #75ce66;
-}
-.cd-timeline-img.cd-movie {
-    background: #c03b44;
-}
-.cd-timeline-img.cd-location {
-    background: #f0ca45;
+    background: #E0E0E0;
 }
 @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
