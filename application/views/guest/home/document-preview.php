@@ -5,7 +5,7 @@
                 <h4 class="light document-name"><b><?php echo $document->name; ?></b></h4>
                 <p class="description"><?php echo $document->description; ?></p>
             </div>
-            <div class="col s12 m4 l8">
+            <div class="col s12 m8 l8">
                 <iframe
                     src="http://docs.google.com/gview?url=http://beedu.vn/upload/file/ac88e0e4c5181702c22a8ad4a6890625.doc&embedded=true"
                     style="width:100%; height:500px;" frameborder="0"></iframe>

@@ -8,21 +8,21 @@
             </a>
         </div>
         <hr>
-        <div class="row no-margin-bottom">
+        <div class="row">
             <?php
             if (count($document_category_item['list_document_in_category'])) {
                 foreach ($document_category_item['list_document_in_category'] as $document) {
                     ?>
                     <div class="col s6 m6 l2 center">
-                        <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
-                            <img class="thumbnail" src="<?php echo base_url($document->avatar); ?>">
+                        <a class="block" href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
+                            <img class="thumbnail icon-file-large" src="<?php echo base_url($document->avatar); ?>">
                         </a>
                         <a href="<?php echo base_url("document_preview/view_detail" . "/" . $document->id); ?>">
                             <?php echo $document->name; ?></a></h5>
                         <br><span><?php echo $document->count_downloaded; ?> downloads</span>
 
                         <a href="<?php echo base_url("document/download" . "/" . $document->id); ?>"
-                                class="waves-effect waves-light btn btn-download">Download
+                                class="waves-effect waves-light btn btn-download blue">Download
                         </a>
                     </div>
 
