@@ -80,21 +80,23 @@ class M_classes extends Crud_manager {
                     'wm_padding'       => '20',
                 ],
             ],
-            'table'    => TRUE,
+            'table'    => [
+                'callback_render_data' => "preview_img",
+            ],
         ],
         'detail'      => [
             'field'    => 'detail',
             'db_field' => 'detail',
             'label'    => 'Mô tả chi tiết',
             'rules'    => 'required',
-            'form'     => [
-                'type' => 'text',
-            ],
-            'filter'   => [
-                'search_type' => 'like',
-                'type'        => 'text',
-            ],
-            'table'    => TRUE,
+//            'form'     => [
+//                'type' => 'text',
+//            ],
+//            'filter'   => [
+//                'search_type' => 'like',
+//                'type'        => 'text',
+//            ],
+//            'table'    => TRUE,
         ],
         'price'       => [
             'field'    => 'price',
@@ -123,5 +125,12 @@ class M_classes extends Crud_manager {
 
     public function __construct() {
         parent::__construct();
+    }
+
+    public function preview_img($origin_column_value, $column_name, &$record, $column_data, $caller) {
+        $src = base_url($record->avatar);
+        return "<div>
+                  <img src='$src' width='150' height='100'>
+                </div>";
     }
 }
