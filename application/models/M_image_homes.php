@@ -78,7 +78,9 @@ class M_image_homes extends Crud_manager {
                     'wm_padding'       => '20',
                 ],
             ],
-            'table'    => TRUE,
+            'table'    => [
+                'callback_render_data' => "preview_img",
+            ],
         ],
         'note'        => [
             'field'    => 'note',
@@ -107,6 +109,13 @@ class M_image_homes extends Crud_manager {
 
     public function __construct() {
         parent::__construct();
+    }
+
+    public function preview_img($origin_column_value, $column_name, &$record, $column_data, $caller) {
+        $src = base_url($record->file);
+        return "<div>
+                  <img src='$src' width='150' height='100'>
+                </div>";
     }
 
 }
