@@ -122,9 +122,10 @@
                 <h4 class="header col s12 light">Chương trình học</h4>
 
                 <div class="row">
+                    <?php $count = 1;?>
                     <?php foreach ($classes as $class) { ?>
                         <div class="col s12 m6 l3">
-                            <div class="card blue-grey darken-1">
+                            <div class="card blue-grey lighten-1" id="program-<?php echo $count;?>">
                                 <div class="card-image">
                                     <img class="card-img-content"
                                          src="<?php echo base_url($class->avatar); ?>">
@@ -142,6 +143,7 @@
                                 </div>
                             </div>
                         </div>
+                        <?php $count = $count + 1;?>
                     <?php } ?>
                 </div>
 

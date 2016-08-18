@@ -113,4 +113,23 @@ $(document).ready(function(){
         childs[1].className += " white-text";
         count++;
     }, 2500);
+
+    setColorCard();
+    $(".modal-trigger").leanModal();
+});
+
+function setColorCard() {
+    var card2 = document.getElementById("program-2");
+    card2.className += "blue-grey darken-1";
+    var card3 = document.getElementById("program-3");
+    card3.className += "blue-grey darken-2";
+    var card4 = document.getElementById("program-4");
+    card4.className += "blue-grey darken-4";
+}
+
+$(document).on("click", ".btn-download", function () {
+    FB.ui({
+        method: 'share',
+        href: "https://developers.facebook.com/docs/",
+    }, function(response){});
 });
