@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2016 at 12:37 PM
+-- Generation Time: Aug 18, 2016 at 06:29 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 7.0.3
 
@@ -60,7 +60,7 @@ CREATE TABLE `ci_migrations` (
 --
 
 INSERT INTO `ci_migrations` (`version`) VALUES
-(20160809223200);
+(20160817220400);
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,15 @@ INSERT INTO `documents` (`id`, `name`, `category_id`, `avatar`, `description`, `
 (3, 'Tuyển tập đại số', 1, 'upload/avatar/c7d99d863e584553ab49c10f42e5caf2.jpg', 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/dfff3465aa9442c15dcecb444c181a1c.docx', 'HieuTT', 1234, '', '2016-08-03 15:05:41'),
 (4, 'Tuyển tập đề thi Toán khối B', 2, 'upload/avatar/3b7b0c84916e568283221915f88b4e22.jpg', 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/180ac1e9a5ccf7fc1f0dbe68e14ae381.docx', 'miunh', 123, '', '2016-08-03 15:06:11'),
 (5, 'Đề thi học sinh giỏi lớp 9 THPT chuyên HN', 3, 'upload/avatar/ec416699c02566963e49f6c871b12ce3.jpg', 'Tuyển tập các đề thi chọn đội tuyển của trường chuyên Hà Nam', 'upload/file/e11c24ea18a9f5aabe9660342f84aba0.docx', 'Mun', 134, '', '2016-08-06 09:25:50'),
-(6, 'Đề thi giữa kì đại số', 1, 'upload/avatar/5637b9b41f2124e836076479e2153773.jpg', 'Đây là tài liệu thứ 2 của phần đề thi toán 12 môn đại số', 'upload/file/b93dd3d2ebe281834f75e4c10297cdf9.docx', 'HieuTT', 112, '', '2016-08-06 09:59:07');
+(6, 'Đề thi giữa kì đại số', 1, 'upload/avatar/5637b9b41f2124e836076479e2153773.jpg', 'Đây là tài liệu thứ 2 của phần đề thi toán 12 môn đại số', 'upload/file/b93dd3d2ebe281834f75e4c10297cdf9.docx', 'HieuTT', 112, '', '2016-08-06 09:59:07'),
+(7, 'a', 4, 'upload/avatar/62787eb4de878707cdc80aae79754a13.jpg', 'a', 'upload/file/5909dd968dbf28e85b9915f89bb34cee.pdf', 'a', 11, 'a', '2016-08-11 15:44:09'),
+(8, 'a', 5, 'upload/avatar/546d8d88d1bbd45a440ee086ad1ddb7d.jpg', 'a', 'upload/file/minh_test.docx', 'dm', 123, 'a', '2016-08-11 16:10:22'),
+(9, 'a', 4, 'upload/avatar/e48fd89e7f59bbf14f3e8fae7dac2711.jpg', 'a', 'upload/file/Đề_thi_cuối_năm_toán_7.pdf', 'a', 1234, 'a', '2016-08-11 16:12:28'),
+(10, 'v', 3, 'upload/avatar/cc4023381fbd86b70509a99c855b38e4.jpg', 'v', 'upload/file/De_thi_CN_Web_20122013.pdf', 'v', 123, 'v', '2016-08-11 16:20:14'),
+(11, 'b', 2, 'upload/avatar/e72d10d1c60654cfd9a2500d6ec71a4e.jpg', 'n', 'upload/file/De_thi_Cong_nghe_Web_2012.pdf', 's', 2, 'b', '2016-08-11 16:20:33'),
+(12, 'pt', 4, 'upload/avatar/a327b1c95aeed78771671d9a156bbb42.jpg', 'py', 'upload/file/answer-phân-tán.doc', 'as', 123, '', '2016-08-11 16:22:22'),
+(13, 'm', 1, 'upload/avatar/f4d0b6d81211433ca2e64bae0de6292f.jpg', 'a', 'upload/file/Shared_Memory_Consistency_Models.pdf', 'a', 3, '', '2016-08-11 16:22:44'),
+(14, 'a', 1, 'upload/avatar/da41d5ce0b30092b5d93f59b4104b4ba.jpg', 'a', 'upload/file/bac094e5170e6351dfb07529974b99c9.pdf', 'a', 123, 'thật là vc', '2016-08-11 16:55:20');
 
 -- --------------------------------------------------------
 
@@ -288,6 +296,7 @@ CREATE TABLE `system_configs` (
   `id` int(9) NOT NULL,
   `name` varchar(255) NOT NULL,
   `value` mediumtext NOT NULL,
+  `module` int(11) DEFAULT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -295,43 +304,43 @@ CREATE TABLE `system_configs` (
 -- Dumping data for table `system_configs`
 --
 
-INSERT INTO `system_configs` (`id`, `name`, `value`, `created_on`) VALUES
-(1, 'Màu nền', 'red', '2016-07-29 14:07:00'),
-(2, 'Menu 1', 'Phương pháp học Beedu', '2016-07-29 14:10:01'),
-(3, 'Menu 2', 'Chương trình học', '2016-07-29 14:10:29'),
-(4, 'Menu 3', 'Thư viện', '2016-07-29 14:10:42'),
-(5, 'Menu 4', 'Hỏi đáp', '2016-07-29 14:10:51'),
-(6, 'Menu 5', 'Giới thiệu', '2016-07-29 14:11:07'),
-(7, 'Câu giới thiệu', 'Thay đổi tư duy giáo dục của người Việt.', '2016-07-29 14:11:57'),
-(8, 'Phương pháp học 1', 'Thói quen tự học', '2016-07-29 14:15:11'),
-(9, 'Phương pháp học 2', 'Giáo dục từng cá nhân', '2016-07-29 14:17:27'),
-(10, 'Phương pháp học 3', 'Giáo trình phù hợp', '2016-07-29 14:17:44'),
-(11, 'Phương pháp học 4', 'Giáo viên nhiệt huyết', '2016-07-29 14:17:59'),
-(12, 'Nội dung phương pháp học 1', 'Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh tự tìm tòi cách giải cho các bài tập đó', '2016-07-29 14:19:01'),
-(13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', '2016-07-29 14:19:15'),
-(14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', '2016-07-29 14:19:27'),
-(15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', '2016-07-29 14:19:41'),
-(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối. Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.', '2016-08-01 14:46:28'),
-(17, 'Địa chỉ liên hệ', 'Tầng 8, Tòa nhà Sông Hồng Land, 165 Thái Hà, Đống Đa, Hà Nội', '2016-08-06 09:34:55'),
-(18, 'Số điện thoại liên hệ', '01674 077049', '2016-08-06 09:35:27'),
-(19, 'Email liên hệ', 'support_miu@beedu.vn', '2016-08-06 09:35:45'),
-(20, 'Link facebook ở dưới cuối trang', 'https://www.facebook.com/miu.hac.3', '2016-08-11 02:27:37'),
-(21, 'Link youtube của fanpage', 'https://www.youtube.com/channel/UCwppdrjsBPAZg5_cUwQjfMQ', '2016-08-11 02:28:14'),
-(22, 'Link google +', 'https://plus.google.com/u/0/102468796914763030485/about/p/pub', '2016-08-11 02:29:19'),
-(23, 'Trang chi tiết Beedu: Câu chào', 'Chào em, anh là Đức Anh - CEO của Akira Group. ', '2016-08-11 02:32:19'),
-(24, 'Trang chi tiết Beedu: Đoạn văn 1', 'Có 1 thứ gắn bó với cuộc sống của mỗi chúng ta còn nhiều hơn cả "gia đình" và "bạn đời", đó chính là "công việc". Còn điều gì kinh khủng hơn khi phải dành 8h-10h mỗi ngày để làm 1 công việc mà mình không yêu thích hoặc không thực sự phù hợp với sở trường của mình? "Công việc nào là phù hợp nhất với mình?" luôn là câu hỏi lớn với nhiều bạn trẻ. Và anh tin đó cũng là câu hỏi của em.', '2016-08-11 02:32:40'),
-(25, 'Trang chi tiết Beedu: Đoạn văn 2', 'Ở tại Akira, anh đã chứng kiến:', '2016-08-11 02:33:22'),
-(26, 'Trang chi tiết Beedu: list 1', '- Giám đốc vận hành từng nghĩ rằng mình chỉ có thể làm Salesman.', '2016-08-11 02:34:01'),
-(27, 'Trang chi tiết Beedu: list 2', '- Giám đốc sản phẩm từng muốn vào làm chuyên viên nhân sự.', '2016-08-11 02:34:13'),
-(28, 'Trang chi tiết Beedu: list 3', '- Trưởng phòng marketing từng xin làm chăm sóc học viên.', '2016-08-11 02:34:22'),
-(29, 'Trang chi tiết Beedu: list 4', '- Phụ trách kinh doanh thì từng định làm phi công lái máy bay khi ra trường theo sự sắp xếp của gia đình. ...', '2016-08-11 02:34:52'),
-(30, 'Trang chi tiết Beedu:kết đoạn 2', 'Đều là những người xuất sắc, nhưng trước đây các anh chị chưa từng nhận ra điều đó.', '2016-08-11 02:35:08'),
-(31, 'Trang chi tiết Beedu:Đoạn 3', 'Có quá nhiều tài năng đang bị lãng phí ở khắp nơi, khi một người sinh ra để làm việc A nhưng lại cứ đâm đầu vào việc B. Tệ hơn là chính các bạn cũng không biết điều gì là tốt nhất với mình. Nhiều khi lờ mờ cảm nhận được nhưng cũng không biết liệu nếu mình thay đổi thì có thật sự tốt hơn ko, hay là sẽ lại rơi vào 1 cái C, D, E... còn tệ hơn cái B? ', '2016-08-11 02:35:58'),
-(32, 'Trang chi tiết Beedu:Đoạn 4', 'Albert Einstein từng nói: Nếu bạn đánh giá một con cá bằng khả năng leo cây thì cả đời (con cá đó) sẽ nghĩ rằng mình ngu ngốc. ', '2016-08-11 02:36:09'),
-(33, 'Trang chi tiết Beedu:Đoạn 5', 'Điều anh tự hào nhất ở Akira, đó là xây dựng được môi trường ở đó mọi người được làm đúng việc các bạn yêu thích và có năng khiếu. Chính vì vậy các nhân sự ở Akira tuy trẻ tuổi nhưng lại có thể làm được nhiều việc phi thường. Vice Director trẻ nhất khi nhận chức mới có 22 tuổi, Project Manager trẻ nhất mới 20 tuổi... Đơn giản là vì các bạn được làm đúng việc các bạn sinh ra để làm! Anh tin rằng ai cũng có tố chất để làm 1 việc gì đó phi thường hơn những người khác.', '2016-08-11 02:36:23'),
-(34, 'Trang chi tiết Beedu:Đoạn 6', 'Vì vậy Akira đã xây dựng một chương trình Akira Manager Trainee (AMT), dành riêng cho những Leader tương lai của Akira. Trong chương trình huấn luyện đặc biệt này, các bạn sẽ được tìm hiểu xem bản thân mình phù hợp với công việc gì và được trực tiếp tham gia các nhiệm vụ thực tế để xem mình có thực sự phù hợp với công việc đó không. Chỉ có trải nghiệm thực tế trên một môi trường làm việc thực mới giúp em biết được mình thật sự phù hợp với công việc đó hay không. Anh và đội ngũ Leader sẽ trực tiếp làm việc, định hướng và hướng dẫn em qua từng công việc cụ thể. ', '2016-08-11 02:36:36'),
-(35, 'Trang chi tiết Beedu:Đoạn 7', 'Chính nhờ phương pháp này, những Leader của Akira đều tìm được công việc phù hợp với sở thích và thế mạnh của bản thân. Từ đó có sự phát triển vượt bậc về năng lực, thăng tiến ầm ầm về sự nghiệp. Và những con người xuất sắc góp phần làm nên một tổ chức phát triển mạnh mẽ.  Và anh tin rằng em cũng có thể làm được điều như vậy!', '2016-08-11 02:36:47'),
-(36, 'Trang chi tiết Beedu: Tác giả', 'Miunh Hiun', '2016-08-11 02:37:10');
+INSERT INTO `system_configs` (`id`, `name`, `value`, `module`, `created_on`) VALUES
+(1, 'Màu nền', 'red', NULL, '2016-07-29 14:07:00'),
+(2, 'Menu 1', 'Phương pháp học Beedu', 0, '2016-07-29 14:10:01'),
+(3, 'Menu 2', 'Chương trình học', 0, '2016-07-29 14:10:29'),
+(4, 'Menu 3', 'Thư viện', 0, '2016-07-29 14:10:42'),
+(5, 'Menu 4', 'Hỏi đáp', 0, '2016-07-29 14:10:51'),
+(6, 'Menu 5', 'Giới thiệu', 0, '2016-07-29 14:11:07'),
+(7, 'Câu giới thiệu', 'Thay đổi tư duy giáo dục của người Việt.', 4, '2016-07-29 14:11:57'),
+(8, 'Phương pháp học 1', 'Thói quen tự học', 2, '2016-07-29 14:15:11'),
+(9, 'Phương pháp học 2', 'Giáo dục từng cá nhân', 2, '2016-07-29 14:17:27'),
+(10, 'Phương pháp học 3', 'Giáo trình phù hợp', 2, '2016-07-29 14:17:44'),
+(11, 'Phương pháp học 4', 'Giáo viên nhiệt huyết', 2, '2016-07-29 14:17:59'),
+(12, 'Nội dung phương pháp học 1', 'Beedu nêu bật tầm quan trọng của việc tự học và việc khuyến khích học sinh tự tìm tòi cách giải cho các bài tập đó', 2, '2016-07-29 14:19:01'),
+(13, 'Nội dung phương pháp học 2', 'Phương pháp giáo dục hướng cá nhân của Beedu giúp mỗi học sinh được học ở một trình độ phù hợp nhất với khả năng của từng em.', 2, '2016-07-29 14:19:15'),
+(14, 'Nội dung phương pháp học 3', 'Giáo trình BEEDU cho phép học sinh tiến bộ bằng chính khả năng của mình.', 2, '2016-07-29 14:19:27'),
+(15, 'Nội dung phương pháp học 4', 'Vai trò của Giáo viên BEEDU là phát triển tối đa tiềm năng của từng học sinh.', 2, '2016-07-29 14:19:41'),
+(16, 'giới thiệu về Beedu', 'Beedu trung tâm đào tạo từ xa vào bậc nhất của VN. Môi trường năng động sáng tạo sẽ giúp các bạn phát triển và trau dồi kiến thức. Tại Beedu, các bạn học tập được các kỹ năng tự học, kiểm tra kiến thức một cách chủ động nhất, hãy tự học thay vì chờ đợi hướng từ giáo viên một cách thụ động. Thông qua các kiến thức theo từng bước nhỏ, các bạn sẽ tự tin hơn khi đối mặt với những vấn đề khiến các bạn trước đây phải bối rối. Khi các bạn đăng ký học tại Beedu, bản thân các bạn sẽ được rèn luyện tự thay đổi bản thân, không theo những lối mòn trước kia đã kéo lùi khả năng tư duy của bạn.', 1, '2016-08-01 14:46:28'),
+(17, 'Địa chỉ liên hệ', 'Tầng 8, Tòa nhà Sông Hồng Land, 165 Thái Hà, Đống Đa, Hà Nội', 1, '2016-08-06 09:34:55'),
+(18, 'Số điện thoại liên hệ', '01674 077049', 1, '2016-08-06 09:35:27'),
+(19, 'Email liên hệ', 'support_miu@beedu.vn', 1, '2016-08-06 09:35:45'),
+(20, 'Link facebook ở dưới cuối trang', 'https://www.facebook.com/miu.hac.3', 1, '2016-08-11 02:27:37'),
+(21, 'Link youtube của fanpage', 'https://www.youtube.com/channel/UCwppdrjsBPAZg5_cUwQjfMQ', 1, '2016-08-11 02:28:14'),
+(22, 'Link google +', 'https://plus.google.com/u/0/102468796914763030485/about/p/pub', 1, '2016-08-11 02:29:19'),
+(23, 'Trang chi tiết Beedu: Câu chào', 'Chào em, anh là Đức Anh - CEO của Akira Group. ', 3, '2016-08-11 02:32:19'),
+(24, 'Trang chi tiết Beedu: Đoạn văn 1', 'Có 1 thứ gắn bó với cuộc sống của mỗi chúng ta còn nhiều hơn cả "gia đình" và "bạn đời", đó chính là "công việc". Còn điều gì kinh khủng hơn khi phải dành 8h-10h mỗi ngày để làm 1 công việc mà mình không yêu thích hoặc không thực sự phù hợp với sở trường của mình? "Công việc nào là phù hợp nhất với mình?" luôn là câu hỏi lớn với nhiều bạn trẻ. Và anh tin đó cũng là câu hỏi của em.', 3, '2016-08-11 02:32:40'),
+(25, 'Trang chi tiết Beedu: Đoạn văn 2', 'Ở tại Akira, anh đã chứng kiến:', 3, '2016-08-11 02:33:22'),
+(26, 'Trang chi tiết Beedu: list 1', '- Giám đốc vận hành từng nghĩ rằng mình chỉ có thể làm Salesman.', 3, '2016-08-11 02:34:01'),
+(27, 'Trang chi tiết Beedu: list 2', '- Giám đốc sản phẩm từng muốn vào làm chuyên viên nhân sự.', 3, '2016-08-11 02:34:13'),
+(28, 'Trang chi tiết Beedu: list 3', '- Trưởng phòng marketing từng xin làm chăm sóc học viên.', 3, '2016-08-11 02:34:22'),
+(29, 'Trang chi tiết Beedu: list 4', '- Phụ trách kinh doanh thì từng định làm phi công lái máy bay khi ra trường theo sự sắp xếp của gia đình. ...', 3, '2016-08-11 02:34:52'),
+(30, 'Trang chi tiết Beedu:kết đoạn 2', 'Đều là những người xuất sắc, nhưng trước đây các anh chị chưa từng nhận ra điều đó.', 3, '2016-08-11 02:35:08'),
+(31, 'Trang chi tiết Beedu:Đoạn 3', 'Có quá nhiều tài năng đang bị lãng phí ở khắp nơi, khi một người sinh ra để làm việc A nhưng lại cứ đâm đầu vào việc B. Tệ hơn là chính các bạn cũng không biết điều gì là tốt nhất với mình. Nhiều khi lờ mờ cảm nhận được nhưng cũng không biết liệu nếu mình thay đổi thì có thật sự tốt hơn ko, hay là sẽ lại rơi vào 1 cái C, D, E... còn tệ hơn cái B? ', 3, '2016-08-11 02:35:58'),
+(32, 'Trang chi tiết Beedu:Đoạn 4', 'Albert Einstein từng nói: Nếu bạn đánh giá một con cá bằng khả năng leo cây thì cả đời (con cá đó) sẽ nghĩ rằng mình ngu ngốc. ', 3, '2016-08-11 02:36:09'),
+(33, 'Trang chi tiết Beedu:Đoạn 5', 'Điều anh tự hào nhất ở Akira, đó là xây dựng được môi trường ở đó mọi người được làm đúng việc các bạn yêu thích và có năng khiếu. Chính vì vậy các nhân sự ở Akira tuy trẻ tuổi nhưng lại có thể làm được nhiều việc phi thường. Vice Director trẻ nhất khi nhận chức mới có 22 tuổi, Project Manager trẻ nhất mới 20 tuổi... Đơn giản là vì các bạn được làm đúng việc các bạn sinh ra để làm! Anh tin rằng ai cũng có tố chất để làm 1 việc gì đó phi thường hơn những người khác.', 3, '2016-08-11 02:36:23'),
+(34, 'Trang chi tiết Beedu:Đoạn 6', 'Vì vậy Akira đã xây dựng một chương trình Akira Manager Trainee (AMT), dành riêng cho những Leader tương lai của Akira. Trong chương trình huấn luyện đặc biệt này, các bạn sẽ được tìm hiểu xem bản thân mình phù hợp với công việc gì và được trực tiếp tham gia các nhiệm vụ thực tế để xem mình có thực sự phù hợp với công việc đó không. Chỉ có trải nghiệm thực tế trên một môi trường làm việc thực mới giúp em biết được mình thật sự phù hợp với công việc đó hay không. Anh và đội ngũ Leader sẽ trực tiếp làm việc, định hướng và hướng dẫn em qua từng công việc cụ thể. ', 3, '2016-08-11 02:36:36'),
+(35, 'Trang chi tiết Beedu:Đoạn 7', 'Chính nhờ phương pháp này, những Leader của Akira đều tìm được công việc phù hợp với sở thích và thế mạnh của bản thân. Từ đó có sự phát triển vượt bậc về năng lực, thăng tiến ầm ầm về sự nghiệp. Và những con người xuất sắc góp phần làm nên một tổ chức phát triển mạnh mẽ.  Và anh tin rằng em cũng có thể làm được điều như vậy!', 3, '2016-08-11 02:36:47'),
+(36, 'Trang chi tiết Beedu: Tác giả', 'Miunh Hiun', 3, '2016-08-11 02:37:10');
 
 -- --------------------------------------------------------
 
@@ -362,7 +371,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1470881931, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1471442803, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -463,7 +472,7 @@ ALTER TABLE `classes`
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `feedback_manages`
 --

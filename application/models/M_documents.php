@@ -86,7 +86,9 @@ class M_documents extends Crud_manager {
                     'wm_padding'       => '20',
                 ],
             ],
-            'table'    => TRUE,
+            'table'    => [
+                'callback_render_data' => "preview_img",
+            ],
         ],
         'description'      => [
             'field'    => 'description',
@@ -142,7 +144,7 @@ class M_documents extends Crud_manager {
                     'wm_padding'       => '20',
                 ],
             ],
-            'table'    => TRUE,
+//            'table'    => TRUE,
         ],
         'author'           => [
             'field'    => 'author',
@@ -204,5 +206,12 @@ class M_documents extends Crud_manager {
     public function join_categories_table() {
         $this->db->select($this->_table_alias . ".*, ct.name as category_name, ct.id as category_id");
         $this->db->join("categories as ct", $this->_table_alias . ".category_id=ct.id");
+    }
+
+    public function preview_img($origin_column_value, $column_name, &$record, $column_data, $caller) {
+        $src = base_url($record->avatar);
+        return "<div>
+                  <img src='$src' width='150' height='100'>
+                </div>";
     }
 }
