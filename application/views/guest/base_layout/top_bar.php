@@ -15,14 +15,15 @@
                         </div>
                     </form>
                 </li>
-                <li class="menu"><a href="<?php echo base_url("home#edu_method"); ?>" id="edu-method"><?php echo $menu_1; ?></a></li>
-                <li class="menu"><a href="<?php echo base_url("home#edu_program"); ?>" id="edu-program"><?php echo $menu_2; ?></a>
-                </li>
-                <li class="menu"><a href="<?php echo base_url("home#edu_library"); ?>" id="edu-library"><?php echo $menu_3; ?></a>
+                <li class="menu"><a href="<?php echo base_url("home#edu_method"); ?>"
+                                    id="edu-method"><?php echo $menu_1; ?></a></li>
+                <li class="menu"><a href="<?php echo base_url("home#edu_program"); ?>"
+                                    id="edu-program"><?php echo $menu_2; ?></a>
                 </li>
                 <li class="menu"><a href="<?php echo base_url("home#answer_question"); ?>"
-                       id="answer-question"><?php echo $menu_4; ?></a></li>
-                <li class="menu"><a href="<?php echo base_url("home#intro_beedu"); ?>" id="intro-beedu"><?php echo $menu_5; ?></a>
+                                    id="answer-question"><?php echo $menu_4; ?></a></li>
+                <li class="menu"><a href="<?php echo base_url("home#intro_beedu"); ?>"
+                                    id="intro-beedu"><?php echo $menu_5; ?></a>
                 </li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
