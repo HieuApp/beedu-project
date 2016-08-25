@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2016 at 06:29 AM
+-- Generation Time: Aug 25, 2016 at 05:50 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 7.0.3
 
@@ -34,17 +34,6 @@ CREATE TABLE `categories` (
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `categories`
---
-
-INSERT INTO `categories` (`id`, `name`, `description`, `note`, `created_on`) VALUES
-(1, 'Toán 12', 'Nơi đây quy tụ tất cả tài liệu đỉnh cao của môn Toán 12', 'test', '2016-07-19 16:39:02'),
-(2, 'Đề thi đại học', 'Chỗ này tuyển tập các đề thi đại học qua các năm', 'test ', '2016-07-19 16:39:22'),
-(3, 'Đề thi học sinh giỏi', 'Chứa đựng tất cả các đề thi học sinh giỏi của các tỉnh thành trong cả nước', '', '2016-08-03 15:07:23'),
-(4, 'Đề cương ôn tập', 'Tổng hợp đề cương ôn thi tốt nghiệp tất cả các môn qua tất cả các năm.', '', '2016-08-03 15:07:51'),
-(5, 'Đề thi Toeic', 'Chỗ này dành cho thánh nào muốn lên trình tiếng anh quốc tế nhanh nhất', '', '2016-08-03 15:08:24');
-
 -- --------------------------------------------------------
 
 --
@@ -60,7 +49,7 @@ CREATE TABLE `ci_migrations` (
 --
 
 INSERT INTO `ci_migrations` (`version`) VALUES
-(20160817220400);
+(20160825212600);
 
 -- --------------------------------------------------------
 
@@ -83,10 +72,10 @@ CREATE TABLE `classes` (
 --
 
 INSERT INTO `classes` (`id`, `name`, `description`, `avatar`, `detail`, `price`, `created_on`) VALUES
-(1, 'Lớp chuẩn', '10-15 học sinh/lớp', 'upload/avatar/ac3fd8b9e8dfc39f0fc782b802d786fa.jpg', 'Lớp này là rẻ nhất', '100.000đ/buổi', '2016-08-09 15:39:38'),
-(2, 'Lớp đảm bảo', '6 học sinh/lớp', 'upload/avatar/50c09cbb508c44332c8c348f5db73f2f.jpg', 'Lớp này thì ngon hơn', '150.000đ/buổi', '2016-08-09 15:40:13'),
-(3, 'Lớp chuyên sâu', '3 học sinh/lớp', 'upload/avatar/73e45b52088a9483b139e99253eff9cb.jpg', 'Lớp này toàn pro thôi', '250.000đ/buổi', '2016-08-09 15:40:50'),
-(4, 'Lớp 1-1', '1 giáo viên kèm 1 học sinh', 'upload/avatar/2778c94d77bb9c6f9524073356554044.jpg', 'Lớp này thì khỏi bàn', '500.00đ/buổi', '2016-08-09 15:41:26');
+(1, 'Lớp chuẩn', '10-15 học sinh/lớp', 'upload/avatar/67a49517d23f407c1e1d2e46a4c503db.jpg', 'Lớp này là rẻ nhất', '100.000đ/buổi', '2016-08-09 15:39:38'),
+(2, 'Lớp đảm bảo', '6 học sinh/lớp', 'upload/avatar/0c90026b54cdda4dca364d3d72c7c4bf.jpg', 'Lớp này thì ngon hơn', '150.000đ/buổi', '2016-08-09 15:40:13'),
+(3, 'Lớp chuyên sâu', '3 học sinh/lớp', 'upload/avatar/a5b6b6a71757cf2102a9e4a176808ec9.jpg', 'Lớp này toàn pro thôi', '250.000đ/buổi', '2016-08-09 15:40:50'),
+(4, 'Lớp 1-1', '1 giáo viên kèm 1 học sinh', 'upload/avatar/be8fa8fa165ab8f7110a037f64f6683a.jpg', 'Lớp này thì khỏi bàn', '500.00đ/buổi', '2016-08-09 15:41:26');
 
 -- --------------------------------------------------------
 
@@ -106,25 +95,6 @@ CREATE TABLE `documents` (
   `note` varchar(255) NOT NULL,
   `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `documents`
---
-
-INSERT INTO `documents` (`id`, `name`, `category_id`, `avatar`, `description`, `file`, `author`, `count_downloaded`, `note`, `created_on`) VALUES
-(2, 'đề thi tốt nghiệp 2014', 2, 'upload/avatar/b8ad207845b57f7d17f110e19d661244.jpg', 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/63c38400a3b075f3a3e8ff098f13321b.docx', 'miunh', 228, '', '2016-08-01 14:43:02'),
-(3, 'Tuyển tập đại số', 1, 'upload/avatar/c7d99d863e584553ab49c10f42e5caf2.jpg', 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/dfff3465aa9442c15dcecb444c181a1c.docx', 'HieuTT', 1234, '', '2016-08-03 15:05:41'),
-(4, 'Tuyển tập đề thi Toán khối B', 2, 'upload/avatar/3b7b0c84916e568283221915f88b4e22.jpg', 'Cùng thử sức với bộ đề thi Đại học khối A môn Toán cực hay. Hãy thử sức mình bằng cách bắt tay làm thử những bài tập toán trong bộ đề thi đại học hay và bổ ích sau.', 'upload/file/180ac1e9a5ccf7fc1f0dbe68e14ae381.docx', 'miunh', 123, '', '2016-08-03 15:06:11'),
-(5, 'Đề thi học sinh giỏi lớp 9 THPT chuyên HN', 3, 'upload/avatar/ec416699c02566963e49f6c871b12ce3.jpg', 'Tuyển tập các đề thi chọn đội tuyển của trường chuyên Hà Nam', 'upload/file/e11c24ea18a9f5aabe9660342f84aba0.docx', 'Mun', 134, '', '2016-08-06 09:25:50'),
-(6, 'Đề thi giữa kì đại số', 1, 'upload/avatar/5637b9b41f2124e836076479e2153773.jpg', 'Đây là tài liệu thứ 2 của phần đề thi toán 12 môn đại số', 'upload/file/b93dd3d2ebe281834f75e4c10297cdf9.docx', 'HieuTT', 112, '', '2016-08-06 09:59:07'),
-(7, 'a', 4, 'upload/avatar/62787eb4de878707cdc80aae79754a13.jpg', 'a', 'upload/file/5909dd968dbf28e85b9915f89bb34cee.pdf', 'a', 11, 'a', '2016-08-11 15:44:09'),
-(8, 'a', 5, 'upload/avatar/546d8d88d1bbd45a440ee086ad1ddb7d.jpg', 'a', 'upload/file/minh_test.docx', 'dm', 123, 'a', '2016-08-11 16:10:22'),
-(9, 'a', 4, 'upload/avatar/e48fd89e7f59bbf14f3e8fae7dac2711.jpg', 'a', 'upload/file/Đề_thi_cuối_năm_toán_7.pdf', 'a', 1234, 'a', '2016-08-11 16:12:28'),
-(10, 'v', 3, 'upload/avatar/cc4023381fbd86b70509a99c855b38e4.jpg', 'v', 'upload/file/De_thi_CN_Web_20122013.pdf', 'v', 123, 'v', '2016-08-11 16:20:14'),
-(11, 'b', 2, 'upload/avatar/e72d10d1c60654cfd9a2500d6ec71a4e.jpg', 'n', 'upload/file/De_thi_Cong_nghe_Web_2012.pdf', 's', 2, 'b', '2016-08-11 16:20:33'),
-(12, 'pt', 4, 'upload/avatar/a327b1c95aeed78771671d9a156bbb42.jpg', 'py', 'upload/file/answer-phân-tán.doc', 'as', 123, '', '2016-08-11 16:22:22'),
-(13, 'm', 1, 'upload/avatar/f4d0b6d81211433ca2e64bae0de6292f.jpg', 'a', 'upload/file/Shared_Memory_Consistency_Models.pdf', 'a', 3, '', '2016-08-11 16:22:44'),
-(14, 'a', 1, 'upload/avatar/da41d5ce0b30092b5d93f59b4104b4ba.jpg', 'a', 'upload/file/bac094e5170e6351dfb07529974b99c9.pdf', 'a', 123, 'thật là vc', '2016-08-11 16:55:20');
 
 -- --------------------------------------------------------
 
@@ -176,14 +146,15 @@ CREATE TABLE `image_homes` (
 --
 
 INSERT INTO `image_homes` (`id`, `title`, `description`, `file`, `note`, `created_on`) VALUES
-(1, 'Ảnh bìa giới thiệu đầu tiên', 'Đây là cái ảnh đầu tiên trên cùng của trang', 'upload/image/5dfd39988e18ab48e165e7d2bbdc2739.jpg', 'test phát 1', '2016-08-03 14:53:07'),
+(1, 'Ảnh bìa giới thiệu đầu tiên', 'Đây là cái ảnh đầu tiên trên cùng của trang', 'upload/image/eca8366027e88601b7c4c441ddb8646d.jpg', 'test phát 1', '2016-08-03 14:53:07'),
 (2, 'Ảnh đại diện phương pháp học 1', 'Đây là cái ảnh đại diện cho phương pháp học đầu tiên.', 'upload/image/41d3678f475963532f31b54908701b7c.jpg', 'đến chịu', '2016-08-03 14:56:19'),
 (3, 'Ảnh đại diện phương pháp học 2', 'Đây là cái ảnh đại diện cho phương pháp học thứ 2.', 'upload/image/05549a47375a7438e7d9eec85e751320.jpg', 'test tiếp', '2016-08-03 14:58:04'),
 (4, 'Ảnh đại diện phương pháp học 3', 'Đây là cái ảnh đại diện cho phương pháp học thứ 3.', 'upload/image/fddd4bfe77063a2637b1ac12b27f684a.jpg', '', '2016-08-03 14:58:42'),
 (5, 'Ảnh đại diện phương pháp học 4', 'Đây là cái ảnh đại diện cho phương pháp học thứ 4.', 'upload/image/70f7d62ac9373f9c66715313912903bb.jpg', '', '2016-08-03 14:59:04'),
-(6, 'Ảnh nền phương pháp học', 'Đây là cái ảnh nền thứ 2 trong trang', 'upload/image/cfe1d0621282ddd919abdb345433f68e.jpg', '', '2016-08-09 16:04:46'),
-(7, 'Ảnh nền thư viện', 'Đây là cái ảnh nền thứ 3 trong trang', 'upload/image/7ad63846b14216a54a9b991f274ecbcb.jpg', '', '2016-08-09 16:05:09'),
-(8, 'Ảnh nền trang Beedu-detail', 'Đây là cái ảnh ở giữa của trang chi tiết', 'upload/image/5b4138548f976cdb1a6a685867d94b0c.jpg', '', '2016-08-11 03:03:26');
+(6, 'Ảnh nền phương pháp học', 'Đây là cái ảnh nền thứ 2 trong trang', 'upload/image/c3cc724631e7927a0b01353c9f150596.jpg', '', '2016-08-09 16:04:46'),
+(7, 'Ảnh nền thư viện', 'Đây là cái ảnh nền thứ 3 trong trang', 'upload/image/db45507bec51ae1337ae94519e58e8f2.jpg', '', '2016-08-09 16:05:09'),
+(8, 'Ảnh nền trang Beedu-detail', 'Đây là cái ảnh ở giữa của trang chi tiết', 'upload/image/5b4138548f976cdb1a6a685867d94b0c.jpg', '', '2016-08-11 03:03:26'),
+(9, 'Ảnh ở giữa trang giới thiệu', 'Ảnh ở giữa trang giới thiệu, nằm ở giữa 2 đoạn văn', 'upload/image/9a4cc6b1fdbb87ae76e73209d7c8f6dd.jpg', '', '2016-08-25 15:00:41');
 
 -- --------------------------------------------------------
 
@@ -249,6 +220,31 @@ INSERT INTO `ion_users_groups` (`id`, `user_id`, `group_id`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `learning_method`
+--
+
+CREATE TABLE `learning_method` (
+  `id` int(9) NOT NULL,
+  `avatar` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(2550) NOT NULL,
+  `note` varchar(255) NOT NULL,
+  `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `learning_method`
+--
+
+INSERT INTO `learning_method` (`id`, `avatar`, `title`, `description`, `note`, `created_on`) VALUES
+(1, 'upload/avatar/400e869eda2865b9d39ea483d8f586d8.jpg', 'Nội dung chi tiết cho phương pháp học 1', 'miunh đại ka', 'có gì đâu mà note', '2016-08-25 14:46:01'),
+(2, 'upload/avatar/37709de9e2ef24be4283c3190fd99b90.jpg', 'Nội dung chi tiết cho phương pháp học 2', 'miunh đại ka phats 2', 'có gì đâu mà note', '2016-08-25 14:46:41'),
+(3, 'upload/avatar/88c24fb1ade78d6c5bf9f974cb1596ae.jpg', 'Nội dung chi tiết cho phương pháp học 3', 'miunh đại ka phats 3', 'có gì đâu mà note', '2016-08-25 14:46:47'),
+(4, 'upload/avatar/de3dea0f6b2136d5558cd1a86e1b7341.jpg', 'Nội dung chi tiết cho phương pháp học 4', 'miunh đại ka phats 4', 'có gì đâu mà note', '2016-08-25 14:46:54');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `notifications`
 --
 
@@ -306,12 +302,12 @@ CREATE TABLE `system_configs` (
 
 INSERT INTO `system_configs` (`id`, `name`, `value`, `module`, `created_on`) VALUES
 (1, 'Màu nền', 'red', NULL, '2016-07-29 14:07:00'),
-(2, 'Menu 1', 'Phương pháp học Beedu', 0, '2016-07-29 14:10:01'),
+(2, 'Menu 1', 'Giá trị', 0, '2016-07-29 14:10:01'),
 (3, 'Menu 2', 'Chương trình học', 0, '2016-07-29 14:10:29'),
 (4, 'Menu 3', 'Thư viện', 0, '2016-07-29 14:10:42'),
 (5, 'Menu 4', 'Hỏi đáp', 0, '2016-07-29 14:10:51'),
 (6, 'Menu 5', 'Giới thiệu', 0, '2016-07-29 14:11:07'),
-(7, 'Câu giới thiệu', 'Thay đổi tư duy giáo dục của người Việt.', 4, '2016-07-29 14:11:57'),
+(7, 'Câu giới thiệu', 'Phát minh lại Dạy học', 4, '2016-07-29 14:11:57'),
 (8, 'Phương pháp học 1', 'Thói quen tự học', 2, '2016-07-29 14:15:11'),
 (9, 'Phương pháp học 2', 'Giáo dục từng cá nhân', 2, '2016-07-29 14:17:27'),
 (10, 'Phương pháp học 3', 'Giáo trình phù hợp', 2, '2016-07-29 14:17:44'),
@@ -327,20 +323,10 @@ INSERT INTO `system_configs` (`id`, `name`, `value`, `module`, `created_on`) VAL
 (20, 'Link facebook ở dưới cuối trang', 'https://www.facebook.com/miu.hac.3', 1, '2016-08-11 02:27:37'),
 (21, 'Link youtube của fanpage', 'https://www.youtube.com/channel/UCwppdrjsBPAZg5_cUwQjfMQ', 1, '2016-08-11 02:28:14'),
 (22, 'Link google +', 'https://plus.google.com/u/0/102468796914763030485/about/p/pub', 1, '2016-08-11 02:29:19'),
-(23, 'Trang chi tiết Beedu: Câu chào', 'Chào em, anh là Đức Anh - CEO của Akira Group. ', 3, '2016-08-11 02:32:19'),
-(24, 'Trang chi tiết Beedu: Đoạn văn 1', 'Có 1 thứ gắn bó với cuộc sống của mỗi chúng ta còn nhiều hơn cả "gia đình" và "bạn đời", đó chính là "công việc". Còn điều gì kinh khủng hơn khi phải dành 8h-10h mỗi ngày để làm 1 công việc mà mình không yêu thích hoặc không thực sự phù hợp với sở trường của mình? "Công việc nào là phù hợp nhất với mình?" luôn là câu hỏi lớn với nhiều bạn trẻ. Và anh tin đó cũng là câu hỏi của em.', 3, '2016-08-11 02:32:40'),
-(25, 'Trang chi tiết Beedu: Đoạn văn 2', 'Ở tại Akira, anh đã chứng kiến:', 3, '2016-08-11 02:33:22'),
-(26, 'Trang chi tiết Beedu: list 1', '- Giám đốc vận hành từng nghĩ rằng mình chỉ có thể làm Salesman.', 3, '2016-08-11 02:34:01'),
-(27, 'Trang chi tiết Beedu: list 2', '- Giám đốc sản phẩm từng muốn vào làm chuyên viên nhân sự.', 3, '2016-08-11 02:34:13'),
-(28, 'Trang chi tiết Beedu: list 3', '- Trưởng phòng marketing từng xin làm chăm sóc học viên.', 3, '2016-08-11 02:34:22'),
-(29, 'Trang chi tiết Beedu: list 4', '- Phụ trách kinh doanh thì từng định làm phi công lái máy bay khi ra trường theo sự sắp xếp của gia đình. ...', 3, '2016-08-11 02:34:52'),
-(30, 'Trang chi tiết Beedu:kết đoạn 2', 'Đều là những người xuất sắc, nhưng trước đây các anh chị chưa từng nhận ra điều đó.', 3, '2016-08-11 02:35:08'),
-(31, 'Trang chi tiết Beedu:Đoạn 3', 'Có quá nhiều tài năng đang bị lãng phí ở khắp nơi, khi một người sinh ra để làm việc A nhưng lại cứ đâm đầu vào việc B. Tệ hơn là chính các bạn cũng không biết điều gì là tốt nhất với mình. Nhiều khi lờ mờ cảm nhận được nhưng cũng không biết liệu nếu mình thay đổi thì có thật sự tốt hơn ko, hay là sẽ lại rơi vào 1 cái C, D, E... còn tệ hơn cái B? ', 3, '2016-08-11 02:35:58'),
-(32, 'Trang chi tiết Beedu:Đoạn 4', 'Albert Einstein từng nói: Nếu bạn đánh giá một con cá bằng khả năng leo cây thì cả đời (con cá đó) sẽ nghĩ rằng mình ngu ngốc. ', 3, '2016-08-11 02:36:09'),
-(33, 'Trang chi tiết Beedu:Đoạn 5', 'Điều anh tự hào nhất ở Akira, đó là xây dựng được môi trường ở đó mọi người được làm đúng việc các bạn yêu thích và có năng khiếu. Chính vì vậy các nhân sự ở Akira tuy trẻ tuổi nhưng lại có thể làm được nhiều việc phi thường. Vice Director trẻ nhất khi nhận chức mới có 22 tuổi, Project Manager trẻ nhất mới 20 tuổi... Đơn giản là vì các bạn được làm đúng việc các bạn sinh ra để làm! Anh tin rằng ai cũng có tố chất để làm 1 việc gì đó phi thường hơn những người khác.', 3, '2016-08-11 02:36:23'),
-(34, 'Trang chi tiết Beedu:Đoạn 6', 'Vì vậy Akira đã xây dựng một chương trình Akira Manager Trainee (AMT), dành riêng cho những Leader tương lai của Akira. Trong chương trình huấn luyện đặc biệt này, các bạn sẽ được tìm hiểu xem bản thân mình phù hợp với công việc gì và được trực tiếp tham gia các nhiệm vụ thực tế để xem mình có thực sự phù hợp với công việc đó không. Chỉ có trải nghiệm thực tế trên một môi trường làm việc thực mới giúp em biết được mình thật sự phù hợp với công việc đó hay không. Anh và đội ngũ Leader sẽ trực tiếp làm việc, định hướng và hướng dẫn em qua từng công việc cụ thể. ', 3, '2016-08-11 02:36:36'),
-(35, 'Trang chi tiết Beedu:Đoạn 7', 'Chính nhờ phương pháp này, những Leader của Akira đều tìm được công việc phù hợp với sở thích và thế mạnh của bản thân. Từ đó có sự phát triển vượt bậc về năng lực, thăng tiến ầm ầm về sự nghiệp. Và những con người xuất sắc góp phần làm nên một tổ chức phát triển mạnh mẽ.  Và anh tin rằng em cũng có thể làm được điều như vậy!', 3, '2016-08-11 02:36:47'),
-(36, 'Trang chi tiết Beedu: Tác giả', 'Miunh Hiun', 3, '2016-08-11 02:37:10');
+(37, 'Tiêu đề', 'Thư ngỏ', 3, '2016-08-25 15:02:29'),
+(38, 'Đoạn văn 1', 'Có 1 thứ gắn bó với cuộc sống của mỗi chúng ta còn nhiều hơn cả "gia đình" và "bạn đời", đó chính là "công việc". Còn điều gì kinh khủng hơn khi phải dành 8h-10h mỗi ngày để làm 1 công việc mà mình không yêu thích hoặc không thực sự phù hợp với sở trường của mình? "Công việc nào là phù hợp nhất với mình?" luôn là câu hỏi lớn với nhiều bạn trẻ. Và anh tin đó cũng là câu hỏi của em.  Ở tại Akira, anh đã chứng kiến: - Giám đốc vận hành từng nghĩ rằng mình chỉ có thể làm Salesman. - Giám đốc sản phẩm từng muốn vào làm chuyên viên nhân sự. - Trưởng phòng marketing từng xin làm chăm sóc học viên. - Phụ trách kinh doanh thì từng định làm phi công lái máy bay khi ra trường theo sự sắp xếp của gia đình. ... Đều là những người xuất sắc, nhưng trước đây các anh chị chưa từng nhận ra điều đó.', 3, '2016-08-25 15:02:43'),
+(39, 'Đoạn văn 2', 'Có quá nhiều tài năng đang bị lãng phí ở khắp nơi, khi một người sinh ra để làm việc A nhưng lại cứ đâm đầu vào việc B. Tệ hơn là chính các bạn cũng không biết điều gì là tốt nhất với mình. Nhiều khi lờ mờ cảm nhận được nhưng cũng không biết liệu nếu mình thay đổi thì có thật sự tốt hơn ko, hay là sẽ lại rơi vào 1 cái C, D, E... còn tệ hơn cái B?  Albert Einstein từng nói: Nếu bạn đánh giá một con cá bằng khả năng leo cây thì cả đời (con cá đó) sẽ nghĩ rằng mình ngu ngốc.  Điều anh tự hào nhất ở Akira, đó là xây dựng được môi trường ở đó mọi người được làm đúng việc các bạn yêu thích và có năng khiếu. Chính vì vậy các nhân sự ở Akira tuy trẻ tuổi nhưng lại có thể làm được nhiều việc phi thường. Vice Director trẻ nhất khi nhận chức mới có 22 tuổi, Project Manager trẻ nhất mới 20 tuổi... Đơn giản là vì các bạn được làm đúng việc các bạn sinh ra để làm! Anh tin rằng ai cũng có tố chất để làm 1 việc gì đó phi thường hơn những người khác.  Vì vậy Akira đã xây dựng một chương trình Akira Manager Trainee (AMT), dành riêng cho những Leader tương lai của Akira. Trong chương trình huấn luyện đặc biệt này, các bạn sẽ được tìm hiểu xem bản thân mình phù hợp với công việc gì và được trực tiếp tham gia các nhiệm vụ thực tế để xem mình có thực sự phù hợp với công việc đó không. Chỉ có trải nghiệm thực tế trên một môi trường làm việc thực mới giúp em biết được mình thật sự phù hợp với công việc đó hay không. Anh và đội ngũ Leader sẽ trực tiếp làm việc, định hướng và hướng dẫn em qua từng công việc cụ thể.  Chính nhờ phương pháp này, những Leader của Akira đều tìm được công việc phù hợp với sở thích và thế mạnh của bản thân. Từ đó có sự phát triển vượt bậc về năng lực, thăng tiến ầm ầm về sự nghiệp. Và những con người xuất sắc góp phần làm nên một tổ chức phát triển mạnh mẽ. Và anh tin rằng em cũng có thể làm được điều như vậy! ', 3, '2016-08-25 15:02:57'),
+(40, 'Link youtube giới thiệu', 'https://www.youtube.com/embed/1mHjMNZZvFo', 4, '2016-08-25 15:09:09');
 
 -- --------------------------------------------------------
 
@@ -371,7 +357,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `name`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `deleted`) VALUES
-(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1471442803, 1, 0),
+(1, '127.0.0.1', 'administrator', 'Administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1472135975, 1, 0),
 (2, '::1', '', 'hieuApp', '$2y$08$TFqMessWz.wP4gJ4YWwHxOFQib1RK6S0Mq2mHrjd0qrZl5qcDlr7W', '', 'hieuapp@gmail.com', NULL, NULL, NULL, NULL, 1468556677, NULL, 1, 0),
 (3, '::1', '', 'a', '$2y$08$fP8Ko4wz9FAMDPSDfdzcnu2oMGRuQ9MOphrlt5YP2e5Vxvcuz5HCq', '', 'a@gmail.com', NULL, NULL, NULL, NULL, 1468556804, NULL, 1, 0);
 
@@ -431,6 +417,12 @@ ALTER TABLE `ion_users_groups`
   ADD KEY `fk_users_groups_groups1_idx` (`group_id`);
 
 --
+-- Indexes for table `learning_method`
+--
+ALTER TABLE `learning_method`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `notifications`
 --
 ALTER TABLE `notifications`
@@ -482,7 +474,7 @@ ALTER TABLE `feedback_manages`
 -- AUTO_INCREMENT for table `image_homes`
 --
 ALTER TABLE `image_homes`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `ion_groups`
 --
@@ -499,6 +491,11 @@ ALTER TABLE `ion_login_attempts`
 ALTER TABLE `ion_users_groups`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
+-- AUTO_INCREMENT for table `learning_method`
+--
+ALTER TABLE `learning_method`
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
@@ -512,7 +509,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `system_configs`
 --
 ALTER TABLE `system_configs`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `users`
 --
