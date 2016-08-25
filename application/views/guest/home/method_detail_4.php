@@ -1,7 +1,7 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row center">
+            <div class="row center valign-wrapper">
                 <div class="col s12 m4 l4">
                     <img class="img-circle" src="<?php echo base_url("upload/image/girl-study.jpg");?>">
                 </div>

@@ -109,11 +109,11 @@ nav.material-icons {
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
-        top: 40%;
+        /*top: 40%;*/
     }
 
     #index-banner .section {
-        top: 10%;
+        /*top: 10%;*/
     }
 }
 
