@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row valign-wrapper">
                 <div class="col s12 m4 l7 center bottom-20">
-                    <h5 class="header col s12 grey-text text-darken-3 font-40"><?php echo $introduce_title; ?></h5>
+                    <h5 class="header grey-text text-darken-3 font-40"><?php echo $introduce_title; ?></h5>
                     <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
                        class="btn-large waves-effect waves-light blue">Xem thêm</a>
                 </div>
@@ -263,7 +263,7 @@
     <div class="row ">
         <div class="col s12 center">
             <h4 class="header col s12 light menu-font">Hỏi đáp</h4>
-            <ul class="col s12 m4 l6 offset-l3 collapsible with-header question-support"
+            <ul class="col s12 m8 offset-m2 l6 offset-l3 collapsible with-header question-support"
                 data-collapsible="accordion">
                 <?php foreach ($questions as $question) {
                     ?>
