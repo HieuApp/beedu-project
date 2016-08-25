@@ -68,3 +68,9 @@ ERROR - 2016-08-25 17:05:38 --> Severity: Notice --> Undefined offset: 38 D:\xam
 ERROR - 2016-08-25 17:05:38 --> Severity: Notice --> Trying to get property of non-object D:\xamp\htdocs\beedu-project\application\controllers\Beedu_detail.php 27
 ERROR - 2016-08-25 17:08:44 --> 404 Page Not Found: Assets/plugins-bower
 ERROR - 2016-08-25 17:08:44 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:19:28 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:19:28 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:22:55 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:22:55 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:25:03 --> 404 Page Not Found: Assets/plugins-bower
+ERROR - 2016-08-25 17:25:03 --> 404 Page Not Found: Assets/plugins-bower

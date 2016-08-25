@@ -40,7 +40,7 @@
                             <h2 id="method-1" class="step-title "><b><?php echo $learning_method_1; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_1 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_1"); ?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/1"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -55,7 +55,7 @@
                             <h2 id="method-2" class="step-title "><b><?php echo $learning_method_2; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_2 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_2"); ?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/2"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -70,7 +70,7 @@
                             <h2 id="method-3" class="step-title "><b><?php echo $learning_method_3; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_3 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_3"); ?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/3"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -85,7 +85,7 @@
                             <h2 id="method-4" class="step-title "><b><?php echo $learning_method_4; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_4 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_4"); ?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/4"); ?>">Xem thêm</a>
                             </p>
                         </div>
                     </div>
