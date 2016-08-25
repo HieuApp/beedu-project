@@ -1,9 +1,9 @@
-<div id="index-banner" class="parallax-container valign-wrapper">
+<div id="index-banner" class="parallax-container valign-wrapper bg-hight">
     <div class="section no-pad-bot ">
         <div class="container">
             <div class="row valign-wrapper">
                 <div class="col s12 m4 l7 center bottom-20">
-                    <h5 class="header col s12 grey-text text-darken-3"><?php echo $introduce_title; ?></h5>
+                    <h5 class="header col s12 grey-text text-darken-3 font-40"><?php echo $introduce_title; ?></h5>
                     <a href="<?php echo base_url("beedu_detail"); ?>" id="download-button"
                        class="btn-large waves-effect waves-light blue">Xem thêm</a>
                 </div>
@@ -28,7 +28,7 @@
     <div class="section section-method">
         <!--   Icon Section   -->
         <div class="row">
-            <h4 class="menu-title header col s12 light center">Phương pháp học Beedu</h4>
+            <h4 class="menu-title header col s12 light center menu-font">Giá trị của Beedu</h4>
             <div class="col s12 m12 l12">
                 <section id="cd-timeline" class="cd-container">
                     <div class="cd-timeline-block">
@@ -39,7 +39,7 @@
                             <h2 id="method-1" class="step-title "><b><?php echo $learning_method_1; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3" >
                                 <?php echo $learning_method_content_1 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("method_detail_1");?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -54,7 +54,7 @@
                             <h2 id="method-2" class="step-title "><b><?php echo $learning_method_2; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_2 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("method_detail_2");?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -69,7 +69,7 @@
                             <h2 id="method-3" class="step-title "><b><?php echo $learning_method_3; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_3 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("method_detail_3");?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -84,7 +84,7 @@
                             <h2 id="method-4" class="step-title "><b><?php echo $learning_method_4; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_4 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("method_detail_4");?>">Xem thêm</a>
                             </p>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
         <div class="container">
             <div class="row center">
 
-                <h5 class="header col s12 grey-text text-darken-3">Chương trình học được nghiên cứu và phát triển theo các
+                <h5 class="header col s12 grey-text text-darken-3 font-30">Chương trình học được nghiên cứu và phát triển theo các
                     nền giáo dục hàng đầu thế giới</h5>
             </div>
         </div>
@@ -119,7 +119,7 @@
     <div class="section section-program">
         <div>
             <div class="col s12 m12 l12 center">
-                <h4 class="header col s12 light">Chương trình học</h4>
+                <h4 class="header col s12 light menu-font">Chương trình học</h4>
 
                 <div class="row">
                     <?php $count = 1;?>
@@ -157,11 +157,11 @@
     <div class="container section-library" id="edu_library">
         <div class="secsion">
             <div class="row">
-                <h4 class="header col s12 grey-text text-darken-3 center">Thư viện</h4>
+                <h4 class="header col s12 white-text center menu-font">Thư viện</h4>
 
                 <div class="row">
                     <div class="col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title grey-text text-darken-3">Mới nhất</h4>
+                        <h4 class="group-title white-text font-30">Mới nhất</h4>
                         <?php foreach ($documents_newest as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -189,7 +189,7 @@
                         } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title grey-text text-darken-3">Tải nhiều nhất</h4>
+                        <h4 class="group-title  white-text font-30">Hay nhất</h4>
                         <?php foreach ($documents_hotest as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -217,7 +217,7 @@
                         } ?>
                     </div>
                     <div class=" col s12 m6 l4 medium-4 columns center">
-                        <h4 class="group-title grey-text text-darken-3">Chọn lọc</h4>
+                        <h4 class="group-title  white-text font-30">Độc nhất</h4>
                         <?php foreach ($documents_special as $document) { ?>
                             <div class="media-object card">
                                 <div class="media-object-section">
@@ -260,7 +260,7 @@
 <div class="secsion section-question" id="answer_question">
     <div class="row ">
         <div class="col s12 center">
-            <h4 class="header col s12 light">Hỏi đáp</h4>
+            <h4 class="header col s12 light menu-font">Hỏi đáp</h4>
             <ul class="col s12 m4 l6 offset-l3 collapsible with-header question-support"
                 data-collapsible="accordion">
                 <?php foreach ($questions as $question) {
