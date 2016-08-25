@@ -115,7 +115,6 @@ $(document).ready(function(){
     }, 2500);
 
     setColorCard();
-    $(".modal-trigger").leanModal();
 });
 
 function setColorCard() {
@@ -128,8 +127,5 @@ function setColorCard() {
 }
 
 $(document).on("click", ".btn-download", function () {
-    FB.ui({
-        method: 'share',
-        href: "https://developers.facebook.com/docs/",
-    }, function(response){});
+
 });

@@ -2,24 +2,23 @@
     <nav class="grey darken-3 override">
         <div class="nav-wrapper">
             <a id="logo-container" href="<?php echo base_url("home"); ?>" class="brand-logo">BEEDU.VN</a>
+            <form id="form-search" action="<?php echo base_url("document/search"); ?>" method="POST"
+                  enctype="multipart/form-data" class="hide-on-med-and-down desktop-search search-box" role="form">
+                <div class="input-field">
+                    <input name="key" id="search" type="search" placeholder="Tìm kiếm đề thi, tài liệu..."
+                           required>
+                    <i class="material-icons ">search</i>
+                </div>
+            </form>
             <a href="#" data-activates="mobile-demo" class="button-collapse white-text"><i
                     class="white-text material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li class="search-box">
-                    <form id="form-search" action="<?php echo base_url("document/search"); ?>" method="POST"
-                          enctype="multipart/form-data" role="form">
-                        <div class="input-field">
-                            <input name="key" id="search" type="search" placeholder="Tìm kiếm đề thi, tài liệu..."
-                                   required>
-                            <i class="material-icons ">search</i>
-                        </div>
-                    </form>
-                </li>
                 <li class="menu"><a href="<?php echo base_url("home#edu_method"); ?>"
                                     id="edu-method"><?php echo $menu_1; ?></a></li>
                 <li class="menu"><a href="<?php echo base_url("home#edu_program"); ?>"
-                                    id="edu-program"><?php echo $menu_2; ?></a>
-                </li>
+                                    id="edu-program"><?php echo $menu_2; ?></a></li>
+                <li class="menu"><a href="<?php echo base_url("home#edu_library"); ?>"
+                                    id="edu-library"><?php echo $menu_3; ?></a></li>
                 <li class="menu"><a href="<?php echo base_url("home#answer_question"); ?>"
                                     id="answer-question"><?php echo $menu_4; ?></a></li>
                 <li class="menu"><a href="<?php echo base_url("home#intro_beedu"); ?>"

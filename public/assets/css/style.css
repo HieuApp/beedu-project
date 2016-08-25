@@ -1097,3 +1097,49 @@ body{
 .margin-top-40{
     margin-top: 40px;
 }
+
+.desktop-search{
+    position: absolute;
+    color: #fff;
+    margin-left: 250px;
+}
+
+@font-face {
+    font-family: "Beedu";
+    src: local(Beedu Normal), url("../font/beedu-font/Baomoi_gdi.woff");
+    src: url("../font/beedu-font/Baomoi_gdi.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Beedu_Bold";
+    src: local(Beedu Bold), url("../font/beedu-font/Baomoi-SemiBold_gdi.woff");
+    src: url("../font/beedu-font/Baomoi-SemiBold_gdi.woff") format("woff");
+    font-weight: normal;
+}
+
+html *{
+    font-family: Beedu;
+}
+
+.bg-hight{
+    min-height: 580px;
+}
+
+.menu-font{
+    font-size: 50px;
+}
+
+.font-40{
+    font-size: 40px;
+}
+
+.font-30{
+    font-size: 30px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}

@@ -3,17 +3,17 @@
 /**
  * Created by PhpStorm.
  * User: hieuapp
- * Date: 16/08/2016
- * Time: 23:33
+ * Date: 25/08/2016
+ * Time: 11:00
  */
-class Method_detail extends Guest_layout {
+class Method_detail_3 extends Guest_layout {
 
     function __construct() {
         parent::__construct();
     }
 
     public function index() {
-        $content = $this->load->view("guest/home/method_detail", null, TRUE);
+        $content = $this->load->view("guest/home/method_detail_3", null, TRUE);
         $this->show_page($content);
     }
 }
