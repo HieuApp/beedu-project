@@ -18,22 +18,13 @@ class Beedu_detail extends Guest_layout {
 
     public function index() {
         $result = $this->m_system_config->get_all();
+//        echo "<pre>";
+//        var_dump($result);
         $image = $this->m_image_homes->get_all();
-        $data["image"] = $image[7]->file;
-        $data["hello_content"] = $result[22]->value;
-        $data["para1"] = $result[23]->value;
-        $data["para2"] = $result[24]->value;
-        $data["para3"] = $result[25]->value;
-        $data["para4"] = $result[26]->value;
-        $data["para5"] = $result[27]->value;
-        $data["para6"] = $result[28]->value;
-        $data["para7"] = $result[29]->value;
-        $data["para8"] = $result[30]->value;
-        $data["para9"] = $result[31]->value;
-        $data["para10"] = $result[32]->value;
-        $data["para11"] = $result[33]->value;
-        $data["para12"] = $result[34]->value;
-        $data["author"] = $result[35]->value;
+        $data["image"] = $image[8]->file;
+        $data["title"] = $result[22]->value;
+        $data["par1"] = $result[23]->value;
+        $data["par2"] = $result[24]->value;
         $content = $this->load->view("guest/home/beedu_detail", $data, TRUE);
         $this->show_page($content);
     }

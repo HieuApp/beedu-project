@@ -10,7 +10,8 @@
 
                 <div class="col s12 m4 l5 center">
                     <iframe width="420" height="240" class="video-border"
-                            src="https://www.youtube.com/embed/1mHjMNZZvFo?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                            src="<?php echo $link_youtube_intro; ?>?autoplay=1" frameborder="0"
+                            allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -37,9 +38,9 @@
                         </div>
                         <div class="cd-timeline-content z-depth-1">
                             <h2 id="method-1" class="step-title "><b><?php echo $learning_method_1; ?></b></h2>
-                            <p class="no-magin grey-text text-darken-3" >
+                            <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_1 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_1");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/1"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -54,7 +55,7 @@
                             <h2 id="method-2" class="step-title "><b><?php echo $learning_method_2; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_2 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_2");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/2"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -69,7 +70,7 @@
                             <h2 id="method-3" class="step-title "><b><?php echo $learning_method_3; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_3 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_3");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/3"); ?>">Xem thêm</a>
                             </p>
 
                         </div>
@@ -84,7 +85,7 @@
                             <h2 id="method-4" class="step-title "><b><?php echo $learning_method_4; ?></b></h2>
                             <p class="no-magin grey-text text-darken-3">
                                 <?php echo $learning_method_content_4 . "..."; ?>
-                                <a href="<?php echo base_url("method_detail_4");?>">Xem thêm</a>
+                                <a href="<?php echo base_url("learning_method/view_method_detail/4"); ?>">Xem thêm</a>
                             </p>
                         </div>
                     </div>
@@ -105,7 +106,8 @@
         <div class="container">
             <div class="row center">
 
-                <h5 class="header col s12 grey-text text-darken-3 font-30">Chương trình học được nghiên cứu và phát triển theo các
+                <h5 class="header col s12 grey-text text-darken-3 font-30">Chương trình học được nghiên cứu và phát
+                    triển theo các
                     nền giáo dục hàng đầu thế giới</h5>
             </div>
         </div>
@@ -122,10 +124,10 @@
                 <h4 class="header col s12 light menu-font">Chương trình học</h4>
 
                 <div class="row">
-                    <?php $count = 1;?>
+                    <?php $count = 1; ?>
                     <?php foreach ($classes as $class) { ?>
                         <div class="col s12 m6 l3">
-                            <div class="card blue-grey lighten-1" id="program-<?php echo $count;?>">
+                            <div class="card blue-grey lighten-1" id="program-<?php echo $count; ?>">
                                 <div class="card-image">
                                     <img class="card-img-content"
                                          src="<?php echo base_url($class->avatar); ?>">
@@ -143,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php $count = $count + 1;?>
+                        <?php $count = $count + 1; ?>
                     <?php } ?>
                 </div>
 

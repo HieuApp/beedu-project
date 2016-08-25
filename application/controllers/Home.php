@@ -40,6 +40,7 @@ class Home extends Guest_layout {
         $data["learning_method_content_2"] = $result[12]->value;
         $data["learning_method_content_3"] = $result[13]->value;
         $data["learning_method_content_4"] = $result[14]->value;
+        $data["link_youtube_intro"]=$result[25]->value;
 
         $data["save_link"] = base_url("home/send_feedback");
 

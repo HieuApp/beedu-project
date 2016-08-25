@@ -3,11 +3,10 @@
         <div class="container">
             <div class="row center valign-wrapper">
                 <div class="col s12 m4 l4">
-                    <img class="img-circle" src="<?php echo base_url("upload/image/girl-study.jpg");?>">
+                    <img class="img-circle" src="<?php echo base_url($avatar); ?>">
                 </div>
                 <div class="col s12 m8 l8">
-                    <h5 class=" header col s12 grey-text text-darken-3">Chương trình học được nghiên cứu và phát triển theo các
-                        nền giáo dục hàng đầu thế giới</h5>
+                    <h5 class=" header col s12 grey-text text-darken-3"><?php echo $desc; ?></h5>
                 </div>
             </div>
         </div>
