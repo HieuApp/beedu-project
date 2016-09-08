@@ -147,12 +147,14 @@ class Documents extends Manager_base {
                 if ($this->input->post() && $id == "0") {
                     $list_id = $this->input->post("list_id");
                 } elseif ($id > 0) {
-                    $record_data = $this->model->get($id);
-                    $this->load->helper("file");
-                    delete_files(base_url($record_data->avatar));
-                    delete_files(base_url($record_data->file));
                     $list_id = Array($id);
                 }
+            }
+            foreach ($list_id as $id_delete) {
+                $record_data = $this->model->get($id_delete);
+                $this->load->helper("file");
+                delete_files(base_url($record_data->avatar));
+                delete_files(base_url($record_data->file));
             }
             $affected_row = $this->model->delete_many($list_id);
             if ($affected_row) {
