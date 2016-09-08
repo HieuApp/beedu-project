@@ -7,7 +7,7 @@
             </div>
             <div class="col s12 m8 l8">
                 <iframe
-                    src="<?php echo base_url("upload/file/77d3ac2ed1c61e7454366ebb70f9ffdc.pdf#toolbar=0");?>"
+                    src="<?php echo base_url("$document->file#toolbar=0"); ?>"
                     style="width:100%; height:700px;" frameborder="0"></iframe>
             </div>
             <div class="col s12 m4 l4">
@@ -25,7 +25,7 @@
             <i class="material-icons grey-text">file_download</i>
             <span class="grey-text margin-right-16"><?php echo $document->count_downloaded; ?></span>
             <a href="<?php echo base_url("document/download" . "/" . $document->id); ?>"
-                    class="waves-effect waves-light btn btn-download">Download
+               class="waves-effect waves-light btn btn-download">Download
             </a>
         </div>
     </div>
