@@ -22,7 +22,7 @@
                 Thư mục
             </label>
             <div class="col-sm-8 col-xs-12">
-                <select class="form-control sl-size" name="series_name">
+                <select class="form-control sl-size" name="category_id">
                     <?php foreach ($categories as $value => $value_display) {
                         $selected = ($value === "$record_data->category_id") ? "selected" : "";
                         echo "<option value='{$value}' $selected>{$value_display}</option>";

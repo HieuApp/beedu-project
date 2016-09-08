@@ -70,35 +70,57 @@ class Documents extends Manager_base {
         if (sizeof($data) == 0) {
             $data = $this->input->post();
         }
-        $config['upload_path'] = './upload/library/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size'] = '20480';
-        $config['max_width'] = '1024';
-        $config['max_height'] = '768';
-        $config['encrypt_name'] = TRUE;
-        if (!is_dir($config['upload_path'])) die("THE UPLOAD DIRECTORY DOES NOT EXIST");
-        $this->load->library('upload', $config);
-        if (!$this->upload->do_upload('new_path')) {
+        $config_img['upload_path'] = './upload/image/';
+        $config_img['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config_img['max_size'] = '20480';
+        $config_img['max_width'] = '1024';
+        $config_img['max_height'] = '768';
+        $config_img['encrypt_name'] = TRUE;
+        if (!is_dir($config_img['upload_path'])) die("THE UPLOAD DIRECTORY DOES NOT EXIST");
+        $this->load->library('upload', $config_img);
+        if (!$this->upload->do_upload('new_avatar')) {
             $image = NULL;
         } else {
-            $image = "upload/library/" . $this->upload->data()['file_name'];
+            $image = "upload/image/" . $this->upload->data()['file_name'];
         }
-        $img_lib_data = Array(
-            'desc' => $data['desc'],
-            'note' => $data['note'],
+        $config_file['upload_path'] = './upload/file/';
+        $config_file['allowed_types'] = 'pdf';
+        $config_file['max_size'] = '2048000';
+        $config_file['max_width'] = '1024';
+        $config_file['max_height'] = '768';
+        $config_file['encrypt_name'] = TRUE;
+        if (!is_dir($config_img['upload_path'])) die("THE UPLOAD DIRECTORY DOES NOT EXIST");
+        $this->load->library('upload', $config_file);
+        if (!$this->upload->do_upload('new_file')) {
+            $file = NULL;
+        } else {
+            $file = "upload/file/" . $this->upload->data()['file_name'];
+        }
+        $document_data = Array(
+            'name'             => $data['name'],
+            'category_id'      => $data['category_id'],
+            'description'      => $data['description'],
+            'author'           => $data['author'],
+            'count_downloaded' => $data['count_downloaded'],
+            'note'             => $data['note'],
         );
         if (!empty($image)) {
-            $img_lib_data['path'] = $image;
+            $document_data['avatar'] = $image;
         } else {
-            $img_lib_data['path'] = $data['path'];
+            $document_data['avatar'] = $data['avatar'];
         }
-        $update = $this->model->update($id, $img_lib_data, TRUE);
+        if (!empty($file)) {
+            $document_data['file'] = $file;
+        } else {
+            $document_data['file'] = $data['file'];
+        }
+        $update = $this->model->update($id, $document_data, TRUE);
         if ($update) {
             $data_return["key_name"] = $this->model->get_primary_key();
             $data_return["record"] = $this->standard_record_data($this->model->get($id));
             $data_return["state"] = 1; /* state = 1 : insert thành công */
             $data_return["msg"] = "Sửa bản ghi thành công.";
-            $data_return["redirect"] = base_url("admin/imglib");
+            $data_return["redirect"] = base_url("admin/documents");
             echo json_encode($data_return);
             return TRUE;
         } else {
