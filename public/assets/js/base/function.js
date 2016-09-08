@@ -31,12 +31,12 @@ function default_ajax_link(data, obj) {
 function permission_error(data, obj) {
     if (data.state != undefined && data.state == 0) {
         $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-            group: "alert-danger",
-            position: 'top-right',
-            sticky: false,
+            group        : "alert-danger",
+            position     : 'top-right',
+            sticky       : false,
             closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-            animateOpen: {
-                width: 'show',
+            animateOpen  : {
+                width : 'show',
                 height: 'show'
             }
         });
@@ -46,12 +46,12 @@ function permission_error(data, obj) {
 function default_data_table(data, obj) {
     if (data.state != undefined && data.state == 0) {
         $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-            group: "alert-danger",
-            position: 'top-right',
-            sticky: false,
+            group        : "alert-danger",
+            position     : 'top-right',
+            sticky       : false,
             closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-            animateOpen: {
-                width: 'show',
+            animateOpen  : {
+                width : 'show',
                 height: 'show'
             }
         });
@@ -134,12 +134,12 @@ function save_form_edit_response(data, form, button) {
     }
 
     $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-        group: jgrow,
-        position: 'top-right',
-        sticky: false,
+        group        : jgrow,
+        position     : 'top-right',
+        sticky       : false,
         closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-        animateOpen: {
-            width: 'show',
+        animateOpen  : {
+            width : 'show',
             height: 'show'
         }
     });
@@ -192,12 +192,12 @@ function save_form_add_response(data, form, button) {
     }
 
     $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-        group: jgrow,
-        position: 'top-right',
-        sticky: false,
+        group        : jgrow,
+        position     : 'top-right',
+        sticky       : false,
         closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-        animateOpen: {
-            width: 'show',
+        animateOpen  : {
+            width : 'show',
             height: 'show'
         }
     });
@@ -250,24 +250,24 @@ function get_form_add_response(data, obj) {
 function get_form_edit_response(data, obj) {
     if (data.state != "1") {
         $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-            group: "alert-danger",
-            position: 'top-right',
-            sticky: false,
+            group        : "alert-danger",
+            position     : 'top-right',
+            sticky       : false,
             closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-            animateOpen: {
-                width: 'show',
+            animateOpen  : {
+                width : 'show',
                 height: 'show'
             }
         });
     } else {
         if (!data.record_data) {
             $.jGrowl("<i class='icon16 i-checkmark-3'></i> Id không tồn tại", {
-                group: "alert-danger",
-                position: 'top-right',
-                sticky: false,
+                group        : "alert-danger",
+                position     : 'top-right',
+                sticky       : false,
                 closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-                animateOpen: {
-                    width: 'show',
+                animateOpen  : {
+                    width : 'show',
                     height: 'show'
                 }
             });
@@ -293,24 +293,24 @@ function get_form_edit_response(data, obj) {
 function get_data_view_response(data, obj) {
     if (data.state != 1) {
         $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-            group: "alert-danger",
-            position: 'top-right',
-            sticky: false,
+            group        : "alert-danger",
+            position     : 'top-right',
+            sticky       : false,
             closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-            animateOpen: {
-                width: 'show',
+            animateOpen  : {
+                width : 'show',
                 height: 'show'
             }
         });
     } else {
         if (!data.record_data) {
             $.jGrowl("<i class='icon16 i-checkmark-3'></i> Id không tồn tại", {
-                group: "alert-danger",
-                position: 'top-right',
-                sticky: false,
+                group        : "alert-danger",
+                position     : 'top-right',
+                sticky       : false,
                 closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-                animateOpen: {
-                    width: 'show',
+                animateOpen  : {
+                    width : 'show',
                     height: 'show'
                 }
             });
@@ -343,12 +343,12 @@ function action_response(data, obj) {
         group = "alert-danger";
     }
     $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-        group: group,
-        position: 'top-right',
-        sticky: false,
+        group        : group,
+        position     : 'top-right',
+        sticky       : false,
         closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-        animateOpen: {
-            width: 'show',
+        animateOpen  : {
+            width : 'show',
             height: 'show'
         }
     });
@@ -369,12 +369,12 @@ function delete_respone(data, obj) {
     }
 
     $.jGrowl("<i class='icon16 i-checkmark-3'></i> " + data.msg, {
-        group: group,
-        position: 'top-right',
-        sticky: false,
+        group        : group,
+        position     : 'top-right',
+        sticky       : false,
         closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-        animateOpen: {
-            width: 'show',
+        animateOpen  : {
+            width : 'show',
             height: 'show'
         }
     });
@@ -414,15 +414,15 @@ function default_form_submit_respone(data, form, button) {
     }
 
     $.jGrowl(data.msg, {
-        group: jgrow,
-        position: 'top-right',
-        sticky: false,
+        group        : jgrow,
+        position     : 'top-right',
+        sticky       : false,
         closeTemplate: '<i class="fa fa-times" aria-hidden="true"></i>',
-        animateOpen: {
-            width: 'show',
+        animateOpen  : {
+            width : 'show',
             height: 'show'
         },
-        afterOpen: function () {
+        afterOpen    : function () {
             if (data.redirect) {
                 window.location = data.redirect;
             }
@@ -507,12 +507,12 @@ function change_view_form() {
         self.val(self.attr("js_default_value"));
     });
     $('#input-upload-file').ace_file_input({
-        style: 'well',
-        btn_choose: 'Drop files here or click to choose',
-        btn_change: null,
-        no_icon: 'ace-icon fa fa-cloud-upload',
-        droppable: false,// to upload automatic when submit form
-        thumbnail: 'small'//large | fit
+        style        : 'well',
+        btn_choose   : 'Drop files here or click to choose',
+        btn_change   : null,
+        no_icon      : 'ace-icon fa fa-cloud-upload',
+        droppable    : false,// to upload automatic when submit form
+        thumbnail    : 'small'//large | fit
         //,icon_remove:null//set null, to hide remove/reset button
         /**,before_change:function(files, dropped) {
                          //Check an example below
@@ -564,9 +564,9 @@ function change_view_form() {
             .ace_file_input('update_settings',
                 {
                     'btn_choose': btn_choose,
-                    'no_icon': no_icon,
-                    'allowExt': whitelist_ext,
-                    'allowMime': whitelist_mime
+                    'no_icon'   : no_icon,
+                    'allowExt'  : whitelist_ext,
+                    'allowMime' : whitelist_mime
                 })
         file_input.ace_file_input('reset_input');
 
@@ -603,6 +603,40 @@ function change_view_form() {
             });
 
     });
+    $('#input-upload-img').ace_file_input({
+        style        : 'well',
+        btn_choose   : 'Drop files here or click to choose',
+        btn_change   : null,
+        no_icon      : 'ace-icon fa fa-picture-o',
+        allow_ext    : ["jpeg", "jpg", "png", "gif", "bmp"],
+        allow_mine   : ["image/jpg", "image/jpeg", "image/png", "image/gif", "image/bmp"],
+        droppable    : false,// to upload automatic when submit form
+        thumbnail    : 'small'//large | fit
+        //,icon_remove:null//set null, to hide remove/reset button
+        /**,before_change:function(files, dropped) {
+                         //Check an example below
+                         //or examples/file-upload.html
+                         return true;
+                         }*/
+        /**,before_remove : function() {
+                         return true;
+                         }*/
+        ,
+        preview_error: function (filename, error_code) {
+            console.log(thumbnail);
+            //name of the file that failed
+            //error_code values
+            //1 = 'FILE_LOAD_FAILED',
+            //2 = 'IMAGE_LOAD_FAILED',
+            //3 = 'THUMBNAIL_FAILED'
+            //alert(error_code);
+        }
+
+    }).on('change', function () {
+        // console.log($(this).data('ace_file_input'));
+        //console.log($(this).data('ace_input_files'));
+        //console.log($(this).data('ace_input_method'));
+    });
     $(".resizable").resizable({handles: "e, w"});
     $(".form-horizontal").find("select.select2").select2();
     $('.select2').addClass('tag-input-style');
@@ -629,14 +663,14 @@ function build_file_input() {
 
         var has_error = false;
         self.ace_file_input({
-            style: 'well',
-            btn_choose: 'Drop files here or click to choose',
-            btn_change: null,
-            no_icon: 'ace-icon fa fa-cloud-upload',
-            droppable: true,
-            thumbnail: 'small',//small | large | fit
-            allowExt: allow_ext,
-            maxSize: max_size,
+            style        : 'well',
+            btn_choose   : 'Drop files here or click to choose',
+            btn_change   : null,
+            no_icon      : 'ace-icon fa fa-cloud-upload',
+            droppable    : true,
+            thumbnail    : 'small',//small | large | fit
+            allowExt     : allow_ext,
+            maxSize      : max_size,
             before_change: function (file_list, droped) {
                 if (!has_error) {
                     self.closest(".form-group").find("label.help-block").hide();
@@ -700,7 +734,7 @@ function build_editor() {
 //                        ['TextColor', 'BGColor']
 //                    ],
                 height: '500px',
-                width: '774px'
+                width : '774px'
             });
         CKFinder.setupCKEditor(window[name], finder);
     });
