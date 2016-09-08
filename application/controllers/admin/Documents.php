@@ -132,6 +132,48 @@ class Documents extends Manager_base {
             return FALSE;
         }
     }
+    
+    public function delete($id = 0, $data = Array()) {
+        $id = intval($id);
+        if (FALSE) { //Kiểm tra phân quyền
+            redirect();
+            return FALSE;
+        }
+        $data_return["callback"] = "delete_respone";
+        if ($this->input->post() || $id > 0) {
+            if (isset($data["list_id"]) && sizeof($data["list_id"])) {
+                $list_id = $data["list_id"];
+            } else {
+                if ($this->input->post() && $id == "0") {
+                    $list_id = $this->input->post("list_id");
+                } elseif ($id > 0) {
+                    $record_data = $this->model->get($id);
+                    $this->load->helper("file");
+                    delete_files(base_url($record_data->avatar));
+                    delete_files(base_url($record_data->file));
+                    $list_id = Array($id);
+                }
+            }
+            $affected_row = $this->model->delete_many($list_id);
+            if ($affected_row) {
+                $data_return["list_id"] = $list_id;
+                $data_return["state"] = 1;
+                $data_return["msg"] = "Xóa bản ghi thành công";
+            } else {
+                $data_return["list_id"] = $list_id;
+                $data_return["state"] = 0;
+                $data_return["msg"] = "Bản ghi đã được xóa từ trước hoặc không thể bị xóa. Vui lòng tải lại trang!";
+            }
+
+            echo json_encode($data_return);
+            return TRUE;
+        } else {
+            $data_return["state"] = 0;
+            $data_return["msg"] = "Id không tồn tại";
+            echo json_encode($data_return);
+            return FALSE;
+        }
+    }
 
     public function add_action_button($origin_column_value, $column_name, &$record, $column_data, $caller) {
         $primary_key = $this->model->get_primary_key();

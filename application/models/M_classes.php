@@ -53,7 +53,7 @@ class M_classes extends Crud_manager {
                 'class'                    => 'ace_file_input',//Use ACE theme for file input
 //                'attr'         => 'data-disable_client_validate=1',//Disable validate in client
                 'upload'                   => [//As config of File Upload Class in codeingiter
-                    'upload_path'      => 'upload/avatar',
+                    'upload_path'      => 'upload/image',
                     'allowed_types'    => 'jpg|jpeg|png',
                     'max_size'         => '20480',
                     'min_size'         => '1',
