@@ -369,13 +369,12 @@ class Crud_model extends CI_Model {
      */
     public function delete_many($primary_values) {
         $primary_values = $this->trigger('before_delete', $primary_values);
-
-        $this->_database->where_in($this->primary_key, $primary_values);
-
         if ($this->soft_delete) {
-            $result = $this->_database->update($this->_table,
+            $this->_database->where_in($this->_table_alias . "." . $this->primary_key, $primary_values);
+            $result = $this->_database->update($this->_table . " AS " . $this->_table_alias,
                 array($this->_table_alias . "." . $this->soft_delete_key => TRUE));
         } else {
+            $this->_database->where_in($this->primary_key, $primary_values);
             $result = $this->_database->delete($this->_table);
         }
 
