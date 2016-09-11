@@ -25,11 +25,11 @@ abstract class Admin_layout extends Base_layout {
     }
 
     private function _set_side_bar_left() {
-        $menu[] = Array(
-            "text" => "Dashboard",
-            "icon" => "fa-tachometer",
-            "url"  => site_url('admin/user'),
-        );
+//        $menu[] = Array(
+//            "text" => "Dashboard",
+//            "icon" => "fa-tachometer",
+//            "url"  => site_url('admin/user'),
+//        );
         $menu[] = Array(
             "text"  => "Quản lý tài khoản",
             "icon"  => "fa-users",

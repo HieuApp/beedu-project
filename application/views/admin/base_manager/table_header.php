@@ -19,19 +19,3 @@
         </label>
     </div>
 </div>
-<div class="pull-right align-right  padding-10 no-padding-top no-padding-bottom header_action btn-group">
-    <button href="#" class="btn btn-sm btn-white btn-info ">
-        <i class="fa fa-th-list"></i>
-    </button>
-    <button href="#" class="btn btn-sm btn-white btn-info ">
-        <i class="fa fa-file-excel-o green"></i>
-    </button>
-
-    <button href="#" class="btn btn-sm btn-white btn-info ">
-        <i class="fa fa-file-pdf-o red"></i>
-    </button>
-    <button href="#" class="btn btn-sm btn-white btn-info ">
-        <i class="fa fa-print dark"></i>
-    </button>
-
-</div>
