@@ -141,7 +141,11 @@
                                     <p><?php echo $class->price; ?></p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="<?php echo base_url("register_trial"); ?>">Học thử miễn phí</a>
+                                    <div class="center">
+                                        <a
+                                            href="<?php echo base_url("register_trial"); ?>"
+                                            class="btn waves-effect waves-light btn-study-first">Đăng ký học ngay</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
