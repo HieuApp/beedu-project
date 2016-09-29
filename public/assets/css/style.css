@@ -8,13 +8,22 @@
 
 /*nav ul a,*/
 .brand-logo {
-color: white;
-left: 56px;
+    color: white;
+    left: 56px;
 }
 
 nav ul {
     position: absolute;
     right: 24px;
+}
+
+.btn-study-first {
+    background-color: white;
+    border-radius: 25px;
+    /*max-width: 80%;*/
+    margin: auto;
+    color: black;
+    /*height: 35px;*/
 }
 
 nav .material-icons {
@@ -141,7 +150,7 @@ h2.menu-title {
     font-family: Roboto;
 }
 
-body{
+body {
     font-family: Roboto;
 }
 
@@ -457,7 +466,7 @@ li.document-item {
     height: 108px;
 }
 
-.icon-file-large{
+.icon-file-large {
     width: 150px;
     height: 200px;
 }
@@ -480,7 +489,7 @@ div.document-info {
     font-weight: bold;
 }
 
-.step-focus{
+.step-focus {
     color: white;
 }
 
@@ -1010,11 +1019,11 @@ div.document-info {
     color: white !important;
     right: -85px !important;
     margin-top: -1px !important;
-    border-radius: 0 2px 2px 0!important;
+    border-radius: 0 2px 2px 0 !important;
 }
 
 nav.black .input-field label.active i,
-nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons{
+nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
     color: #212121;
 }
 
@@ -1030,75 +1039,75 @@ nav.black .input-field input[type=search] ~ .mdi-navigation-close, .input-field 
     display: -webkit-inline-box;
 }
 
-.margin-right-16{
+.margin-right-16 {
     margin-right: 16px;
 }
 
-.no-margin-bottom{
+.no-margin-bottom {
     margin-bottom: 0px !important;
 }
 
-.img-empty{
+.img-empty {
     padding: 30px;
     width: 250px;
 }
 
-.empty-search{
+.empty-search {
     height: 500px;
     margin-top: 120px;
 }
 
-.block{
+.block {
     display: block;
 }
 
-#search{
+#search {
     border-radius: 3px;
     height: 33px !important;
     width: 300px !important;
 }
 
-.input-field input{
+.input-field input {
     font-size: 1rem !important;
 }
 
-.margin-top-80{
+.margin-top-80 {
     margin-top: 80px;
 }
 
-body{
+body {
     background-color: #E0E0E0;
 }
 
-#cd-timeline::before{
+#cd-timeline::before {
     background: #757575;
 }
 
-.inline{
+.inline {
     display: inline-block;
 }
 
-.video-border{
+.video-border {
     border: 3px solid #ffffff;
 }
 
-.bottom-20{
+.bottom-20 {
     margin-bottom: 20px;
 }
 
-.translateY-20{
+.translateY-20 {
     transform: translateY(20%);
 }
 
-.step-active{
+.step-active {
     background: #2196F3 !important;
 }
 
-.margin-top-40{
+.margin-top-40 {
     margin-top: 40px;
 }
 
-.desktop-search{
+.desktop-search {
     position: absolute;
     color: #fff;
     margin-left: 250px;
@@ -1118,23 +1127,23 @@ body{
     font-weight: normal;
 }
 
-html *{
+html * {
     font-family: Beedu;
 }
 
-.bg-hight{
+.bg-hight {
     min-height: 580px;
 }
 
-.menu-font{
+.menu-font {
     font-size: 50px;
 }
 
-.font-40{
+.font-40 {
     font-size: 40px;
 }
 
-.font-30{
+.font-30 {
     font-size: 30px;
 }
 
